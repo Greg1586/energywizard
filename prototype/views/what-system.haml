@@ -68,6 +68,24 @@
           %input{:type=>"radio",:id=>"fortnightly", :name=>"payment-freq", :value=>"fortnightly"}
           %label{:for=>"fortnightly"} DC
           %br
+            %h2 What AC battery do you plan to use?
+          %form
+            %label Battery manufacturer
+            %br
+            %input
+            %br
+            %br
+            %label Battery inverter model
+            %br
+            %input
+            %p
+            %label Battery type
+            %br
+            %select
+              %option Salt Water
+              %option Lithium Ion
+              %option Uranium
+            %br
 
 %a.button{:href=>"/"}
   Next
