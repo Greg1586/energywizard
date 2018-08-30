@@ -2,224 +2,29 @@
 	homepage
 - content_for :bodyClass do
 	homepage
+%div
+	%h1 Welcome to AusNet Services
 
-/ .emergency-message
-/ 	%a{:href=>"/styleguide"}View the styleguide here.
+	%h2 You can use this tool to get approval for a power generation system of up to 30kW, such as for Solar or Wind.
 
-.banner-wrapper
-	-# .app-motto
-	-# 	.app-store
-	-# 	.motto 
-	-# 		%h3 Get the Mobile Banking App
-	-# 		.icon-chevron-right.icon	
-	-# 		%span.icon-remove-sign.icon &nbsp;
-	.homebanner
-		.message
-			%h1
-				Suncorp Bank is big on the things that count.
-			%h2
-				The personal and business banking alternative.
-				%br
-				%a
-					Learn More
-	.sidebar#big-login
-		.sidebar-content
+	%h3 For power systems above 30kW, you need to apply manually.
 
-			#logon
-				.header
-					%span
-						.icon-lock
-						Login Hello
-				.details.callout
-					%button.orange
-						Internet Banking Login
-					#security
-						> Register >Online Security
-					%ul.dropdown
-						%li Other Login Options
-						%li Share Trade
-						%li Margin Lending
-						%li Superannuation
-						%li Working Capital
-						%li Trade Finance
-
-				.details#hide
-					#contact
-						.icon-phone
-						Call Us 13 11 75 55
-
-				#atm
-					.icon-map-marker
-					Find an ATM or Branch
-
-		.sidebar-content
-
-			#helpLinks
-
-				.details
-
-
-					%ul
-
-						%li#interest
-
-							%a
-								Interest Rate
-
-						%li#exchange
-
-							%a
-								Foreign Exchange Rates
-
-						%li#tools
-
-							%a
-								Tools and Calculators
-						%li#business
-
-							%a
-								Business Banking Hub
-
-						%li#financial
-
-							%a
-								Are you experiencing
-								financial difficulty?
-			
-			
-.homepage-content-section
-	.child-tiles
-		-# .wrapper.large
-		-# 	%h3 SPECIAL OFFERS
-		-# 	.rotator.full-bleed
-		-# 		.campaign-text
-		-# 			%h2 that's a conversation worth having
-		-# 			%p Talk to us about how to move your things to other things.
-		-# 			%button.red click this thing
-		-# 		.arrow-left
-		-# 			.icon-chevron-left
-		-# 		.arrow-right
-		-# 			.icon-chevron-right
-		.wrapper.large
-			%h3 SPECIAL OFFERS
-			.rotator.half-bleed.right-align
-				.campaign-text
-					%h2 that's a conversation worth having
-					%p Talk to us about how to move your things to other things
-					%button.red click this thing
-				.campaign-image{:style=>"background-image: url(/images/happy_family.png);"}
-				.arrow-left
-					.icon-chevron-left
-				.arrow-right
-					.icon-chevron-right
-
-		-# .wrapper.large
-		-# 	%h3 SPECIAL OFFERS
-		-# 	.rotator.half-bleed
-		-# 		.campaign-image{:style=>"background-image: url(/images/happy_family.png);"}
-		-# 		.campaign-text
-		-# 			%h2 that's a conversation worth having
-		-# 			%p Talk to us about how to move your things to other things
-		-# 			%button.red click this thing
-		-# 		.arrow-left
-		-# 			.icon-chevron-left
-		-# 		.arrow-right
-		-# 			.icon-chevron-right
-		
-		-# TRANSPARENT FEATURE IMAGES
-		-# .wrapper.large
-		-# 	%h3 SPECIAL OFFERS
-		-# 	.rotator.trans-png.right-align
-		-# 		.campaign-text
-		-# 			%h2 that's a conversation worth having
-		-# 			%p Talk to us about how to move your things to other things
-		-# 			%button.red click this thing
-		-# 		.campaign-image{:style=>"background-image: url(/images/campaign-1.png);"}
-		-# 		.arrow-left
-		-# 			.icon-chevron-left
-		-# 		.arrow-right
-		-# 			.icon-chevron-right
-
-		-# .wrapper.large
-		-# 	%h3 SPECIAL OFFERS
-		-# 	.rotator.trans-png
-		-# 		.campaign-image{:style=>"background-image: url(/images/campaign-1.png);"}
-		-# 		.campaign-text
-		-# 			%h2 that's a conversation worth having
-		-# 			%p Talk to us about how to move your things to other things
-		-# 			%button.red click this thing
-		-# 		.arrow-left
-		-# 			.icon-chevron-left
-		-# 		.arrow-right
-		-# 			.icon-chevron-right
-		
-		.wrapper
-			%h3 SPONSORSHIPS
-			.child-tile.full-image{:style=>"background-image: url(/images/homepage6_a.png); background-position: center center"}
-				.campaign-text
-					%h2 Run the Marathon
-					%p We're sponsoring the Sydney Marathon
-					%button.red Support Us!
-
-
-		.wrapper.parent-page
-			%h3 LATEST NEWS
-			.child-tile.default.green.news
-				.caption
-					.child-tile-content
-						%ul
-							%li
-								%a Suncorp domestic debt deal
-							%li
-								%a Tips for Trips
-							%li
-								%a How Financially Savvy are...
-							%li
-								%a The Cost of Being Green is ...
-							%li
-								%a Look we can fit one more line ...
-
-
-						.icon-file-alt.icon
-
-		
-.homepage-content-section.seo-links
-	.wrapper
-		%h3 SWEET PRODUCTS
-		%ul
-			%li 
-				%a{:href=>"/bank-accounts/index"}
-					.thumb{:style=>"background-image: url('/images/savings.png')"}
-					.wrap
-						%h4 Savings Accounts
-						%p Suncorp has high interest rates. Take a look!
-				
-
-			%li 
-				%a{:href=>"/bank-accounts/everyday-basics"}
-					.thumb{:style=>"background-image: url('/images/50bucks.png')"}
-					.wrap
-						%h4 Term Deposits
-						%p Personal or Business, we help you get returns on your investment.
-				
-			%li
-				%a{:href=>"/bank-accounts/everyday-basics"}			
-					.thumb{:style=>"background-image: url('/images/Integrated_parent.jpg')"}
-					.wrap
-						%h4 Merchant Services
-						%p Latest hardware and software to support your business.
-
-			%li 
-				%a{:href=>"/bank-accounts/index"}
-					.thumb{:style=>"background-image: url('/images/savings.png')"}
-					.wrap
-						%h4 Savings Accounts
-						%p Suncorp has high interest rates. Take a look!
-				
-
-			/ %li 
-			/ 	.thumb{:style=>"background-image: url('/images/50bucks.png')"}
-			/ 	.wrap
-			/ 		%h4 Term Deposits
-			/ 		%p Personal or Business, we help you get returns on your investment
-						
+	There are a few things you'll need before you use this tool:
+	.spacer
+		%input{:type=>"checkbox", :id=>"monthly", :name=>"payment-freq", :value=>"monthly", :checked=>"checked"}
+		%label{:for=>"monthly"} What sort of installation it is, eg wind or solar
+		%br
+		%input{:type=>"checkbox",:id=>"fortnightly", :name=>"payment-freq", :value=>"fortnightly"}
+		%label{:for=>"fortnightly"} A copy of a recent electricity bill for the property
+		%br
+		%input{:type=>"checkbox", :id=>"weekly", :name=>"payment-freq", :value=>"weekly"}
+		%label{:for=>"weekly"} make and model numbers for the proposed equipment
+		%br
+		%input{:type=>"checkbox", :id=>"weekly", :name=>"payment-freq", :value=>"weekly"}
+		%label{:for=>"weekly"} the expected total power of the proposed system
+		%br
+		%input{:type=>"checkbox", :id=>"weekly", :name=>"payment-freq", :value=>"weekly"}
+		%label{:for=>"weekly"} how many phases the property has (most have one)
+		%br
+%a.button{:href=>"/nmi-meter-email"}
+	I've got all these things
