@@ -1,0 +1,158 @@
+html.hidden
+	overflow: hidden
+	body
+		overflow: hidden
+
+body
+	position: relative
+	&.homepage
+		.main-content
+			max-width: 1440px
+	@include breakpoints(medium)
+		width: 100% !important
+
+
+header, .search
+	width: 960px
+	margin: 0 auto
+	@include breakpoints(medium-small)
+		display: none
+
+.blog
+	header, .search
+		@include breakpoints(medium)
+			display: block
+	
+		
+
+.responsive-menu
+	position: fixed
+	display: none
+	height: 45px
+	z-index: 300
+	top: 35px
+	width: 100%
+	left: 0
+	right: 0
+	@include breakpoints(medium)
+		display: block
+	@include breakpoints(medium-small)
+		top: 0
+
+nav.main
+	width: 100%
+	min-width: 960px
+	ul
+		width: 960px
+	.nav-mobile, .sidebar-mobile
+		display: none
+
+	@include breakpoints(medium)
+		position: fixed
+		width: 80%
+		left: -80%
+		top: 35px
+		bottom: 0
+		height: 100%
+		background-color: $dark-green
+		+background-image(linear-gradient(lighten($dark-green, 3), $dark-green))
+		min-width: 0
+		overflow: auto
+	@include breakpoints(medium-small)
+		top: 0
+
+	.secondary, .tertiary
+		@include breakpoints(medium)
+			display: none
+
+.main-content
+	width: 960px
+	margin: 0 auto
+	margin-bottom: 20px
+	margin-top: 20px
+	@include breakpoints(medium)
+		width: 100%
+		margin-top: 95px
+	@include breakpoints(medium-small)
+		margin-top: 60px
+.blog
+	@include breakpoints(medium)
+		.main-content
+			margin-top: 60px
+		nav.main, .responsive-menu
+			top: 0
+
+
+.content
+	display: inline-block
+	vertical-align: top
+	width: 700px
+	margin-right: 20px
+	position: relative //this is for child-page tiles
+	@include breakpoints(medium)
+		width: 100%
+		padding: 0 20px
+		margin-right: 0
+	@include breakpoints(small)
+		padding: 0
+.sidebar
+	display: inline-block
+	vertical-align: top
+	width: 220px
+	height: 100%
+	text-align: left
+	@include breakpoints(medium)
+		width: 80%
+		position: fixed
+		top: 35px
+		right: -80%
+		bottom: 0
+		height: auto
+		z-index: 300
+		overflow: scroll
+		
+	@include breakpoints(medium-small)
+		top: 0
+
+@include breakpoints(medium)
+
+	.page-wrapper
+		position: relative
+	.mobile-nav-active
+		nav.main
+			left: 0
+		.page-wrapper, .responsive-menu, .search
+			left: 80%
+		.nav-mobile
+			+background-image(linear-gradient(lighten($dark-green, 7), lighten($dark-green, 3)))
+	.mobile-sidebar-active
+		.sidebar
+			right: 0
+		.page-wrapper, .responsive-menu, .search
+			left: -80%
+		.sidebar-mobile
+			+background-image(linear-gradient(lighten($dark-green, 7), lighten($dark-green, 3)))
+	.mobile-search-active
+		.search-mobile
+			+background-image(linear-gradient(lighten($dark-green, 7), lighten($dark-green, 3)))
+		.search
+			display: block
+		&.homepage 
+			.content
+				margin-top: 105px !important
+		.main-content
+			margin-top: 160px
+
+	.page-wrapper, nav.main, .sidebar, .responsive-menu, .search, .blogheader
+		+transition-property(all)
+		+transition-duration(.3s)
+		+transition-timing-function(ease-out)
+	.mobile-nav-active, .mobile-sidebar-active
+		overflow: hidden
+		.channel-bar
+			.selected:after
+				content: "" !important
+@include breakpoints(medium-small)
+	.mobile-search-active
+		.main-content
+			margin-top: 120px

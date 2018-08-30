@@ -1,0 +1,148 @@
+- content_for :title do
+	Everyday Basics
+- content_for :bodyClass do
+	Bank Personal Basics child-page
+
+.header-image{:style=>"background-image:url('/images/money.png');"}
+	%h1
+		Everyday Basics Account
+		
+.product-summary.top-summary
+	%h2 A simple, fee-free Transaction Account
+
+	%p That's right, this one's for spending. For drawing out cash. For paying bills. All the normal, everyday stuff, but with Suncorp Bank -
+	.top-cta
+		%ul.proof-points
+			%li You don't pay any account-keeping fees.
+			%li It's pretty much the best, and easiest thing ever.
+		#cta
+			%button.red
+				Apply Now
+				%br
+				for a Bank Account
+
+.child-tiles
+	%ul
+		%li.expandable-tile.active
+
+			.child-tile.default
+				.child-tile-header
+					%p Features
+					.icon-search.icon
+
+			.child-content
+				%h2 Ways to Access Your Account
+				.product-summary
+					%ul.product-features
+						%li
+							.icon-money.icon
+							%a ATMS
+						%li
+							.icon-exchange.icon
+							EFTPOS
+						%li
+							.icon-file-alt.icon
+							BPAY®
+						%li
+							.icon-credit-card.icon
+							%a Visa Debit card
+						%li
+							.icon-phone-sign.icon
+							Telephone Banking
+						%li
+							.icon-laptop.icon
+							Internet Banking
+						%li
+							.icon-mobile-phone.icon
+							Mobile Banking
+						%li
+							.icon-building.icon
+							%a Branches
+				%hr
+
+				%h2 Card Options
+				%p
+					Choose a
+					%a Visa Debit card
+					%sup
+						%a 1
+					and access your own money in more places, like when you’re shopping online or travelling overseas.
+
+
+		%li.expandable-tile
+			.child-tile.default.inactive
+				.child-tile-header
+					%p Rates and Fees
+					.icon-exchange.icon
+
+			.child-content
+				%h2 Fees at a Glance
+
+				%table
+					%tr
+						%td Monthly account keeping fee
+						%td 	None
+					%tr
+						%td All Suncorp Bank Transaction
+						%td Free
+					%tr
+						%td Using other bank's ATMs
+						%td ATM Operator fee2
+					%tr
+						%td Electronic transfers to other banks
+						%td Free
+					%tr
+						%td Bank cheque purchase
+						%td $8.00
+				%hr
+				%h2 Interest Rates
+				%p There’s no interest paid on money in this account.
+
+				%p If you’re saving for goal and would like to earn interest you can use your everyday account with our eOptions high interest online savings account.
+
+				%p You can add up to 15 “flexiRates” on your 55+ account, just log into Internet Banking and apply via the “Manage my flexiRates” tab.
+
+	.product-summary
+		%strong Looking for something else?
+		%span
+			Try our
+			%a Guide to Choosing a Bank Account.
+.call-to-action
+
+	%ul
+		%li#apply
+			.icon.icon-chevron-right
+			.action-header
+				Apply for an Account
+			.action-content
+				%button.red
+					Apply Online
+
+		%li#location
+			.icon.icon-phone
+			.action-header
+				Call Us
+				%br
+				13 11 75
+			.action-content
+				%p BSB is 484-799 for all Suncorp Bank branches.
+
+		%li#existing
+			.icon.icon-group
+			.action-header
+				Existing Customers
+			.action-content
+				%p
+					Logon to
+					%a
+						Internet Banking
+
+.disclaimer
+	%p
+		%strong Things you should know
+
+	%p 1. To be eligible for a Suncorp Bank Visa Debit card you must be over 16 and a permanent resident of Australia. If not eligible you will receive a Suncorp Bank Transaction card.
+
+	%p 2. Withdrawals and enquiries at other (“non Suncorp Bank”) ATMs will incur the ATM Operator fee by the Financial Institution who owns the ATM. This fee will be charged immediately at the time of the transaction to your account.
+
+	%p Banking Products issued by Suncorp-Metway Ltd (“Suncorp Bank”) ABN 66 010 831 722. Please read the Product Information Document before making any decisions regarding this product. Visit your nearest  branch or call 13 11 75 for more information. Terms and Conditions, fees and charges may apply and are available on request.

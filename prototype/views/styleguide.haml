@@ -1,0 +1,733 @@
+- content_for :title do
+	Style Guide
+- content_for :bodyClass do
+	style-guide
+
+.emergency-message
+	This is an example of an emergency header on a page that's not the homepage. The emergency message should always appear above the header.
+	%br
+	%br
+	Links to other pages:
+	%a{:href=>"/search-results"} Search Results
+	%a{:href=>"/blog"} Blog
+	%a{:href=>"/faq"} FAQ
+	%a{:href=>"/foreign-exchange"} Foreign Exchange
+	%a{:href=>"/suncorp-landing-page"} Suncorp Page Promo Tile
+	%a{:href=>"/bank-accounts/compare-accounts"} Compare Accounts
+	%a{:href=>"/bank-accounts/compare-loans"} Compare Loans
+	%a{:href=>"/campaign"} Campaign Templates
+	%a{:href=>"/calculator"} Calculator
+.alert 
+	This is an example of an alert. It should come above headers. Oops something is broken! 
+	%ul.list
+		%li here's an error
+		%li here's another error
+		%li and another one
+
+.confirmation 
+	%p This is an example of a confirmation. It should come above headers or no headers at all on confirmation pages. Thanks for submitting this form. It has been submitted successfully.
+
+	%a Return Home
+.header-image{:style=>"background-image:url('/images/argentina.jpg')"}
+	%h1
+		This is a header with an image
+
+%h1 This is an H1 Header without an image
+
+%h2 This is an H2 Header
+
+%h3 This is an H3 Header
+
+%h4 This is an H4 Header
+
+%hr
+%h2 This is our Color Pallete
+.color-pallet
+	%ul
+		%li#darkest-green 
+			Darkest Green
+			%br
+			rgb(0,75,70)
+			%br
+			&#35;004b46
+
+		%li#dark-green 
+			Heritage Green
+			%br
+			rgb(0,111,102)
+			%br
+			&#35;006f66
+
+		%li#special-green 
+			Special Green
+			%br
+			rgb(30, 157, 147)
+			%br
+			&#35;#1e9d93
+		%br
+		%li#green 
+			Green
+			%br
+			rgb(127,183,178)
+			%br
+			&#35;#7fb7b2
+
+		%li#light-green 
+			Light Green
+			%br
+			rgb(225, 238, 237)
+			%br
+			&#35;#e1eeed
+
+		%br
+		%li#yellow 
+			Yellow
+			%br
+			rgb(255, 187, 47)
+			%br
+			&#35;ffbb2f
+		%li#lightest-yellow 
+			Lightest Yellow
+			%br
+			rgb(252, 245, 226)
+			%br
+			&#35;fcf5e2
+		%br
+		%li#dark-red
+			Dark Red
+			%br
+			rgb(139, 19, 3)
+			%br
+			&#35;8b1303
+		%li#red
+			Red
+			%br
+			rgb(189,25,3)
+			%br
+			&#35;bd1903
+
+		%li#lightest-red
+			Lightest Red
+			%br
+			rgb(250,242,242)
+			%br
+			&#35;faf2f2
+		%br
+		%li#darkest-gray
+			Darkest Gray
+			%br
+			rgb(72,72,72)
+			%br
+			&#35;484848
+		%li#dark-gray
+			Dark Gray
+			%br
+			rgb(102,102,102)
+			%br
+			&#35;666666
+		%li#gray 
+			Gray
+			%br
+			rgb(145,145,150)
+			%br
+			&#35;919196
+		%br
+		%li#light-gray
+			Light Gray
+			%br
+			rgb(204,204,204)
+			%br
+			&#35;cccccc
+		%li#lightest-gray
+			Lightest Gray
+			%br
+			rgb(238,238,238)
+			%br
+			&#35;f2f2f2
+		%li#off-white
+			Off White
+			%br
+			rgb(248,248,248)
+			%br
+			&#35;f8f8f8
+
+%hr
+
+%h2 Typography
+%br
+.typography
+
+	%p#rounded Arial Rounded MT Bold
+
+	%p#arial Arial
+
+	%p#source SOURCE SANS PRO
+				
+%hr
+.product-summary
+	%h2 Example of a Product Summary with a Call To Action
+	%p Looking for the uncomplicated version of everything you need from a bank account, and all in the one place? Look no further than our 55 Plus account.
+
+	.top-cta
+		%ul.proof-points
+			%li Exclusively for those 55, and over.
+			%li No monthly account-keeping fee*
+			%li The freedom to access your account with a free chequebook, or Visa Debit card
+		#cta
+			%button.red
+				Apply Now
+				%br
+				for a Bank Account
+
+.product-summary
+	%h2 Example of Content Inside a Plain 'Ol Summary Box
+
+	%p This is example of a paragraph inside the summary box. Look at this content. There is a bit of padding around it. Look at this content. There is a bit of padding around it. Look at this content. There is a bit of padding around it.
+
+
+.product-summary
+	%h2 Example of a Product Summary Box with Inline Columns
+	.inline-column
+		%h5 Switching to Suncorp Bank
+		%p Switching is quick, easy, and most importantly, we'll contact the departing bank on your behalf.
+	.inline-column
+		%h5 Compare Accounts
+		%p Use our Account Comparison Tool to compare Transaction and Savings Accounts.
+	.inline-column
+		%h5 Secured Savings Return
+		%p Our Term Deposits give you guaranteed, secure returns.
+	.inline-column
+		%h5 Travellers Cheques
+		%p Safer than cash, American Express Travellers Cheques mean security. Full refund or replacement if your cheques are lost or stolen.
+.product-summary
+	%ul.product-features
+		%li
+			.icon-money.icon
+			%a ATMS
+		%li
+			.icon-exchange.icon
+			EFTPOS
+		%li
+			.icon-file-alt.icon
+			BPAY®
+		%li
+			.icon-credit-card.icon
+			%a Visa Debit card
+		%li
+			.icon-edit.icon
+			Free Cheque Book
+		%li
+			.icon-phone-sign.icon
+			Telephone Banking
+		%li
+			.icon-laptop.icon
+			Internet Banking
+		%li
+			.icon-mobile-phone.icon
+			Mobile Banking
+		%li
+			.icon-building.icon
+			%a Branches
+%hr
+%h3 Here is some plain content
+%p This is paragraph text yay look at me I'm a paragraph! This is paragraph text yay look at me I'm a paragraph! This is paragraph text yay look at me I'm a paragraph! This is paragraph text yay look at me I'm a paragraph!
+
+%p This is paragraph text yay look at me I'm a paragraph! This is paragraph text yay look at me I'm a paragraph! This is paragraph text yay look at me I'm a paragraph! This is paragraph text yay look at me I'm a paragraph!
+%p
+	%a This is a link go on hover on me.
+%p
+	%a.leading-link This is a leading Link
+
+%h5 This is styling for lists
+%br
+%ul.list
+	%li This is a bulleted list
+	%li This is a bulleted list
+	%li This is a bulleted list
+	%li This is a bulleted list
+%br
+%h5 This is a basic table
+%table
+	%tr
+		%th Popcorn
+		%th Kittens
+		%th Balloons
+		%th Cupcakes
+	%tr
+		%td
+			12
+		%td
+			20
+		%td
+			123
+		%td
+			0
+	%tr
+		%td
+			18
+		%td
+			51241
+		%td
+			30
+		%td
+			841
+	%tr
+		%td
+			124
+		%td
+			12355
+		%td
+			16
+		%td
+			713
+	%tr
+		%td
+			60
+		%td
+			214195123
+		%td
+			2413
+		%td
+			12
+	%tr
+		%td
+			18
+		%td
+			51241
+		%td
+			30
+		%td
+			841
+	%tr
+		%td
+			18
+		%td
+			51241
+		%td
+			30
+		%td
+			841
+	%tr
+		%td
+			18
+		%td
+			51241
+		%td
+			30
+		%td
+			841
+%strong To see a bigger comparison table, 
+%a{:href=>"/bank-accounts/compare-accounts"} visit this page.
+%hr
+.formspacer
+	%h2 Example of Form
+	%form
+		%label An Input
+		%br
+		%input
+		%br
+		%label 
+			A Required Input With Error
+			%sup * 
+		%br
+		%input.inline-error
+		%br
+		.inline-error-message
+			Please fill out this field
+		%br
+		%label An Input with a dollar sign
+		%br
+		.text-input-icon-wrapper.money
+			%input{:type=>"text", :id=>"repayment-amount", :value=>""}
+		%br
+		%label An Input with a percent sign
+		%br
+		.text-input-icon-wrapper.percent
+			%input{:type=>"text", :id=>"repayment-amount", :value=>""}
+		%br
+		%label An Input with a percent pa sign
+		%br
+		.text-input-icon-wrapper.percent-pa
+			%input{:type=>"text", :id=>"repayment-amount", :value=>""}
+		%br
+		%label An Input with years
+		%br
+		.text-input-icon-wrapper.years
+			%input{:type=>"text", :id=>"repayment-amount", :value=>""}
+
+		%br
+		%label This is a dropdown
+		%br
+		%select
+			%option Option 1
+			%option Option 2
+			%option Option 3
+			%option Option 4
+			%option Option 5
+		%br
+		%label This is a custom dropdown in the sidebar
+		%br
+		#logon
+			%ul.dropdown
+				%li 
+					%span#header-text Option 1
+				%li Option 2
+				%li Option 3
+				%li Option 4
+				%li Option 5
+		%br
+		%label This is a textarea
+		%br
+		%br
+		%textarea
+		%br
+		%br
+		.spacer
+
+			%input{:type=>"radio", :id=>"monthly", :name=>"payment-freq", :value=>"monthly", :checked=>"checked"} 
+			%label{:for=>"monthly"} Option 1
+
+			%input{:type=>"radio",:id=>"fortnightly", :name=>"payment-freq", :value=>"fortnightly"} 
+			%label{:for=>"fortnightly"} Option 2
+
+			%input{:type=>"radio", :id=>"weekly", :name=>"payment-freq", :value=>"weekly"} 
+			%label{:for=>"weekly"} Option 3
+			%br
+
+
+			%input{:type=>"checkbox", :id=>"monthly", :name=>"payment-freq", :value=>"monthly", :checked=>"checked"} 
+			%label{:for=>"monthly"} Option 1
+
+			%input{:type=>"checkbox",:id=>"fortnightly", :name=>"payment-freq", :value=>"fortnightly"} 
+			%label{:for=>"fortnightly"} Option 2
+
+			%input{:type=>"checkbox", :id=>"weekly", :name=>"payment-freq", :value=>"weekly"} 
+			%label{:for=>"weekly"} Option 3
+		%br
+		%button.green
+			Submit
+		%button.red
+			Cancel
+
+
+%hr
+
+%button.red
+
+	Primary Action
+
+%button.green
+	Secondary Action
+
+%button.orange
+	Tertiary Action
+
+%button.disabled
+	Disabled Button
+
+.accordion
+	.accordion-header
+		This is an accordion
+		.accordion-toggle
+
+	.accordion-content
+		%h2 Cashback (Redraw facility)
+		%p You’ll have easy access to any additional repayments you have made on your home loan, any time, with Suncorp Bank Cashback4. You can make one free Online Cashback transaction per calendar month5 and there’s a minimum redraw of $1,000.
+
+		%h2 Statements
+		%p We issue you with a statement every 6 months, or more often when you request it.
+
+.accordion
+	.accordion-header
+		This is an accordion as well
+		.accordion-toggle
+
+	.accordion-content
+		%h2 Cashback (Redraw facility)
+		%p You’ll have easy access to any additional repayments you have made on your home loan, any time, with Suncorp Bank Cashback4. You can make one free Online Cashback transaction per calendar month5 and there’s a minimum redraw of $1,000.
+
+		%h2 Statements
+		%p We issue you with a statement every 6 months, or more often when you request it.
+
+.accordion
+	.accordion-header
+		This is another accordion
+		.accordion-toggle
+
+	.accordion-content
+		%h2 Cashback (Redraw facility)
+		%p You’ll have easy access to any additional repayments you have made on your home loan, any time, with Suncorp Bank Cashback4. You can make one free Online Cashback transaction per calendar month5 and there’s a minimum redraw of $1,000.
+
+		%h2 Statements
+		%p We issue you with a statement every 6 months, or more often when you request it.
+%hr
+	%button.green.overlay-trigger Click Me for Overlay Styling, or Click Feedback
+%hr
+
+
+
+.child-page
+	%h2 Example of How-to style tiles on child pages.
+	%p The styling here is specifically for more than 3 tiles and for either how-to type content or displaying more content.
+
+	.child-tiles
+
+		%ul
+
+			%li.expandable-tile.active
+				.child-tile.default
+					.child-tile-header
+						%p Just Spending
+						.icon-money.icon
+
+
+				.child-content
+					%h2 Everyday Basics Account
+					%p Just for spending, an everyday, no-fuss, fee-free transaction account.
+					%a.leading-link Learn More
+
+			%li.expandable-tile
+				.child-tile.default
+					.child-tile-header
+						%p Spending and Savings
+						.icon-lock.icon
+
+				.child-content
+
+					%h2 Everyday Options Account
+
+					%p An everyday transaction account that links to a number of high-interest savings accounts.
+					%a.leading-link Learn More
+
+			%li.expandable-tile
+				.child-tile.default
+					.child-tile-header
+						%p For someone over 55, or Under 18
+
+						.icon-key.icon
+
+				.child-content
+					%h2 55 Plus Account
+					%p Suncorp Bank's 55 Plus Account is a simple transaction account rich with all the right features. With it, you not only have the option of linking it to a savings account, but you'll also enjoy a wealth of bonuses, like free bank-cheques, a Visa Debit card, and flexiRates. A 'passbook' access option is also available.
+					%a.leading-link Learn More
+
+					%hr
+
+					%h2 For under 18's
+
+					%p Perfect for getting the kids used to managing and saving money, a Kids Savings Account comes with the opportunity to earn bonus interest, and a whole host of fun learning tools and games via our specially designed website, www.suncorpkids.com.au.
+					%a.leading-link Learn More
+
+					%hr
+
+					%h2 Under 18, but not looking for a Kids account?
+
+					%p Anyone over the age of 12 can open an Everyday Basics Transaction Account, as well as an eOptions Online Savings Account.
+					%a.leading-link Learn More
+
+
+			%li.expandable-tile
+				.child-tile.default
+					.child-tile-header
+						%p For High Balances
+						.icon-book.icon
+					.child-tile-content
+
+				.child-content
+
+					%h2 Cash Management Account
+					%p A transaction and savings account in one, with a competitive, tiered interest rate, so the more you save, the more you earn.
+					%a.leading-link Learn More
+
+			%li.expandable-tile
+				.child-tile.default
+					.child-tile-header
+						%p A purely online savings account
+						.icon-laptop.icon
+
+				.child-content.55
+
+					%h2 eOptions
+
+					%p A high-interest, online savings account with no fees.
+					%a.leading-link Learn More
+
+
+			%li.expandable-tile
+				.child-tile.default
+					.child-tile-header
+						%p For Travel
+						.icon-plane.icon
+
+				.child-content
+					%h2 Accessing your money overseas as a Suncorp Bank customer is quick, and easy.
+					%hr
+					%h4 Cash Passport
+					%p Our Cash Passport option lets you purchase a prepaid debit card matched to the currency of your travel destination. This card can be used over the counter, and to withindraw cash from over 1 million Visa ATMs worldwide.
+					%a.leading-link Learn More
+					%br
+					%hr
+					%h4 Foreign Currency
+					%p With Foreign Currency Cash you can exchange your money into numerous foreign currencies at a Suncorp bank branch prior to your travel.
+					%a.leading-link Learn More
+
+					%hr
+					%h4 Visa Debit Card
+					%p Simply link a Visa Debit card to one of your transaction accounts, and you can shop and pay - with your money - anywhere that accepts Visa.
+					%a.leading-link Learn More
+
+					%hr
+					%h4 Travellers Cheques
+					%p Safer than cash, American Express Travellers Cheques mean security. And you'll get a full refund or replacement if your cheques are lost or stolen.
+					%a.leading-link Learn More
+
+%hr
+
+.parent-page
+	%h2 Example of tiles on parent page that link to child pages.
+	%p Notice the styling for full images and default colored tiles.
+
+	.child-tiles
+		%ul
+
+			%li.child-tile.full-image{:style=>"background-image: url(/images/money.png)"}
+				%a{:href=>"/bank-accounts/everyday-basics"}
+					.caption
+						.child-tile-header
+							Full Image Tile
+						.child-tile-content
+							%p This is an example of a full image tile with text in the description.
+
+			%li.child-tile.default.green
+				%a{:href=>"/bank-accounts/compare-accounts"}
+					.caption
+						.child-tile-header
+							Default Green Tile
+						.child-tile-content
+							%p This is an example of a green tile with text in the description.
+							%p This is an example of a green tile with text in the description.
+
+							.icon-ok-circle.icon
+
+			%li.child-tile.default.dark-green
+				%a{:href=>"/bank-accounts/compare-accounts"}
+					.caption
+						.child-tile-header
+							Default Dark Green Tile
+						.child-tile-content
+							%p This is an example of a dark green tile with text in the description.
+							%p This is an example of a dark green tile with text in the description.
+
+							.icon-star.icon
+			%li.child-tile.default.orange
+				%a{:href=>"/bank-accounts/compare-accounts"}
+					.caption
+						.child-tile-header
+							Default Orange Tile
+						.child-tile-content
+							%p This is an example of a orange tile with text in the description.
+							%p This is an example of a orange tile with text in the description.
+
+							.icon-suitcase.icon
+
+			%li.child-tile.default.white
+				%a{:href=>"/bank-accounts/compare-accounts"}
+					.caption
+						.child-tile-header
+							Default white Tile
+						.child-tile-content
+							%p This is an example of a white tile with text in the description.
+							%p This is an example of a white tile with text in the description.
+
+							.icon-suitcase.icon
+
+			%li.child-tile.default.text-gray
+				%a{:href=>"/bank-accounts/compare-accounts"}
+					.caption
+						.child-tile-header
+							Default Light Gray Tile
+						.child-tile-content
+							%p This is an example of a light gray tile with text in the description.
+							%p This is an example of a light gray tile with text in the description.
+
+							.icon-umbrella.icon
+			%li.child-tile.default.gray
+				%a{:href=>"/bank-accounts/compare-accounts"}
+					.caption
+						.child-tile-header
+							Default Gray Tile
+						.child-tile-content
+							%p This is an example of a gray tile with text in the description.
+							%p This is an example of a gray tile with text in the description.
+
+							.icon-suitcase.icon
+%hr
+%h2 Example of Homepage Carousel
+.homepage
+	.homepage-content-section
+
+		.wrapper.large
+			%h3 SPECIAL OFFERS
+			.rotator.half-bleed.right-align
+				.campaign-text
+					%h2 that's a conversation worth having
+					%p Talk to us about how to move your things to other things
+					%button.red click this thing
+				.campaign-image{:style=>"background-image: url(/images/happy_family.png);"}
+				.arrow-left
+					.icon-chevron-left
+				.arrow-right
+					.icon-chevron-right
+		.wrapper.large
+			%h3 SPECIAL OFFERS
+			.rotator.half-bleed
+				.campaign-image{:style=>"background-image: url(/images/happy_family.png);"}
+				.campaign-text
+					%h2 that's a conversation worth having
+					%p Talk to us about how to move your things to other things
+					%button.red click this thing
+				.arrow-left
+					.icon-chevron-left
+				.arrow-right
+					.icon-chevron-right
+		.wrapper.large
+			%h3 SPECIAL OFFERS
+			.rotator.trans-png.right-align
+				.campaign-text
+					%h2 that's a conversation worth having
+					%p Talk to us about how to move your things to other things
+					%button.red click this thing
+				.campaign-image{:style=>"background-image: url(/images/campaign-1.png);"}
+				.arrow-left
+					.icon-chevron-left
+				.arrow-right
+					.icon-chevron-right
+
+		.wrapper.large
+			%h3 SPECIAL OFFERS
+			.rotator.trans-png
+				.campaign-image{:style=>"background-image: url(/images/campaign-1.png);"}
+				.campaign-text
+					%h2 that's a conversation worth having
+					%p Talk to us about how to move your things to other things
+					%button.red click this thing
+				.arrow-left
+					.icon-chevron-left
+				.arrow-right
+					.icon-chevron-right
+	
+%hr
+%h2 Example of Pagination
+
+.pagination
+	%ul
+		%li.selected 1
+		%li 2
+		%li 3
+		%li 4
+		%li 5
+		%li 6
+		%li 7
+		%li 8
+		%li 9
+		%li 10

@@ -1,0 +1,65 @@
+//color pallet
+
+$darkest-green: rgb(0,75,70)
+
+$dark-green: rgb(0,111,102)
+
+$special-green: rgb(30, 157, 147)
+
+$green: rgb(127,183,178)
+
+$light-green: rgb(225, 238, 237)
+
+$lightest-green: lighten($light-green, 4)
+
+$red:rgb(189,25,3)
+$dark-red: rgb(139, 19, 3)
+$lightest-red: rgb(250,242,242)
+
+$yellow: rgb(255, 187, 47)
+$lightest-yellow: lighten(rgb(240, 200, 85), 30)
+
+
+$darkest-gray:rgb(72,72,72)
+$dark-gray: #666
+$gray: rgb(145,145,150)
+$light-gray: #ccc
+$lightest-gray: #f2f2f2
+$off-white: #f8f8f8
+
+$facebook-blue: #3B5998
+$twitter-blue: #00ACED
+$google-red: #CF3502
+$tumblr-blue: #44546a
+
+$responsive-nav-font-size: 16px
+
+// @mixin box-shadow-standard
+	// +box-shadow(0 1px 4px 0 rgba(0,0,0, .4))
+
+@mixin box-shadow-standard
+	+box-shadow(0 1px 4px 0 rgba(0,0,0, 0))
+
+@mixin box-shadow-subtle
+	+box-shadow(0 0 25px 0 rgba(0,0,0,.3))
+
+@mixin breakpoints($point)
+	@if $point == super
+		@media (max-width: 1440px)
+			@content
+	@if $point == large
+		@media (max-width: 1024px)
+			@content
+	@if $point == medium
+		@media (max-width: 800px)
+			@content
+	@if $point == medium-small
+		@media (max-width: 640px)
+			@content
+	@else if $point == small
+		@media (max-width: 480px)
+			@content
+
+@mixin specific-breakpoint($point)
+	@media (max-width: $point)
+		@content

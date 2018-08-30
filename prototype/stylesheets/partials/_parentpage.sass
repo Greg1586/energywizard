@@ -1,0 +1,91 @@
+$child-tile-width: 48.5%
+$child-tile-height: 220px
+
+.non-parent
+	.child-tile
+		width: $child-tile-width
+		height: $child-tile-height*1 !important
+		margin: 0 2% 20px 0
+		&:nth-child(even)
+			margin-right: 0
+		@include breakpoints(small)
+			margin: 0
+			margin-bottom: 30px
+			+border-radius(0)
+		&.full-image
+			.caption
+				height: $child-tile-height - ($child-tile-height - 40px)
+			&:hover
+				.caption
+					height: $child-tile-height
+
+.parent-page
+	.child-tile
+		width: $child-tile-width
+		height: $child-tile-height
+		margin: 0 2% 20px 0
+		&:nth-child(even)
+			margin-right: 0
+		.caption
+			display: inline-block
+			+border-bottom-radius(4px)
+			.child-tile-header
+				margin: 15px 20px 0 20px
+				border-bottom: 1px solid white
+				padding-bottom: 10px
+			&.pictile
+				width: 60%
+		@include breakpoints(small)
+			margin: 0
+			margin-bottom: 30px
+			+border-radius(0)
+		.full-image
+			background-repeat: no-repeat
+			background-size: cover
+			height: 100px
+			width: 100px
+			display: inline-block
+			+border-radius(4px)
+		&.full-image
+			.caption
+				height: $child-tile-height - ($child-tile-height - 40px)
+			&:hover
+				.caption
+					height: $child-tile-height
+
+		&.default
+			height: $child-tile-height
+			.caption
+				&:after
+					font-family: 'FontAwesome', Arial
+					content: "Learn More \f054"
+					font-weight: bold
+					position: absolute
+					bottom: 10px
+					right: 10px
+					z-index: 5
+			.child-tile-content
+				.icon
+					position: absolute
+					top: -20px
+					right: -50px
+					font-size: 160px
+					z-index: -1
+		@include specific-breakpoint(620px)
+			width: 100%
+	
+.products-page
+
+	.child-tile.default
+		width: 30%
+		height: 180px
+		margin: 1.4% !important
+		.child-tile-header
+			font-size: 18px
+		.child-tile-content
+			.icon
+				position: absolute
+				top: -10px
+				right: -50px
+				font-size: 130px
+				z-index: -1

@@ -1,0 +1,63 @@
+!!!
+
+%html
+	<!--<![endif]-->
+	%head
+		%meta(charset="utf-8")
+		%meta(http-equiv="Content-language" content="en")
+		%meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+		- title = yield :title
+		%title
+			= "#{title}"
+		%meta{:charset => "utf-8"}
+		%link{:rel=>"stylesheet", :href=>"/stylesheets/application.css"}
+		= javascript_include_tag "jquery"
+		= javascript_include_tag "application"
+		= javascript_include_tag "navigation"
+
+
+	- bodyClass = yield :bodyClass
+	%body{ :class => "#{bodyClass}" }
+		.blogheader
+			%header
+				.bannerleft
+					.blogbanner
+						insight
+						.blogbannertext
+							iseverything
+					.tinytext 
+						%span by	
+						.logo
+						%span.mobilehide Know your stuff. No more bank speak. 
+				.callin
+					.icon-reorder
+				.blog-mob-search
+					.icon-search
+				.blogsearch
+					%a#suncorp-link head back to suncorpbank.com.au
+					.search
+						%input
+			.blogfind
+				.search
+					%input{:type=>"text", :placeholder=>"Search this blog"}
+			.categories
+				.header#hilight
+					Categories
+				.details
+					%ul
+						%li All Blog Posts 
+						%li Saving Money
+						%li Work Life Balance
+					%ul#rightaligned
+						%li Financial Hardship
+						%li Travel Destinations
+						%li More Categories
+					
+	.page-wrapper	
+		.main-content
+			.content
+				= yield
+
+			= render "layouts/sidebar"
+
+		= render "layouts/footer"

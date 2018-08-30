@@ -1,0 +1,46 @@
+!!!
+/[if lt IE 8] <html class="ie7" lang="en">
+/[if IE 8] <html class="ie8" lang="en">
+/[if IE 9] <html class="ie9" lang="en">
+<!--[if gt IE 9]><!-->
+%html
+	<!--<![endif]-->
+	%head
+		%meta(charset="utf-8")
+		%meta(http-equiv="Content-language" content="en")
+		%meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		- title = yield :title
+		%title
+			= "#{title}"
+		%meta{:charset => "utf-8"}
+
+		-# %meta{:name=>"apple-itunes-app", :content=>"app-id=484823774, affiliate-data=myAffiliateData, app-argument=https://itunes.apple.com/au/app/suncorp-bank/id484823774?mt=8"}
+
+		%meta{:name=>"apple-itunes-app", :content=>"app-id=490217893, affiliate-data=myAffiliateData, app-argument=https://itunes.apple.com/au/app/suncorp-bank/id484823774?mt=8"}
+
+
+		%link{:rel=>"stylesheet", :href=>"/stylesheets/application.css"}
+		= javascript_include_tag "jquery"
+		= javascript_include_tag "jquery.hammer"
+		= javascript_include_tag "application"
+		= javascript_include_tag "navigation"
+
+
+
+	- bodyClass = yield :bodyClass
+	%body{ :class => "#{bodyClass}" }
+
+		= render "layouts/header"
+
+		.page-wrapper
+			= render "layouts/navigation"
+
+
+			.main-content
+				.content
+					= yield
+
+				= render "layouts/sidebar"
+				= render "feedback"
+
+			= render "layouts/footer"

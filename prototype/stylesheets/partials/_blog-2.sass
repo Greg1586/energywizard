@@ -1,0 +1,325 @@
+// NORMAL CRAP
+.blog_2
+	max-width: 1440px
+	margin: 0 auto
+	header, .search
+		width: 100%
+		margin: 0 auto
+		border-bottom: none
+		@include breakpoints(super)
+			pading: 0 20px
+		@include breakpoints(medium-small)
+			display: none
+		.bannerleft
+			margin-left: 20px
+		.blogbanner
+			color: $dark-green
+		.blogbannertext, .tinytext
+			color: $darkest-gray
+			.logo
+				background-image: url("/images/logo_blog_header.png")
+				width: 110px 
+		.callin, .blog-mob-search
+			display: block
+			height: 35px
+			width: 35px
+			color: $dark-green
+			font-size: 20px
+			padding: 10px
+			position: absolute
+			@include breakpoints(medium)
+				display: block
+			.icon-chevron-right
+				display: none
+		.callin	
+			right: 0
+			margin-right: 10px
+			bottom: 12px
+		.blog-mob-search
+			right: 35px
+			bottom: 12px
+			margin-right: 10px	
+	
+	table, th, tr, td
+		position: relative
+		background-color: transparent !important
+		border-style: none
+	
+	.main-content
+		width: 100%
+		margin-top: 0
+	.content 
+		width: 100%
+		margin-right: 0
+	
+	.blog-post
+		+border-radius(8px)
+		background-color: $lightest-gray
+		padding-top: 0
+		height: 600px
+		position: relative
+		&:first-child
+			margin-top: 0
+		p
+			padding: 0
+		.leading-image
+			+border-top-radius(8px)
+			height: 400px
+		.textbit
+			margin: 15px 20px 0px 20px
+			position: relative
+			.othertext
+				height: 30px
+				position: relative
+				.social-share
+					height: auto
+				.metadata, .social-share
+					position: absolute
+					bottom: 10px
+					width: 100%
+					vertical-align: bottom
+					.icon 
+						font-size: 1.75em
+					h3
+						font-family: Georgia, Times, "Times New Roman", Serif
+						font-weight: normal
+						font-style: italic
+						font-size: 1.4em
+						margin-bottom: 0
+		.linkstrip
+			position: absolute
+			bottom: 0
+			+border-bottom-radius(8px)
+			width: 100px
+			height: 40px
+			right: 20px
+			@include breakpoints(large)
+				bottom: -10px
+
+			.date
+				padding-bottom: 10px
+		.picture
+			position: relative
+		.postheader
+			width: 100%
+			position: absolute
+			bottom: 0
+			background-color: rgba(255,255,255,0.85)
+			h2 
+				font-family: Georgia, Times, "Times New Roman", Serif
+				font-weight: normal
+				font-size: 1.8em
+				margin: 20px
+			a
+				margin-left: 20px
+	
+	.leading-link
+		position: absolute
+		right: 0
+
+	.half
+		width: 50%
+		display: inline-block
+		top: 0
+		@include breakpoints(large)
+			width: 66%
+		.picture
+			.postheader	
+				padding: 0
+	.quarter1, .quarter2
+		padding-left: 20px
+		width: 25%
+		display: inline-block	
+		height: auto
+		vertical-align: top
+	.quarter1
+		position: absolute
+		right: 25%
+	.quarter2
+		position: absolute
+		right: 0
+		@include breakpoints(large)
+			width: 33%
+
+	.socialstuff
+		height: 180px
+
+	.col1
+		left: 0
+		right: auto
+		padding-left: 0
+		.blog-post
+			height: 350px
+	.col2		
+		position: relative
+		left: 25%
+		.blog-post
+			height: 350px
+	.col3 
+		@include breakpoints(large)
+			display: none
+
+	.blogbox
+		padding: 20px
+		h2
+			margin-left: 0
+			margin-top: 10px
+			margin-bottom: 20px
+		table
+			width: 100%
+		td 
+			p 
+				display: inline-block
+				position: absolute
+				top: 10px
+				font-size: 1em
+			.icon 
+				font-size: 2em
+				margin-right: 20px
+			.icon-twitter-sign
+				color: $twitter-blue
+			.icon-facebook-sign
+				color: $facebook-blue
+			.icon-rss
+				color: darken($yellow, 10%)
+			.icon-envelope
+				color: $gray
+		
+		.graph
+			position: relative
+			height: 50px 
+			width: 100%
+			margin-bottom: 12px
+			background-color: $off-white
+			.number
+				position: absolute
+				top: 0
+				margin: 10px
+				@include breakpoints(super)
+					width: 60%
+				.littlenumbers
+					font-weight: bold
+				.littlestnumbers
+					font-size: 0.9em
+					@include breakpoints(super)
+						display: none
+			.bignumber
+				overflow: hidden
+				position: absolute
+				right: 0
+				top: 0
+				margin-right: 10px
+				margin-top: 10px
+				font-size: 1.75em
+				font-weight: bold
+				@include breakpoints(super)
+					font-size: 1.4em
+
+
+			.graph1
+				width: 100%
+				height: 100%
+				background-color: lighten($yellow, 0%)
+			.graph2
+				width: 90%
+				height: 100%
+				background-color: lighten($yellow, 10%)
+			.graph3
+				width: 70%
+				height: 100%
+				background-color: lighten($yellow, 20%)
+			.graph4
+				width: 45%
+				height: 100%
+				background-color: lighten($yellow, 30%)
+			.graph5
+				width: 30%
+				height: 100%
+				background-color: lighten($yellow, 33%)
+
+	.data
+		height: 400px
+
+	.rows
+		margin-bottom: 20px
+		height: 350px
+		.blog-post
+			padding-bottom: 0
+			padding: 20px
+			height: 350px
+			@include breakpoints(large)
+				padding: 0
+			&.featured
+				padding: 0
+			.textbit
+				@include breakpoints(large)
+					display: none
+		.picture
+			height: 100%
+			a
+				margin: 0 20px 20px 0
+				bottom: -5px
+		.leading-image
+			height: 100%
+			+border-bottom-radius(8px)
+			.postheader
+				position: relative
+				padding: 0
+				margin: 0
+		.quarter1
+			@include breakpoints(large)
+				display: inline-block
+				width: 50%
+			p
+				margin-left: 20px
+		.threequarter
+			width: 75%
+			padding-left: 20px
+			height: auto
+			vertical-align: top
+			h2
+				font-family: Georgia, Times, "Times New Roman", Serif
+				font-weight: normal
+				font-size: 1.8em	
+				margin: 10px 20px
+			table
+				margin-top: 0
+				width: 100%
+				.firstcell
+					text-align: left
+				.secondcell
+					text-align: center
+				.thirdcell
+					text-align: right
+				.icon
+					font-size: 2em
+				.picture
+					height: 240px
+					padding: 0
+					margin: 0
+					.postheader
+						+border-bottom-radius(8px)
+						h3
+							font-family: Georgia, Times, "Times New Roman", Serif
+							font-weight: normal
+							font-size: 1.8em
+						p 
+							width: 66%	
+							margin-left: 20px						
+				.spacer
+					width: 10px
+				@include breakpoints(medium)
+					h2, .icon
+						font-size: 1.3em
+					.tablefirst
+					.tablesecond
+					.tablethird
+						display: none
+		#tablet1
+			display: none
+			@include breakpoints(large)
+				display: inline
+				right: 0
+		#tablet2
+			@include breakpoints(large)
+				display: none

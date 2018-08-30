@@ -1,0 +1,54 @@
+- content_for :title do
+	Account Types
+- content_for :bodyClass do
+	parent-page
+
+.header-image{:style=>"background-image:url('/images/help.png'); background-position: left 55%; background-size: 120%"}
+	%h1
+		Account Types
+
+.child-tiles
+	%ul
+
+		%li.child-tile.full-image{:style=>"background-image: url(/images/money.png)"}
+			%a{:href=>"/bank-accounts/everyday-basics"}
+				.caption
+					.child-tile-header
+						Everyday Basics
+					.child-tile-content
+						%p That's right, this one's for spending. For drawing out cash. For paying bills. All the normal, everyday stuff, but with Suncorp Bank -
+						%p You don't pay any account-keeping fees.
+						%p It's pretty much the best, and easiest thing ever.
+
+
+		%li.child-tile.full-image{:style=>"background-image: url(/images/vacation.png)"}
+			%a{:href=>"/bank-accounts/everyday-options"}
+				.caption
+					.child-tile-header
+						Everyday Options
+					.child-tile-content
+						%p For the seamless integration of your spending with your saving, Everyday Options is the account that has everything you need.
+						%p Link up to 9, high-interest savings (sub-) accounts
+						%p Lock portions of your money away at an even higher interest rate, with flexiRates
+
+
+		%li.child-tile.full-image{:style=>"background-image: url(/images/elderly.png)"}
+			%a{:href=>"/bank-accounts/55-plus"}
+				.caption
+					.child-tile-header
+						55 Plus
+					.child-tile-content
+						%p Looking for the uncomplicated version of everything you need from a bank account, and all in the one place? Look no further than our 55 Plus account.
+						%p Exclusively for those 55, and over. (Or if you're opening a joint account with someone who is.)
+						%p No monthly account-keeping fee*
+
+
+		%li.child-tile.default.green
+			%a{:href=>"/bank-accounts/compare-accounts"}
+				.caption
+					.child-tile-header
+						.icon-ok-circle.icon
+						Compare Our Accounts
+					.child-tile-content
+						%p Changing to a better bank has never been easier.
+						%p Understandably, the prospect of switching your account-based banking over to a new bank may seem daunting. Here at Suncorp Bank, we want to assure you that it's not.

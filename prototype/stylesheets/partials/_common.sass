@@ -1,0 +1,905 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro)
+
+body
+	font-family: Arial
+	color: $darkest-gray
+	font-size: 14px
+
+h1
+	color: $dark-green
+	font-size: 2.2em
+	margin: .3em 0
+	@include breakpoints(medium)
+		font-size: 1.8em
+
+h2
+	color: $dark-green
+	font-size: 1.6em
+	margin: .6em 0
+	@include breakpoints(medium)
+		font-size: 1.4em
+
+h3
+	color: $green
+	font-size: 1.2em
+	margin: .4em 0
+
+h4
+	color: $dark-green
+	font-size: 1.2em
+	margin: .4em 0
+
+h5
+	color: $dark-green
+	font-size: 1em
+	margin: .3em 0
+
+a
+	color: $dark-green
+	cursor: pointer
+	text-decoration: none
+	&:hover
+		color: $green
+
+	&.leading-link
+		font-size: 14px
+		font-weight: bold
+		text-decoration: none !important
+		float: right
+		&:after
+			font-family: 'FontAwesome'
+			content: $chevron-right
+			margin-left: 5px
+p
+	margin-bottom: 1em
+	font-size: 14px
+	a
+		text-decoration: underline
+	@include breakpoints(medium)
+		font-size: 16px
+
+hr
+	border-top: 1px solid #f2f2f2
+	border-bottom: none
+	margin: 15px 0
+
+//Form Elements
+
+label
+	font-size: 16px
+	font-weight: bold
+	margin: 5px 0
+	display: inline-block
+	color: $dark-green
+	sup
+		line-height: 0
+		color: $red
+
+.inline-error-message
+	color: $red
+	&:before
+		content: $exclamation-sign
+		font-family: "FontAwesome"
+.inline-error
+	border: 2px solid $red
+
+input, textarea, select
+	background-color: $off-white
+	color: $darkest-gray
+	border: 1px solid $gray
+	+border-radius(4px)
+	padding: 5px 10px
+	font-size: 14px
+	margin: 0 0 10px
+	width: 300px
+	&:focus
+		background-color: #fff
+		+box-shadow(0 0 6px 2px rgba(255, 255, 255, .6))
+	@include breakpoints(small)
+		width: 100%
+
+select
+	height: 28px
+input[type="checkbox"], input[type="radio"]
+	width: auto
+	display: inline-block
+	vertical-align: top
+	margin: 0
+
+input[type="checkbox"] ~ label, input[type="radio"]  ~ label
+	margin: -25px 10px 10px 0
+	padding: 20px 5px 15px 10px
+	font-weight: normal
+
+input[type="range"]
+	-webkit-appearance: none
+	-moz-apperance: none 
+	padding: 0 !important
+	height: 15px
+	border: 1px solid $green
+	background-color: $light-green
+	margin: 20px 0
+
+input::-webkit-slider-thumb
+	-webkit-appearance: none
+	-moz-apperance: none 
+	width: 30px
+	height: 30px
+	background-color: $dark-green
+	border: 1px solid $darkest-green
+	+border-radius(50%)
+	position: relative
+	&:before, &:after
+		position: absolute
+		color: #fff
+		font-family: "FontAwesome"
+		font-size: 19px
+		top: 5px
+	&:before
+		left: 5px
+		content: $caret-left
+	&:after
+		right: 5px
+		content: $caret-right
+
+label.checkbox-label
+	display: inline-block
+	font-size: 14px
+	color: $darkest-gray
+	width: 90%
+	margin: 3px 0 5px
+.text-input-icon-wrapper
+	position: relative
+	display: inline-block
+	@include breakpoints(small)
+		width: 100%
+	&:before
+		color: #333
+		position: absolute
+		top: 0		
+		padding: 5px 10px
+		z-index: 10
+		color: $dark-gray
+		font-size: 15px
+		background-color: $lightest-gray
+		border: 1px solid $gray
+		
+
+	&.money
+		input[type="text"]
+			padding-left: 40px
+		&:before
+			left: 0
+			content: "$"
+			+border-left-radius(4px)
+	&.percent
+		input[type="text"]
+			padding-right: 40px
+		&:before
+			right: 0
+			content: "%"
+			+border-right-radius(4px)
+	&.percent-pa
+		input[type="text"]
+			padding-right: 70px
+		&:before
+			right: 0
+			content: "% p.a"
+			+border-right-radius(4px)
+	&.years
+		input[type="text"]
+			padding-right: 70px
+		&:before
+			right: 0
+			content: "years"
+			+border-right-radius(4px)
+			
+.content
+	.search input
+		float: left !important
+	@include breakpoints(small)
+		h1, h2, h3, h4, h5, h6, p, ul, ol, form
+			padding-left: 10px
+			padding-right: 10px
+		table
+			width: 95%
+			margin: 0 auto
+ul.list
+	font-size: 14px
+	li
+		margin-left: 20px
+		list-style-type: disc !important
+		margin-bottom: 5px
+
+ul.proof-points
+	li
+		margin-left: 20px
+		margin-bottom: 4px
+		font-weight: bold
+
+		&:before
+			font-family: 'FontAwesome'
+			font-size: 14px
+			content: "\f054"
+			margin-left: -12px
+			margin-right: 2px
+			color: $green
+
+table
+	border: 1px solid $dark-green
+	width: auto
+	margin: 10px 0
+
+	th, td
+		padding: 5px 10px
+		border: 1px solid $darkest-green
+	th
+		background-color: $dark-green
+		color: #fff
+	tr:nth-child(even)
+		background-color: #fff
+	tr:nth-child(odd)
+		background-color: $light-green
+
+table#foreign-exchange
+	sub
+		color: $darkest-gray
+		font-size: 1em
+	th,td
+		width: 116px
+		&:first-of-type
+			width: 120px
+
+table.compare-table
+	font-family: 'Source Sans Pro', sans-serif
+	border: none
+	tbody
+		position: relative
+	tr
+		border-bottom: 1px solid $light-gray
+		background-color: #fff
+		&:hover
+			td, i.icon-ok
+				background-color: $lightest-yellow
+				color: $darkest-gray
+			td
+				&:first-of-type
+					background-color: #fff
+					color: $dark-green
+
+	tr.full-row
+		background-color: #fff
+		td
+			background-color: #fff
+		&:hover
+			td
+				background-color: #fff
+	tr.sub-header
+		background-color: $off-white
+		td
+			background-color: $off-white
+		&:hover
+			td
+				background-color: $off-white
+	th
+		text-align: center
+		border: none
+		border-bottom: 4px solid $darkest-green
+		border-left: 5px solid #fff
+		padding: 10px
+		background-color: $dark-green
+		+background-image(linear-gradient($dark-green, darken($dark-green, 2)))
+		margin: 0
+		font-size: 16px
+		a
+			color: #f4f4f4
+		&:first-of-type
+			background-color: #fff
+			+background-image(none)
+			border-left: none
+			border-bottom: none
+	td
+		position: relative
+		max-width: 200px
+		padding: 0 0 0 5px
+		margin: 0
+		border: none
+		text-align: center
+		padding: 10px
+		background-color: $lightest-green
+		margin: 0
+		border-left: 5px solid #fff
+		i
+			line-height: 65px
+			font-size: 1.6em
+		.icon-ok
+			color: $dark-green
+		.icon-remove
+			color: $gray
+		.leading-link
+			float: none
+			font-size: 12px
+		strong
+			font-size: 1.2em
+
+		&:first-of-type
+			vertical-align: middle
+			max-width: 150px
+			text-align: left
+			color: $dark-green
+			background-color: #fff
+			min-height: auto
+
+
+.table-header.scrolled
+	position: fixed
+	top: 46px
+	z-index: 20
+	border-top: 20px solid #fff
+
+
+select, input[type=text]
+	+border-radius(4px)
+
+button
+	+border-radius(4px)
+	color: #fff
+	font-size: 14px
+	padding: 5px 10px
+	font-weight: bold
+	@include box-shadow-standard
+
+	&.red
+		+background-image(linear-gradient($red, darken($red, 6)))
+		&:hover
+			+background-image(linear-gradient(lighten($red,10), lighten($dark-red,10)))
+
+	&.green
+		+background-image(linear-gradient($dark-green, $darkest-green))
+		&:hover
+			+background-image(linear-gradient(lighten($dark-green,8), lighten($darkest-green,8)))
+
+	&.orange
+		+background-image(linear-gradient($yellow, darken($yellow,10)))
+		color: $darkest-gray
+		&:hover
+			+background-image(linear-gradient(lighten($yellow, 10), darken($yellow,10)))
+	&.disabled
+		+background-image(linear-gradient($light-gray, $gray))
+		
+	@include breakpoints(small)
+		width: 100%
+		padding: 10px
+
+.main-header
+	margin: 0
+.header-image
+	position: relative
+	width: 100%
+	height: 120px
+	background-size: cover
+	background-position: center 30%
+	+border-radius(4px)
+	@include box-shadow-standard
+	h1
+		position: absolute
+		bottom: 0
+		left: 0
+		background-color: rgba(0,0,0, .7)
+		+border-right-radius(4px)
+		display: inline-block
+		padding: 10px 20px
+		font-size: 1.8em
+		color: #fff
+	@include specific-breakpoint(600px)
+		background-image: none !important
+		width: auto
+		height: auto
+		+box-shadow(none)
+		h1
+			position: relative
+			background-color: transparent
+			padding: 0
+			color: $dark-green
+	@include breakpoints(small)
+		padding-left: 20px
+
+//Accordion
+
+.accordion
+	display: block
+	width: 100%
+	margin-top: 10px
+
+	.accordion-header
+		height: 45px
+		font-size: 16px
+		font-weight: bold
+		line-height: 45px
+		color: $dark-green
+		padding: 0 10px
+		cursor: pointer
+		@include box-shadow-standard
+		+border-radius(4px)
+		background-color: #f2f2f2
+		border: 1px solid $lightest-gray
+		// +background-image(linear-gradient(#f4f4f4, darken(#f4f4f4,5)))
+		&:hover
+			background-color: lighten(#f2f2f2, 3)
+			// +background-image(linear-gradient(lighten(#f4f4f4, 2), #f4f4f4))
+		.accordion-toggle
+			font-size: 16px
+			float: right
+			&:after
+				font-family: "FontAwesome"
+				content: "\f067"
+
+	.accordion-content
+		display: none
+		height: auto
+		font-size: 14px
+		padding: 20px
+		background-color: #fff
+		+box-shadow( inset 0 1px 4px 0 rgba(0,0,0, .4))
+		+border-bottom-radius(4px)
+
+	&.active
+		.accordion-header
+			+border-bottom-radius(0)
+		.accordion-content
+			display: block
+		.accordion-toggle
+			&:after
+				content: "\f068"
+
+
+//Emergency Message
+
+.emergency-message
+	width: 100%
+	background-color: $lightest-yellow
+	border: 2px solid $yellow
+	color: $red
+	padding: 15px
+	font-size: 16px
+	text-align: center
+	margin-bottom: 10px
+	a
+		color: $red
+		text-decoration: underline
+		&:hover
+			color: lighten($red, 10)
+#ie7-warning
+	border-bottom: 0
+
+//Alert
+.alert
+	+border-radius(4px)
+	border: 1px solid $red
+	background-color: $lightest-red
+	color: $red
+	padding: 20px
+	margin: 10px 0
+.confirmation
+	+border-radius(4px)
+	border: 1px solid $green
+	background-color: $lightest-green
+	color: $dark-green
+	padding: 20px
+	margin: 10px 0
+	a
+		text-decoration: underline
+
+//Call To Action
+
+.call-to-action
+	position: relative
+	overflow: hidden
+	color: $dark-green
+	margin: 10px 0
+	border-top: 1px solid #ddd
+
+
+	li
+		position: relative
+		float: left
+		vertical-align: top
+		border-right: 1px solid #ddd
+		margin: 10px 0
+		width: 33.33%
+		padding: 10px
+		text-align: center
+		&:last-of-type
+			border: none
+		@include breakpoints(small)
+			width: 100%
+			border-right: none
+			border-bottom: 1px solid #ddd 
+			&:last-of-type
+		.icon
+			color: $light-green
+			position: absolute
+			right: 0
+			z-index: -2
+			font-size: 90px
+	.action-header
+		font-size: 26px
+		font-weight: bold
+		line-height: 28px
+		padding: 10px
+	.action-content
+		p
+			color: $darkest-gray
+			text-align: center
+			padding-top: 12px
+			margin-bottom: 0
+	button
+		width: 90%
+		margin-top: 15px
+
+	#location
+		.icon-chevron-right
+			color: $darkest-gray
+			margin-left: -24px
+
+.homepage, .oops
+	.call-to-action
+		display: none
+
+.product-summary
+	position: relative
+	margin: 20px 0
+	border: 1px solid #f2f2f2
+	background-color: $off-white
+	padding: 10px 20px
+	z-index: -2
+	+border-radius(4px)
+	hr
+		border-top: 1px solid #f2f2f2
+		border-bottom: 0
+		border-right: 0
+		border-left: 0
+	a
+		text-decoration: underline
+	.top-call-to-action
+		display: inline-block
+		width: 34%
+		text-align: right
+	.top-cta
+		ul.proof-points
+			display: inline-block
+			width: 65%
+			vertical-align: top
+		#cta
+			display: inline-block
+			vertical-align: top
+			text-align: right
+			width: 34%
+		@include breakpoints(small)
+			ul.proof-points, #cta, button
+				width: 100%
+			button
+				margin-top: 10px
+
+
+.inline-column
+	display: inline-block
+	width: 49%
+	padding: 0 10px
+	vertical-align: top
+	h4
+		display: inline-block
+	@include breakpoints(medium-small)
+		width: 100%
+
+ul.product-features
+	li
+		display: inline-block
+		vertical-align: top
+		width: 80px
+		margin: 5px
+		font-weight: bold
+		text-align: left
+		font-size: 13px
+		.icon
+			color: $green
+			font-size: 22px
+			display: block
+			text-align: left
+			margin-bottom: 5px
+//Overlay
+
+.overlay-bg
+	display: none
+	position: fixed
+	overflow-y: auto
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: rgba(0,0,0, .6)
+	z-index: 400
+
+.overlay
+	display: none
+	position: fixed
+	top: 56px
+	left: 50%
+	margin-left: -200px
+	max-width: 600px
+	min-width: 460px
+	background-color: #fff
+	z-index: 500
+	font-size: 16px
+	color: #444
+	overflow: hidden
+	+border-radius(4px)
+	.icon-remove-circle
+		color: $off-white
+		float: right
+		cursor: pointer
+	@include breakpoints(medium)
+		width: 100%
+		max-width: 100%
+		min-width: 100%
+		margin: 0
+		left: 0
+		top: 45px
+
+.overlay-header
+	+background-image(linear-gradient(lighten($dark-green, 3), $dark-green))
+	.icon-remove-circle
+		font-size: 36px
+		padding: 5px
+	h2
+		margin: 0
+		padding: 10px 20px
+		color: #fff
+		display: inline-block
+
+
+.overlay-content
+	> *
+		padding: 30px
+	input, textarea
+		width: 100%
+		margin-bottom: 10px
+	textarea
+		height: 85px
+	.button-wrapper
+		overflow: hidden
+		text-align: right
+		+border-top-radius(4px)
+
+
+.web-feedback, .service-feedback
+	display: none
+	padding-top: 0
+
+.selected
+	display: block
+
+.overlay-active
+	overflow: hidden
+	.overlay, .overlay-bg
+		display: block
+
+
+.tab-wrapper
+	text-align: center
+	.tab
+		position: relative
+		display: inline-block
+		font-weight: bold
+		padding: 10px 20px
+		width: 49%
+		+border-radius(4px)
+		background-color: $lightest-gray
+		color: $gray
+		cursor: pointer
+		&:hover
+			background-color: $yellow
+			color: $darkest-gray
+		&.selected
+			background-color: $yellow
+			color: $darkest-gray
+			&:after
+				font-family: "FontAwesome"
+				content: "\f0d7"
+				color: $yellow
+				position: absolute
+				font-size: 36px
+				top: 22px
+				left: 50%
+				margin-left: -13px
+		@include breakpoints(medium)
+			font-size: 14px
+
+footer
+	background-color: $dark-gray
+	text-align: center
+	color: #fff
+	@include breakpoints(medium-small)
+		text-align: left
+	.content-wrapper
+		@include breakpoints(medium-small)
+			display: inline-block
+			vertical-align: top
+			width: 77%
+		@include specific-breakpoint(568px)
+			display: block
+			width: 100%
+
+	ul			
+		@include breakpoints(medium-small)
+			display: inline-block
+			vertical-align: top
+			width: 32%
+			
+			font-size: 14px
+
+		
+	li
+		display: inline-block
+		padding: 0 10px
+		color: #fff
+		font-size: 14px
+		margin-bottom: 10px
+		@include breakpoints(medium-small)
+			display: block
+
+		a
+			color: #fff
+			text-decoration: none
+			font-weight: bold
+			
+			&:hover
+				color: #fff
+				text-decoration: underline
+	.channel
+		display: none
+		@include breakpoints(medium-small)
+			display: block
+	#legal
+		li
+			border-right: 1px solid #fff
+			&:last-of-type
+				border: none
+			@include breakpoints(medium-small)
+				border: none
+
+	
+.footer-content
+	max-width: 960px
+	margin: 0 auto
+	padding: 20px 20px 10px
+	@include breakpoints(small)
+		padding: 20px 10px 0
+
+#extra-info
+	padding: 20px
+	background-color: darken($dark-gray, 5)
+	p
+		max-width: 960px
+		margin: 0 auto
+		font-size: 12px
+
+.social-wrapper
+	display: inline-block
+	vertical-align: top
+	width: 22%
+	@include breakpoints(medium-small)
+		text-align: left
+		&:before
+			content: "Share Via"
+			padding: 0 5px
+			font-size: 14px
+	@include specific-breakpoint(568px)
+		display: block
+		width: 100%
+		margin-bottom: 20px
+
+#feedback-form, #social-icons
+	@include box-shadow-standard
+	font-size: 1.2em
+	color: #fff
+	cursor: pointer
+	position: fixed
+	z-index: 100
+	@include breakpoints(medium-small)
+		position: relative
+		+box-shadow(none)
+		text-align: center
+		font-size: 14px
+		
+#feedback-form
+	@include rotate(-90deg)
+	+border-top-radius(4px)
+	padding: 10px 20px
+	width: 112px
+	height: 40px
+	bottom: 280px
+	right: -40px
+	background-color: $darkest-gray
+	@include breakpoints(medium-small)
+		@include rotate(0)
+		left: 0
+		top: 0
+		margin: 0
+		width: auto
+		height: auto
+		padding: 10px
+		+border-radius(4px)
+		&:hover
+			background-color: lighten($darkest-gray, 5)
+		&:before
+			content: "Give"
+	@include specific-breakpoint(568px)
+		display: inline-block
+		
+#social-icons
+	font-size: 1.6em
+	width: 36px
+	height: auto
+	bottom: 370px
+	right: 0
+	background-color: $gray
+	+border-left-radius(4px)
+	> *
+		display: block
+		padding: 5px
+		text-align: center
+		&:hover
+			color: rgba(#fff, .8)
+	@include breakpoints(medium-small)
+		background-color: transparent
+		width: auto
+		padding: 0 0 10px
+		bottom: 0
+		display: inline-block
+
+		+border-left-radius(0)
+		+border-top-radius(4px)
+		> *
+			display: inline-block
+			font-size: 30px
+			padding: 0 5px
+	@include specific-breakpoint(568px)
+		margin-right: 10px
+
+//pagination
+.pagination
+
+	text-align: center
+	ul
+		padding-top: 10px
+		border-top: 1px solid $green
+		display: inline-block
+	li
+		display: inline-block
+		padding: 5px 10px
+		text-align: center
+		cursor: pointer
+		+border-radius(4px)
+		&.selected
+			background-color: $green
+			color: #fff
+		&:hover
+			background-color: $light-green
+	@include breakpoints(medium-small)
+		ul
+			display: none
+		&:after
+			content: "Load More"
+		background-color: $green
+		color: #fff
+		font-weight: bold
+		padding: 15px
+		+border-radius(4px)
+.disclaimer
+	border-top: 2px solid $light-gray
+	padding: 10px 0
+	margin-top: 10px
+	p
+		font-size: 11px
+		line-height: 14px

@@ -1,0 +1,98 @@
+/*
+Syntax error: Undefined variable: "$lightest-gray".
+        on line 41 of ./stylesheets/partials/blogtest.sass
+
+36: 	.quart3
+37: 		right: 25%
+38: 
+39: 
+40: 	.card, .card1, .card2
+41: 		background-color: $lightest-gray
+42: 		+border-radius(8px)
+43: 		width: 100%
+44: 	.card
+45: 		height: 100%
+46: 	.card1
+
+Backtrace:
+./stylesheets/partials/blogtest.sass:41
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/script/variable.rb:49:in `_perform'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/script/node.rb:40:in `perform'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/tree/root_node.rb:20:in `render'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/engine.rb:315:in `_render'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/engine.rb:262:in `render'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/plugin/compiler.rb:341:in `update_stylesheet'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/plugin/compiler.rb:201:in `each'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/plugin.rb:81:in `update_stylesheets'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/plugin.rb:54:in `check_for_updates'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.7/lib/sass/../sass/plugin/rack.rb:51:in `call'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/Users/gskinner/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/gskinner/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/gskinner/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/gskinner/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/gskinner/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/gskinner/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/gskinner/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/gskinner/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/gskinner/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/gskinner/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/rack-1.5.2/lib/rack/handler/webrick.rb:14:in `run'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/rack-1.5.2/lib/rack/server.rb:264:in `start'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/rack-1.5.2/lib/rack/server.rb:141:in `start'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/gems/rack-1.5.2/bin/rackup:4
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/bin/rackup:23:in `load'
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/bin/rackup:23
+/Users/gskinner/.rvm/gems/ruby-1.8.7-p374/bin/ruby_executable_hooks:15
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$lightest-gray\".\A         on line 41 of ./stylesheets/partials/blogtest.sass\A \A 36: 	.quart3\A 37: 		right: 25%\A 38: \A 39: \A 40: 	.card, .card1, .card2\A 41: 		background-color: $lightest-gray\A 42: 		+border-radius(8px)\A 43: 		width: 100%\A 44: 	.card\A 45: 		height: 100%\A 46: 	.card1"; }

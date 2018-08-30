@@ -1,0 +1,149 @@
+//top level child-tile styling. refer to specfic pages for child tile page styling on parent page vs. child page
+
+.child-tiles
+	margin-top: 20px
+	@include breakpoints(small)
+	ul 
+		padding-left: 0
+		padding-right: 0
+.child-tile
+	position: relative
+	display: inline-block
+	vertical-align: top
+	cursor: pointer
+	text-align: left
+	+border-radius(4px)
+	@include box-shadow-standard
+
+	.caption
+		width: 100%
+		height: 100%
+		overflow: hidden
+	.child-tile-header
+		margin: 10px
+		font-weight: bold
+		h2
+			display: inline
+			font-size: 18px
+			color: #fff
+
+	.child-tile-content
+		margin: 15px 20px
+
+
+	&.full-image
+		background-size: cover
+		background-color: #fff
+		.caption
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			color: #fff
+			background-color: rgba(0,0,0, .7)
+			+border-radius(4px)
+			@include breakpoints(small)
+				+border-radius(0)
+		&:hover
+			.caption
+				+transition(.4s)
+
+	&.default
+		.child-tile-header
+			margin: 15px 20px 0 20px
+			border-bottom: 1px solid $darkest-gray
+			padding-bottom: 10px
+		.child-tile-content
+			position: relative
+			z-index: 5
+
+
+	&.text-gray
+		background-color: lighten($light-gray, 15)
+		.child-tile-header
+			border-bottom: 1px solid $darkest-green
+		.caption, a
+			color: $darkest-green
+			.icon
+				color: lighten($light-gray, 5)
+		&.default
+			&:hover
+				background-color: lighten($light-gray,10)
+
+	&.gray
+		background-color: $gray
+		.child-tile-header
+			border-bottom: 1px solid #fff
+		.caption, a
+			color: #fff
+			.icon
+				color: lighten($gray, 5)
+		&.default
+			&:hover
+				background-color: lighten($gray,10)
+
+	&.white
+		background-color: #fff
+		border: 1px solid $dark-green
+		.child-tile-header
+			border-bottom: 1px solid $dark-green
+		.caption, a
+			color: $dark-green
+			.icon
+				color: darken($off-white, 5)
+		&.default
+			&:hover
+				background-color: $off-white
+
+
+	&.dark-green
+		background-color: $dark-green
+		.child-tile-header
+			border-bottom: 1px solid #fff
+		.caption, a
+			color: #fff
+			.icon
+				color: lighten($dark-green, 5)
+		&.default
+			&:hover
+				background-color: lighten($dark-green,2)
+
+	&.green
+		background-color: $green
+		.child-tile-header
+			border-bottom: 1px solid #fff
+		.caption, a
+			color: #fff
+			.icon
+				color: darken($green, 10)
+		&.default
+			&:hover
+				background-color: darken($green, 5)
+
+	&.orange
+		background-color: $yellow
+		.caption, a
+			color: $darkest-gray
+			.icon
+				color: lighten($yellow, 15)
+		.child-tile-header
+			border-bottom: 1px solid $darkest-gray !important
+		&.default
+			&:hover
+				background-color: lighten($yellow, 5)
+
+
+
+	&#helpLinks
+		background-color: $off-white
+		.child-tile-header
+			margin-bottom: 0
+		.child-tile-content
+			margin: 0 10px
+		li
+			padding: 10px 0
+			border-bottom: 1px solid #ddd
+			cursor: pointer
+			overflow: hidden
+			&:last-of-type
+				border-bottom: 0

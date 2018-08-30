@@ -1,0 +1,176 @@
+$child-tile-width:  30.85%
+$child-tile-height: 100px
+
+.child-page
+
+	.child-tiles
+		text-align: left
+		position: relative
+
+	.child-tile
+		width: 100%
+		height: $child-tile-height
+		text-align: center
+		position: relative
+		@include specific-breakpoint(640px)
+			height: 45px
+			text-align: left
+		.child-tile-header
+			position: relative
+			border: none !important
+			padding: 0 10px
+			height: 100%
+			width: 100%
+			margin: 0
+			display: table
+			z-index: 2
+			p
+				display: table-cell
+				font-size: 18px
+				vertical-align: middle
+		.icon
+			font-size: 80px
+			width: 80px
+			position: absolute
+			left: 50%
+			top: 50%
+			margin-top: -40px
+			margin-left: -40px
+			z-index: -2
+			@include specific-breakpoint(640px)
+				display: none
+
+		&:after
+			position: absolute
+			font-family: 'FontAwesome'
+			content: "..."
+			font-size: 16px
+			bottom: 5px
+			left: 0
+			right: 0
+			@include specific-breakpoint(640px)
+				display: none
+
+		&.green
+			color: #fff
+			.icon
+				color: darken($green, 10)
+
+
+		&.orange
+			color: $darkest-gray
+			.icon
+				color: lighten($yellow, 15)
+
+		&.default
+			@extend .green
+			.child-tile-content
+				margin: 0
+
+
+.child-content
+	width: 316% !important
+	margin: 20px 0 0
+	height: auto
+	width: 100%
+	padding: 20px
+	border: 2px solid $yellow
+	text-align: left
+	+border-radius(4px)
+	display: none
+	@include specific-breakpoint(640px)
+		position: relative
+		margin: 0
+		padding: 10px 20px
+		width: 100%
+		border-top: none
+		+border-top-radius(0)
+
+	.icon-remove-circle
+		float: right
+		margin-top: -18px
+		margin-right: -15px
+		cursor: pointer
+		font-size: 32px
+		&:hover
+			color: $yellow
+		@include specific-breakpoint(640px)
+			display: none
+	a.leading-link
+		float: none
+
+.expandable-tile
+	position: relative
+	width: $child-tile-width
+	vertical-align: top
+	height: auto
+	display: inline-block
+	margin: 1%
+	&.active
+		height: auto
+		.child-tile
+			@extend .orange
+			//refactor
+			.child-tile-header
+				border: none !important
+			&:after
+				position: absolute
+				bottom: 0
+				margin-bottom: -38px
+				z-index: -10
+				font-family: 'FontAwesome'
+				content: "\f0d7"
+				font-size: 60px
+				color: $yellow
+		.child-content
+			display: block
+	&:nth-child(2), &:nth-child(5)
+		.child-content
+			margin-left: -108%
+	&:nth-child(3), &:nth-child(6)
+		.child-content
+			margin-left: -216%
+
+	@include specific-breakpoint(640px)
+		width: 100%
+		height: 45px
+		margin: 0 0 10px
+		&:after
+			content: $plus
+			font-family: "FontAwesome"
+			color: #fff
+			font-size: 17px
+			position: absolute
+			right: 10px
+			top: 15px
+		&.active
+			&:after
+				content: $minus
+		.child-content
+			margin: 0 !important
+			width: 100% !important
+		
+.help-choose
+	.small-nav, .product-summary
+		display: none
+	.prompt
+		padding: 10px
+		margin: 10px 0
+		border: 1px solid $green
+		&:hover
+			cursor: pointer
+	&.selected
+		.prompt
+			display: none
+		.small-nav
+			display: inline-block
+			color: $darkest-gray
+			&:hover
+				cursor: pointer
+			&:before
+				content: $chevron-left
+				font-family: "FontAwesome"
+	li.active
+		.product-summary
+			display: block
+

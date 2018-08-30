@@ -1,0 +1,30 @@
+%header
+	%a.logo{:href=>"/"}
+		
+	.channel-bar
+		%ul.left
+			%li
+				%a Suncorp
+			%li
+				%a Insurance
+			%li.selected
+				%a Banking
+			%li
+				%a Super
+		%ul.right
+			%li
+				%a Careers
+			%li
+				%a Contact Us
+			%li
+				%a Documents
+			%li
+				%a{:href=>"/styleguide"} Styleguide
+.responsive-menu
+	.nav-mobile.icon-reorder
+	%a.mobile-logo{:href=>"/"}
+	.search-mobile.icon-search
+	.sidebar-mobile.icon-user
+
+.search
+	%input{:type=>"text", :placeholder=>"Search this site"}

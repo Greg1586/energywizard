@@ -1,0 +1,71 @@
+.overlay-bg
+.overlay-wrapper
+	.overlay#feedback
+		.overlay-header
+			%h2 Feedback Form
+			.icon-remove-circle
+
+		.overlay-content
+			.tab-wrapper
+				#web-feedback.tab.selected
+					Wesite Feedback
+				#service-feedback.tab
+					Service Feedback
+
+			.web-feedback.selected
+				%form
+					%label
+						What did you like/dislike about our website today?
+						%span{:style=>"color: red"}
+							*
+					%br
+					%textarea
+					%br
+
+					%label Contact Email (Optional)
+					%br
+					%input{:type=>"text"}
+					%br
+
+					.button-wrapper
+						%button.green
+							Submit
+
+			.service-feedback
+				%form
+					%label First Name
+					%br
+					%input{:type=>"text"}
+					%br
+
+					%label Last Name
+					%br
+					%input{:type=>"text"}
+					%br
+
+					%label Contact Number
+					%br
+					%input{:type=>"text"}
+					%br
+
+					%label Contact Email
+					%br
+					%input{:type=>"text"}
+					%br
+
+					%label Account Name or Policy Number (If Applicable)
+					%br
+					%input{:type=>"text"}
+					%br
+
+					%label
+						How can we help you today?
+						%span{:style=>"color: red"}
+							*
+					%br
+					%textarea
+					%br
+
+					.button-wrapper
+						%button.green
+							Submit

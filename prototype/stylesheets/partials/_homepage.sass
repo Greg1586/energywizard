@@ -1,0 +1,521 @@
+.homepage
+	.content
+		width: 100%
+		margin: 0
+		@include breakpoints(large)
+			padding: 0
+		@include breakpoints(medium)
+			margin-top: 80px
+		@include breakpoints(medium-small)
+			margin-top: 45px
+
+	.main-content
+		width: 100%
+		margin-top: 0
+
+	.emergency-message
+		margin-bottom: 0
+		position: static
+
+	.banner-wrapper
+		position: relative
+		@include breakpoints(medium)
+			height: auto
+		.details
+			border-style: none
+	.app-motto
+		margin: 20px
+		+border-radius(8px)
+		display: none
+		width: 100%
+		position: absolute
+		top: 0
+		background: rgba(0, 0, 0, 0.6)
+		z-index: 10
+		@include breakpoints(medium)
+			display: block
+		.app-store
+			width: 200px
+			height: 69px
+			margin: 20px 20px 0 40px
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 100%
+			background-image: url("/images/app-store-icon_s.png")
+			display: inline-block
+		.motto
+			display: inline-block
+			color: white
+			width: 50%
+			height: 100%
+			padding-bottom: 20px
+			h3
+				display: inline-block
+				color: white
+			span
+				position: absolute
+				right: 10px
+				top: 10px
+				font-size: 20px
+				cursor: pointer
+			.icon 
+				display: inline-block
+	.homebanner
+		position: relative
+		background-image: url("/images/homepage_final.jpg")
+		background-position: center 30%
+		background-size: cover
+		background-repeat: no-repeat
+		height: 480px
+		width: 100%
+		overflow: hidden
+		@include box-shadow-standard
+		z-index: 2
+		@include breakpoints(medium)
+			height: 340px
+			background-image: url("/images/homepage_mobile.jpg")
+		@include breakpoints(small)
+			height: 300px
+
+		.message
+			position: absolute
+			left: 0
+			right: 300px
+			bottom: 0
+			cursor: pointer
+			text-align: left
+			padding: 20px 50px
+			+text-shadow(#000 0 1px 6px)
+			@include breakpoints(medium)
+				right: 0 !important
+
+			h1, h2
+				color: #fff
+
+			h1
+				font-size: 2.2em
+				font-family: "Arial Rounded MT Bold", Arial, sans-serif
+				font-weight: bold
+			h2
+				font-size: 1.6em
+				margin-top: 0
+				a
+					color: #fff
+					text-decoration: none
+					&:after
+						font-family: 'FontAwesome'
+						content: "\f054"
+						font-size: .8em
+					&:hover
+						color: $green
+
+
+	$child-tile-width: 23%
+	$child-tile-height: 220px
+
+	#big-login
+		position: absolute
+		top: 0
+		right: 50px
+		width: 240px
+		z-index: 1
+		margin-top: 20px
+		z-index: 20
+
+		.sidebar-content
+			width: 100%
+
+		button, .dropdown
+			width: 220px
+
+		#helpLinks
+
+			.details
+				margin: 0
+			.mobile-message
+				display: none
+			a
+				width: 94%
+				font-weight: normal
+			li
+				// +background-image(linear-gradient($off-white, darken($off-white, 4)))
+				padding: 6px 10px
+				&:first-of-type
+					+border-top-radius(4px)
+				&:last-of-type
+					+border-bottom-radius(4px)
+
+		@include breakpoints(medium)
+			display: block
+			position: relative
+			height: auto
+			width: 100%
+			left: 0
+			top: 0
+			margin-top: 0
+			background-color: transparent
+			z-index: 0
+			#logon
+				display: none
+			#helpLinks
+				display: block
+				width: 100%
+				background-color: #fff
+				text-align: center
+				padding: 0 40px
+				.details
+					display: none
+					border-bottom: 1px solid $off-white
+					padding: 10px 0
+				.mobile-message
+					display: block
+					h3
+						font-size: 18px
+						font-weight: bold
+						color: #666666
+						font-family: "Source Sans Pro", sans-serif	
+				&:before
+					content: ""
+
+				li
+					// +background-image(linear-gradient($light-green, $light-green))
+					padding: 10px 20px
+					margin-top: 5px
+					display: inline-block
+					vertical-align: top
+					width: auto
+					margin: 5px
+					border-bottom: none
+					border-right: 1px solid $light-gray
+					border: none
+					+border-radius(4px)
+					&:last-of-type
+						border: none
+					&:after
+						content: ""
+					a
+						color: $dark-green
+						width: 100%
+						font-size: 14px
+						display: inline-block
+						&:before
+							font-family: "FontAwesome"
+							display: inline-block
+				#interest
+					a:before
+						content: $bar-chart
+				#exchange
+					a:before
+						content: $exchange
+				#tools
+					a:before
+						content: $wrench
+				#business
+					a:before
+						content: $suitcase
+				#financial
+					a:before
+						content: $money
+		@include breakpoints(small)
+			#helpLinks
+				li
+					width: 100% !important
+					font-size: 16px
+					padding: 15px
+
+	.child-tiles
+		position: relative
+		padding: 0 30px 20px
+		text-align: center
+		background-color: #fff
+		@include breakpoints(large)
+			padding: 10px 0
+
+	.homepage-content-section
+		&:nth-child(even)
+			// +background-image(linear-gradient($off-white, #fff))
+		h3
+			text-align: center
+			font-size: 1.3em
+			color: $dark-gray
+			font-family: 'Source Sans Pro', sans-serif
+			font-weight: normal
+	.wrapper
+		display: inline-block
+		vertical-align: top
+		width: $child-tile-width
+		margin: 0 1%
+		&.large
+			width: $child-tile-width * 2
+		
+		@include breakpoints(large)
+
+			width: 43.5% 
+			margin: 10px 1% 0 1% 
+			&.large
+				width: 90% 
+				margin: 0 1% 
+				margin-bottom: 10px
+		@include breakpoints(small)
+			width: 85% 
+			margin: 0 1% 
+	
+	.parent-page
+		&.child-tile
+		&.default
+			height: $child-tile-height
+
+	.child-tile
+		position: relative
+		z-index: 10
+		width: 100%
+		height: $child-tile-height
+		margin-bottom: 0
+		border: none !important
+		+border-radius(4px !important)
+
+		&.news
+			.child-tile-header
+			.child-tile-content
+				position: relative
+				margin: 10px 20px
+				font-size: 14px
+			.icon
+				right: -12px !important
+				top: 55px !important
+			li
+				padding: 10px 0
+				cursor: pointer
+				overflow: hidden
+				&:before
+					font-family: 'FontAwesome'
+					content: "\f105"
+				&:last-of-type
+					border-bottom: 0
+				a
+					text-decoration: underline
+
+				&:hover
+					a
+						color: $dark-green
+		&.full-image
+			.campaign-text
+				width: 60%
+				padding: 20px
+				padding-top: 0
+				h2, p
+					color: white
+					text-shadow: black 0 1px 6px
+				.red 
+				@include breakpoints (medium-small)
+					width: 100%
+	.rotator
+		height: 220px
+		text-align: left
+		position: relative
+		width: 100%
+		background-size: cover
+		background-color: #fff
+		margin: 0
+		+border-radius(4px)
+		@include box-shadow-standard
+		background: #ededed
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ededed), color-stop(50%,#ffffff), color-stop(100%,#ededed))
+		.campaign-text	
+			width: 45%
+		@include breakpoints (medium-small)
+			height: auto
+		.campaign-image
+			height: 100%
+			width: 50%
+			display: inline-block
+			vertical-align: middle
+			background-repeat: no-repeat
+			background-position: center center
+			+border-left-radius(4px)
+		.campaign-text
+			width: 45%
+			display: inline-block
+			vertical-align: middle
+			text-align: left 
+			padding: 0 20px 20px
+
+		&.trans-png
+			padding: 10px 20px 10px 20px
+			.campaign-image
+				background-size: contain
+		&.half-bleed
+			padding: 0
+			.campaign-image
+				background-size: cover
+		&.right-align
+			text-align: right
+			.campaign-image
+				+border-right-radius(4px)
+				+border-left-radius(0px)
+
+
+		@include breakpoints (medium-small)
+			.campaign-image
+				display: block
+				height: 150px
+				width: 100%
+				background-size: cover
+				+border-left-radius(0px)
+				+border-top-radius(4px)
+			&.right-align
+				.campaign-image
+					+border-left-radius(0px)
+					+border-top-radius(0px)
+					+border-bottom-radius(4px)
+			.campaign-text
+				text-align: center
+				display: inline-block
+				width: 100%
+			&.right-align
+				.campaign-text
+					margin-top: 0
+					padding-top: 0
+					min-height: 100px
+				&.half-bleed
+					margin-top: 20px
+					padding-top: 15px
+					min-height: 100px
+
+
+
+		.icon-chevron-left, .icon-chevron-right
+			color: rgba(#fff, .6)
+			position: absolute
+			top: 0
+			bottom: 0
+			font-size: 3.2em
+			padding: 10px
+			padding-top: $child-tile-height / 2 - 16px
+			-webkit-text-stroke-width: 1px
+			-webkit-text-stroke-color: $green
+			&:hover
+				color: #fff
+		.icon-chevron-right
+			right: 0
+		.icon-chevron-left
+			left: 0
+
+
+	.help-links
+		li
+			display: inline-block
+			margin: 10px
+			background-color: $light-green
+			padding: 10px
+			+border-radius(4px)
+			min-width: 43%
+		a
+			font-size: 16px
+			color: $dark-green
+			&:before
+				padding: 0 5px
+
+	.seo-links
+		width: 100%
+		z-index: 10
+		margin-top: 0
+		text-align: left
+		background-color: #fff !important
+		text-align: center
+		padding: 10px 30px 20px
+		@include breakpoints(medium)
+			padding: 10px 10px 20px
+		.wrapper
+			width: 98%
+			p
+				color: $dark-gray
+		li
+			display: inline-block
+			vertical-align: top
+			margin-left: -4px	
+			padding: 1.5%
+			&:hover
+				background-color: $light-green
+				cursor: pointer
+			a
+				text-decoration: none
+		
+		li:first-child:nth-last-child(3),
+		li:first-child:nth-last-child(3) ~ li
+			width: 25%	
+
+			@include breakpoints(large)
+				width: 30%
+			@include breakpoints(medium)
+				width: 49%
+			@include breakpoints(small)
+				width: 100%
+				text-align: left
+				padding: 10px
+
+		li:first-child:nth-last-child(4),
+		li:first-child:nth-last-child(4) ~ li
+			width: 25%	
+			@include breakpoints(large)
+				width: 25%
+			@include breakpoints(medium)
+				width: 49%
+			@include breakpoints(small)
+				width: 100%
+
+		li:first-child:nth-last-child(5),
+		li:first-child:nth-last-child(5) ~ li
+			width: 20%	
+
+			@include breakpoints(large)
+				width: 30%
+			@include breakpoints(medium)
+				width: 49%
+			@include breakpoints(small)
+				width: 100%
+	
+		.thumb
+			margin: 0 0 20px
+			width: 100%
+			height: 100px
+			background-size: cover
+			+border-radius(4px)
+			@include breakpoints(small)
+				display: inline-block
+				margin: 0
+				margin-right: 10px
+				width: 35%
+
+		.wrap
+			@include breakpoints(small)
+				width: 50%
+				display: inline-block
+				vertical-align: top
+				text-align: left
+		a
+			margin-right: 10px
+			line-height: 20px
+			text-decoration: underline
+			&:before
+				padding-right: 5px
+				font-size: 18px
+
+		// background: -moz-linear-gradient(left,  #ededed 0%, #ffffff 50%, #ededed 100%)
+
+		// background: -webkit-linear-gradient(left,  #ededed 0%,#ffffff 50%,#ededed 100%)
+		// background: -o-linear-gradient(left,  #ededed 0%,#ffffff 50%,#ededed 100%)
+		// background: -ms-linear-gradient(left,  #ededed 0%,#ffffff 50%,#ededed 100%)
+		// background: linear-gradient(to right,  #ededed 0%,#ffffff 50%,#ededed 100%)
+
+		// &.full-bleed
+		// 	text-align: left
+		// 	position: relative
+		// 	width: 100%
+		// 	background-image: url("/images/0108.jpg")
+		// 	background-position: center right
+		// 	background-size: cover
+		// 	background-color: #fff
+		// 	overflow: auto
+		// 	+border-radius(4px)
+	

@@ -1,0 +1,95 @@
+.promo-tile
+	position: relative
+	width: 480px
+	height: 335px
+	+border-radius(20px)
+	background-image: url("/images/promo-tile-bg.jpg")
+	background-size: cover
+	+box-shadow-standard
+	.message
+		position: absolute
+		padding: 20px 35px
+		bottom: 60px
+		right: 0
+		h2
+			margin: 0
+			color: #fff
+			&.num
+				color: $dark-green
+
+	.sidebar
+		position: absolute
+		top: 0
+		right: -20px
+
+		.sidebar-content#primary
+			width: 200px
+			margin: 0
+			+border-top-left-radius(0)
+			+border-top-right-radius(20px)
+			.header
+				font-size: 14px
+				padding: 0 10px
+				+border-top-left-radius(0)
+				+border-top-right-radius(20px)
+			.details
+				padding: 0
+				height: 90px
+				+border-bottom-left-radius(4px)
+
+			button
+				width: 180px
+				font-size: 12px
+				margin: 10px 10px
+			.other-options
+				text-align: left
+				&:before
+					content: "OR"
+					display: inline-block
+					margin-left: 12px
+					margin-right: 6px
+					margin-top: 8px
+					color: #fff
+			ul.dropdown
+				display: inline-block
+				width: 150px
+				font-size: 12px
+				li
+					padding: 4px 8px
+				li:first-of-type:after
+					font-size: 12px
+					padding-left: 5px
+
+.bottom-content
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	+border-bottom-radius(20px)
+	background-color: rgba(255,255,255, .9)
+	.helpful-links
+		width: 155px
+		padding: 10px 12px
+		display: inline-block
+		&#two
+			width: 200px
+		a
+			display: inline-block
+			margin: 3px 0
+
+			&:before
+				font-family: 'FontAwesome'
+				content: "\f105"
+				margin-right: 3px
+
+
+.logo-tile
+	width: 120px
+	height: 55px
+	background-image: url("/images/logo2.png")
+	background-size: contain
+	background-repeat: no-repeat
+	position: absolute
+	top: 0
+	right: 0
+

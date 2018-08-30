@@ -1,0 +1,165 @@
+
+.blog_3
+	width: 100%
+	.row1, .row2
+		width: 100%
+		position: relative
+		display: inline-block
+		margin-bottom: 40px
+	.row1
+		height: 600px
+	.row2
+		height: 400px
+
+	.threequart1, .threequart2, .twothird1, .twothird2, .half1, .half2, .third1, .third2, .quart1, .quart2, .quart3, .quart4	
+		height: 100%
+		display: inline-block
+		margin-bottom: 40px
+	.threequart2, .twothird2, .half2, .third2, .quart2, .quart3, .quart4
+		padding-left: 40px
+		position: absolute
+		top: 0
+	.threequart1, .threequart2
+		width: 75%
+	.twothird1, .twothird2
+		width: 67%
+	.half1, .half2
+		width: 50%
+	.third1, .third2
+		width: 33%
+	.twothird2, .half2, .third2, .quart4
+		right: 0
+	.quart1, .quart2, .quart3, .quart4
+		width: 25% 
+	.quart2
+		left: 25%
+	.quart3
+		right: 25%
+
+
+	.card, .card1, .card2
+		position: relative
+		background-color: $lightest-gray
+		+border-radius(8px)
+		width: 100%
+	.card
+		height: 100%
+	.card1
+		height: 200px
+		margin-bottom: 20px
+	.card2
+		height: 380px
+
+	@include breakpoints(large)
+		.row1, .row2
+			height: auto
+			margin-bottom: 0
+		.threequart2, .twothird2, .third2, .quart1, .quart2, .quart4
+			display: inline-block
+			position: relative
+			width: 100%
+			height: 300px
+			padding-left: 0
+		.threequart2, .quart2
+			width: 50%
+		.half1, .quart3
+			height: 600px
+		.half1
+			width: 67%
+
+		.quart1
+			width: 50%
+		.quart3
+			width: 33%
+			right: 0
+
+		.card1, .card2
+			height: 100%
+			display: inline-block
+		.card1
+			width: 33%
+			+border-right-radius(0)
+		.card2
+			width: 67%
+			position: absolute
+			right: 0
+			+border-left-radius(0)
+		
+		.row2
+			.threequart2
+				width: 47.5%
+				display: inline-block
+				float: right
+				padding-left: 20px	
+
+		// SPECIAL SECOND ROW SHIT
+		.keepright
+			.quart2
+				left: 0
+			.half2
+				padding-bottom: 40px
+
+
+	@include breakpoints(medium)
+		.threequart1, .twothird1, .half1, .third1, .quart1
+			width: 100%
+		.threequart1, .twothird1, .half1
+			height: 450px
+		.quart1, .third1
+			height: 375px
+		.quart3
+			display: inline-block
+			position: relative
+			width: 50%
+			padding-left: 0
+			height: 300px
+		.threequart2, .half2, .quart4
+			width: 47.5%
+			display: inline-block
+			float: right
+			padding-left: 20px
+			.card1
+				width: 100%
+			.card2
+				display: none
+		.card, .card1, .card2
+			+border-radius(4px)
+		.row2
+			.threequart2
+				width: 100%
+				padding-left: 0
+				float: none
+
+		// SPECIAL SECOND ROW SHIT
+		.keepright
+			.quart2
+				position: relative
+				display: inline-block
+			.half2
+				padding-bottom: 0
+				position: relative
+				display: inline-block
+				height: 300px
+				padding-left: 0
+
+
+	@include breakpoints(medium-small)
+		.quart3
+			width: 100%
+		.quart4
+			display: none
+
+	.blue 
+		background-color: #00CCFF
+	.red
+		background-color: $red
+	.yellow
+		background-color: $yellow
+	.lightblue
+		background-color: $twitter-blue
+	.darkblue
+		background-color: $facebook-blue
+	.green
+		background-color: $green
+	.lightgreen
+		background-color: $special-green

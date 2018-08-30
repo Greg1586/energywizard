@@ -31,7 +31,7 @@ After Serve is installed, you can start it up in a given directory like this:
 This will start Serve on port 4000. You can now view the prototype in your
 Web browser at this URL:
 
-<http://localhost:4000>
+<http://localhost:3000>
 
 
 Compass and Sass

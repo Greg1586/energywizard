@@ -5,8 +5,6 @@ gem 'serve', '1.5.2'
 # TryStatic
 gem 'rack-contrib'
 
-# gem bundler
-
 # Use edge instead:
 # gem 'serve', :git => 'git://github.com/jlong/serve.git'
 
@@ -19,7 +17,7 @@ gem 'compass'
 
 # Other templating languages
 # gem 'erubis'
-# gem 'haml'
+gem 'haml'
 # gem 'slim'
 # gem 'radius'
 # gem 'less'

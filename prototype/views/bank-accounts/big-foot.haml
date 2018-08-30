@@ -1,0 +1,19 @@
+- content_for :title do
+	Breadcrumbs
+- content_for :bodyClass do
+	Bank Personal BigFoot test-breadcrumbs parent-page
+.header-image{:style=>"background-image:url('/images/big-foot.jpg');"}
+	%h1
+		Big Foot
+
+.child-tiles
+	%ul
+		%li.child-tile.default.dark-green
+			%a{:href=>"/bank-accounts/big-foot2.haml"}
+				.caption
+					.child-tile-header
+						%span
+							WE MUST GO DEEPER
+					.child-tile-content
+						%p We don't know if this monster really exists although there have been claims of sightings and a famous photograph.
+						.icon.icon-key
