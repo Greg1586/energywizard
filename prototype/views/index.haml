@@ -3,28 +3,29 @@
 - content_for :bodyClass do
 	homepage
 %div
-	%h1 Welcome to AusNet Services
+	%h1.section Welcome to AusNet Services
+	.line
+	%h3.section You can use this tool to get approval for a power generation system of up to 30kW, such as for Solar or Wind.
 
-	%h2 You can use this tool to get approval for a power generation system of up to 30kW, such as for Solar or Wind.
-
-	%h3 For power systems above 30kW, you need to apply manually.
-
+	%h4.section For power systems above 30kW, you need to apply manually.
+	.line
 	There are a few things you'll need before you use this tool:
-	.spacer
-		%input{:type=>"checkbox", :id=>"monthly", :name=>"payment-freq", :value=>"monthly", :checked=>"checked"}
-		%label{:for=>"monthly"} What sort of installation it is, eg wind or solar
-		%br
-		%input{:type=>"checkbox",:id=>"fortnightly", :name=>"payment-freq", :value=>"fortnightly"}
-		%label{:for=>"fortnightly"} A copy of a recent electricity bill for the property
-		%br
-		%input{:type=>"checkbox", :id=>"weekly", :name=>"payment-freq", :value=>"weekly"}
-		%label{:for=>"weekly"} make and model numbers for the proposed equipment
-		%br
-		%input{:type=>"checkbox", :id=>"weekly", :name=>"payment-freq", :value=>"weekly"}
-		%label{:for=>"weekly"} the expected total power of the proposed system
-		%br
-		%input{:type=>"checkbox", :id=>"weekly", :name=>"payment-freq", :value=>"weekly"}
-		%label{:for=>"weekly"} how many phases the property has (most have one)
-		%br
+	.section
+		%div.checkbox
+			%input{:type=>"checkbox", :id=>"monthly", :name=>"payment-freq", :value=>"monthly", :checked=>"checked"}
+			%label{:for=>"monthly"} What sort of installation it is, eg wind or solar
+		%div.checkbox
+			%input{:type=>"checkbox",:id=>"fortnightly", :name=>"payment-freq", :value=>"fortnightly"}
+			%label{:for=>"fortnightly"} A copy of a recent electricity bill for the property
+		%div.checkbox
+			%input{:type=>"checkbox", :id=>"weekly", :name=>"payment-freq", :value=>"weekly"}
+			%label{:for=>"weekly"} make and model numbers for the proposed equipment
+		%div.checkbox
+			%input{:type=>"checkbox", :id=>"weekly", :name=>"payment-freq", :value=>"weekly"}
+			%label{:for=>"weekly"} the expected total power of the proposed system
+		%div.checkbox
+			%input{:type=>"checkbox", :id=>"weekly", :name=>"payment-freq", :value=>"weekly"}
+			%label{:for=>"weekly"} how many phases the property has (most have one)
+
 %a.button{:href=>"/nmi-meter-email"}
 	I've got all these things

@@ -2,28 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bb37536-95a9-4643-84b7-ef02d9d47c0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/stylesheets/partials/_components.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/partials/_setout.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/application.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/application.sass" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/application.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_404.sass" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/partials/_ausnet.sass" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/partials/_ausnet.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_author.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_blog-2.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_blog-3.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_blogtest.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_calculator.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_campaign.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_faq.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_navigation.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_parentpage.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_print.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_promotile.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_search-results.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_sidebar.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_standardpage.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_blog.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_childpage.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_common.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_extras.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_font-awesome-variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_homepage.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_layout.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/partials/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_style-guide.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_tiles.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/partials/_variables.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/_layout.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/_layout.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/business.haml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/calculator.haml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/choosing-credit-card.haml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/faq.haml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/foreign-exchange.haml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/form.haml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home-loans.haml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/_header.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/_header.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/nmi-meter-email.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/nmi-meter-email.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/search-results.haml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/suncorp-landing-page.haml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/switching-suncorp.haml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/terms-conditions.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/terms-conditions.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/what-system.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/what-system.haml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -51,90 +66,126 @@
           <entry key="Gemfile" value="3" />
           <entry key="config" value="2" />
           <entry key="css" value="4" />
-          <entry key="haml" value="20" />
+          <entry key="haml" value="35" />
           <entry key="html" value="2" />
           <entry key="js" value="11" />
           <entry key="md" value="1" />
-          <entry key="ru" value="3" />
-          <entry key="sass" value="13" />
-          <entry key="scss" value="10" />
+          <entry key="ru" value="4" />
+          <entry key="sass" value="20" />
+          <entry key="scss" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
           <entry key="HTML" value="2" />
-          <entry key="Haml" value="19" />
+          <entry key="Haml" value="34" />
           <entry key="JavaScript" value="11" />
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="SCSS" value="10" />
-          <entry key="Sass" value="13" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="SCSS" value="14" />
+          <entry key="Sass" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Gemfile" value="57" />
-          <entry key="haml" value="1987" />
+          <entry key="haml" value="2328" />
           <entry key="html" value="65" />
           <entry key="js" value="265" />
           <entry key="ru" value="1" />
-          <entry key="sass" value="1220" />
-          <entry key="scss" value="49" />
+          <entry key="sass" value="2210" />
+          <entry key="scss" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="65" />
-          <entry key="Haml" value="1987" />
+          <entry key="Haml" value="2328" />
           <entry key="JavaScript" value="265" />
           <entry key="PLAIN_TEXT" value="58" />
-          <entry key="SCSS" value="49" />
-          <entry key="Sass" value="1220" />
+          <entry key="SCSS" value="50" />
+          <entry key="Sass" value="2210" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4024169">
+    <splitter split-orientation="horizontal" split-proportion="0.4344411">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/_layout.haml">
+            <entry file="file://$PROJECT_DIR$/stylesheets/application.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+                <state relative-caret-position="203">
+                  <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/stylesheets/partials/_setout.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="967">
+                  <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/stylesheets/partials/_variables.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1701">
+                  <caret line="65" lean-forward="true" selection-start-line="38" selection-end-line="65" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/stylesheets/application.sass">
+            <entry file="file://$PROJECT_DIR$/stylesheets/partials/_ausnet.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="232">
-                  <caret line="8" selection-start-line="8" selection-end-line="8" />
+                <state relative-caret-position="940">
+                  <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/stylesheets/partials/_mixins.scss">
+            <entry file="file://$PROJECT_DIR$/stylesheets/partials/_components.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="783">
+                  <caret line="27" selection-start-line="27" selection-end-line="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/stylesheets/partials/_reset.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="621">
+                  <caret line="22" selection-start-line="22" selection-end-line="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/layouts/_footer.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="725">
+                  <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/layouts/_sidebar.haml">
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/stylesheets/partials/_ausnet.sass">
+            <entry file="file://$PROJECT_DIR$/views/layouts/stash.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="232">
-                  <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="882">
-                  <caret line="173" column="34" lean-forward="true" selection-start-line="173" selection-start-column="34" selection-end-line="173" selection-end-column="34" />
+                <state relative-caret-position="6206">
+                  <caret line="214" column="9" selection-start-line="214" selection-start-column="9" selection-end-line="214" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -143,11 +194,65 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/_layout.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="892">
+                  <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/layouts/_header.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="29">
+                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/index.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="290">
+                  <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/nmi-meter-email.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="58">
+                  <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/terms-conditions.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="87">
+                  <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/what-system.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2407">
-                  <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+                <state relative-caret-position="541">
+                  <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/test.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="18" selection-start-column="18" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -178,23 +283,27 @@
         <option value="$PROJECT_DIR$/views/test.haml" />
         <option value="$PROJECT_DIR$/views/layouts/2_NMI-meter-email.haml" />
         <option value="$PROJECT_DIR$/views/layouts/_navigation.haml" />
-        <option value="$PROJECT_DIR$/views/layouts/_header.haml" />
         <option value="$PROJECT_DIR$/views/layouts/stash.haml" />
         <option value="$PROJECT_DIR$/views/NMI-meter-email.haml" />
         <option value="$PROJECT_DIR$/views/Terms-conditions.haml" />
-        <option value="$PROJECT_DIR$/views/nmi-meter-email.haml" />
-        <option value="$PROJECT_DIR$/views/terms-conditions.haml" />
-        <option value="$PROJECT_DIR$/views/index.haml" />
         <option value="$PROJECT_DIR$/stylesheets/partials/_common.sass" />
         <option value="$PROJECT_DIR$/public/javascripts/togglerjquerymin.js" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/stylesheets/partials/_switchery.scss" />
         <option value="$PROJECT_DIR$/public/javascripts/Switchery.js" />
         <option value="$PROJECT_DIR$/public/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/views/what-system.haml" />
-        <option value="$PROJECT_DIR$/views/_layout.haml" />
-        <option value="$PROJECT_DIR$/stylesheets/partials/_ausnet.sass" />
+        <option value="$PROJECT_DIR$/stylesheets/partials/_reset.scss" />
+        <option value="$PROJECT_DIR$/stylesheets/partials/_variables.sass" />
         <option value="$PROJECT_DIR$/stylesheets/application.sass" />
+        <option value="$PROJECT_DIR$/views/layouts/_header.haml" />
+        <option value="$PROJECT_DIR$/views/_layout.haml" />
+        <option value="$PROJECT_DIR$/views/index.haml" />
+        <option value="$PROJECT_DIR$/stylesheets/partials/_components.sass" />
+        <option value="$PROJECT_DIR$/views/nmi-meter-email.haml" />
+        <option value="$PROJECT_DIR$/views/terms-conditions.haml" />
+        <option value="$PROJECT_DIR$/stylesheets/partials/_setout.sass" />
+        <option value="$PROJECT_DIR$/views/what-system.haml" />
+        <option value="$PROJECT_DIR$/stylesheets/partials/_ausnet.sass" />
       </list>
     </option>
   </component>
@@ -256,6 +365,12 @@
               <item name="prototype" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -303,18 +418,18 @@
       <workItem from="1535603183354" duration="1535000" />
       <workItem from="1535605257408" duration="10006000" />
       <workItem from="1535685749725" duration="1672000" />
-      <workItem from="1535687552687" duration="1684000" />
+      <workItem from="1535687552687" duration="7716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14897000" />
+    <option name="totallyTimeSpent" value="20929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12848867" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12848867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -340,12 +455,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/stylesheets/partials/jquery-ui.min.css" />
-    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_jquery-ui.scss" />
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/jquery-ui.theme.css" />
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/jquery-ui.css" />
-    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_base.scss" />
-    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_content.scss" />
     <entry file="file://$PROJECT_DIR$/stylesheets/partials/_layout.scss" />
     <entry file="file://$PROJECT_DIR$/stylesheets/screen.scss" />
     <entry file="file://$PROJECT_DIR$/public/helpful-stuff.html" />
@@ -354,56 +463,17 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/partials/_print.sass" />
-    <entry file="file://$PROJECT_DIR$/views/test.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/partials/_author.sass" />
-    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_reset.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_layout.sass">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/suncorp-landing-page.haml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layouts/stash.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="214" column="9" selection-start-line="214" selection-start-column="9" selection-end-line="214" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/terms-conditions.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/partials/_style-guide.sass">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_core.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2832" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/styleguide.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="358" column="8" selection-start-line="358" selection-start-column="8" selection-end-line="366" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -427,18 +497,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/nmi-meter-email.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/partials/_tiles.sass">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/switchery.js" />
     <entry file="file://$PROJECT_DIR$/public/javascripts/navigation.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1474" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compass.config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_switchery.scss" />
+    <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="173" column="34" lean-forward="true" selection-start-line="173" selection-start-column="34" selection-end-line="173" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_standardpage.sass">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_parentpage.sass">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/template-3blank.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_blog.sass">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2030">
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_homepage.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="914">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_layout.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2698">
+          <caret line="94" column="23" lean-forward="true" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_core.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="105" column="17" lean-forward="true" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_bootstrap.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layouts/_navigation.haml">
@@ -455,18 +589,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layouts/_header.haml">
+    <entry file="file://$PROJECT_DIR$/views/layouts/_sidebar.haml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/views/layouts/stash.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1474" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+        <state relative-caret-position="6206">
+          <caret line="214" column="9" selection-start-line="214" selection-start-column="9" selection-end-line="214" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -477,51 +606,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compass.config">
+    <entry file="file://$PROJECT_DIR$/views/switching-suncorp.haml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_switchery.scss" />
-    <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/views/test.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="173" column="34" lean-forward="true" selection-start-line="173" selection-start-column="34" selection-end-line="173" selection-end-column="34" />
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/what-system.haml">
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_reset.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2407">
-          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+        <state relative-caret-position="621">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/application.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/_layout.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        <state relative-caret-position="892">
+          <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_standardpage.sass">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/views/layouts/_header.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/nmi-meter-email.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/terms-conditions.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_components.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_setout.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="967">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_variables.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="65" lean-forward="true" selection-start-line="38" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/what-system.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/partials/_ausnet.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_parentpage.sass">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/application.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="940">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
         </state>
       </provider>
     </entry>

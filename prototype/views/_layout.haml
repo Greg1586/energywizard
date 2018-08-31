@@ -28,16 +28,12 @@
 
 
 	- bodyClass = yield :bodyClass
-	%body.page{ :class => "#{bodyClass}" }
-
+	%body{ :class => "#{bodyClass}" }
 		= render "layouts/header"
 
-		.page-wrapper
+		%div
 			= render "layouts/navigation"
-
-
-			.main-content
-				.content
-					= yield
+			.page
+				= yield
 
 			= render "layouts/footer"

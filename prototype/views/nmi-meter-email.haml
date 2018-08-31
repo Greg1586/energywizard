@@ -1,28 +1,19 @@
-%h1 Please tell us the NMI and Meter Number
-
-%h2 These can be found on a recent electricity bill for the property.
-
-%form
-  %label Enter your NMI (National Meter Identifier)
-  %br
-  %input
-  %br
-  %p This is an 11-digit number, usually on page two of your electricity bill
-  %br
-  %br
-
-  %label Enter your Meter Number
-  %br
-  %input
-  %p
-  %br
-  %br
-
-  %label Enter the email address of the person managing the grid application
-  %br
-  %input
-  %br
-  %p the output will be sent to this address.
+%h1.section Please tell us the NMI and Meter Number
+.line
+%h3.section These can be found on a recent electricity bill for the property.
+.line
+%form.section.text-input
+  %div
+    %label Enter your NMI (National Meter Identifier)
+    %input
+    %p This is an 11-digit number, usually on page two of your electricity bill
+  %div
+    %label Enter your Meter Number
+    %input
+  %div
+    %label Enter the email address of the person managing the grid application
+    %input
+    %p the output will be sent to this address.
 
 %a.button{:href=>"/terms-conditions"}
   Next

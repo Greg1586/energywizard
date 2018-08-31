@@ -1,76 +1,52 @@
-%h1 Please tell us about the system you want to install
-
+%h1.section Please tell us about the system you want to install
+.line
 .section
-  %input{:type=>"checkbox", :id=>"solar", :checked=>"checked", :class=>"solarQuery"}
-  %label{:for=>"solar"} Solar
-  %br
-  %input{:type=>"checkbox", :id=>"battery", :name=>"", :class=>"batteryQuery"}
-  %label{:for=>"battery"} Battery
-  %br
-  %input{:type=>"checkbox", :id=>"otherPower", :class=>"otherQuery" }
-  %label{:for=>"otherPower"} Other, eg wind or hydro-electric
-  %br
+  .checkbox
+    %input{:type=>"checkbox", :id=>"solar", :checked=>"checked", :class=>"solarQuery"}
+    %label{:for=>"solar"} Solar
+  .checkbox
+    %input{:type=>"checkbox", :id=>"battery", :name=>"", :class=>"batteryQuery"}
+    %label{:for=>"battery"} Battery
+  .checkbox
+    %input{:type=>"checkbox", :id=>"otherPower", :class=>"otherQuery" }
+    %label{:for=>"otherPower"} Other, eg wind or hydro-electric
 
 .section.other-content.hider-class
-  %label What generation type will you be installing?
-  %br
-  %select
-    %option Wind
-    %option Hydro-electric
-  %br
-  %br
-  %br
+  %h3 What generation type will you be installing?
+  .text-input
+    %select
+      %option Wind
+      %option Hydro-electric
 
 .section.solar-content
-  %h2 What inverter do you plan to use?
-  %form
-    %label Solar inverter manufacturer
-    %br
-    %input
-    %br
-    %br
-    %br
+  %h3 What inverter do you plan to use?
+  .text-input
+    %form
+      %label Solar inverter manufacturer
+      %input
 
-    %label Solar inverter model
-    %br
-    %input
-    %p
-    %br
-    %br
+      %label Solar inverter model
+      %input
 
-    %label Quantity
-    %br
-    %input
-    %p
-    %br
-    %br
+      %label Quantity
+      %input
 
-.section.accordion
-  .accordion-header
-    Add an inverter...
-    .accordion-toggle
 
-.section.battery-content.hider-class
-  %h2 Please tell us about your battery system
-  %h3.battery-class.dc-yes DC
-  %label{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"toggler"}
-    .switch
-  %h3.battery-class AC
+.battery-content.hider-class
+  %h3.section Please tell us about your battery system
+  .section.battery-toggler
+    %h3.battery-class.dc-yes DC
+    %label{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"toggler"}
+      .switch
+    %h3.battery-class.ac AC
   .something.hider-class
-    %br
-      %h2 What AC battery do you plan to use?
+    %h2 What AC battery do you plan to use?
     %form
       %label Battery manufacturer
-      %br
       %input
-      %br
-      %br
       %label Battery inverter model
-      %br
       %input
-      %p
       %label Battery type
-      %br
       %select
         %option Salt Water
         %option Lithium Ion

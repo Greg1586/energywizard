@@ -36,30 +36,30 @@ $responsive-nav-font-size: 16px
 
 // @mixin box-shadow-standard
 	// +box-shadow(0 1px 4px 0 rgba(0,0,0, .4))
-
-@mixin box-shadow-standard
-	+box-shadow(0 1px 4px 0 rgba(0,0,0, 0))
-
-@mixin box-shadow-subtle
-	+box-shadow(0 0 25px 0 rgba(0,0,0,.3))
-
-@mixin breakpoints($point)
-	@if $point == super
-		@media (max-width: 1440px)
-			@content
-	@if $point == large
-		@media (max-width: 1024px)
-			@content
-	@if $point == medium
-		@media (max-width: 800px)
-			@content
-	@if $point == medium-small
-		@media (max-width: 640px)
-			@content
-	@else if $point == small
-		@media (max-width: 480px)
-			@content
-
-@mixin specific-breakpoint($point)
-	@media (max-width: $point)
-		@content
+//
+//@mixin box-shadow-standard
+//	+box-shadow(0 1px 4px 0 rgba(0,0,0, 0))
+//
+//@mixin box-shadow-subtle
+//	+box-shadow(0 0 25px 0 rgba(0,0,0,.3))
+//
+//@mixin breakpoints($point)
+//	@if $point == super
+//		@media (max-width: 1440px)
+//			@content
+//	@if $point == large
+//		@media (max-width: 1024px)
+//			@content
+//	@if $point == medium
+//		@media (max-width: 800px)
+//			@content
+//	@if $point == medium-small
+//		@media (max-width: 640px)
+//			@content
+//	@else if $point == small
+//		@media (max-width: 480px)
+//			@content
+//
+//@mixin specific-breakpoint($point)
+//	@media (max-width: $point)
+//		@content
