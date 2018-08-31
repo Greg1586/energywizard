@@ -160,4 +160,20 @@ $(".app-motto span").click(function(){
   $(".app-motto").css("display", "none");
 });
 
+$('.toggler').click(function(){
+  $(this).toggleClass("togglerOn");
+  $(".something").toggleClass("hider-class");
+  $(".battery-class").toggleClass("dc-yes");
+});
+$('.batteryQuery').click(function(){
+  $(".battery-content").toggleClass("hider-class");
+});
+$('.solarQuery').click(function(){
+  $(".solar-content").toggleClass("hider-class");
+});
+$('.otherQuery').click(function(){
+  $(".other-content").toggleClass("hider-class");
+});
+    // $('.toggler').click(function(){
+    // });
 });

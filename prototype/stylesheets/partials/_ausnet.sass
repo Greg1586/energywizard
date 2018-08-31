@@ -3,3 +3,68 @@ a.button
     border-radius: 10px
     color: white
     padding: 10px
+
+//Page
+.page
+    background-color: #ededed
+
+//Section
+.section
+    margin-bottom: 3rem
+
+
+// toggles
+
+.toggler
+    width: 200px
+    height: 100px
+    background: #e5e5e5
+    z-index: 0
+    padding: 0
+    appearance: none
+    -webkit-appearance: none
+    -moz-appearance: none
+    border: none
+    cursor: pointer
+    position: relative
+    border-radius: 100px
+
+.toggler:before
+    content: ''
+    position: absolute
+    left: 5px
+    top: 5px
+    width: 190px
+    height: 90px
+    background: white
+    z-index: 1
+    border-radius: 100px
+
+.toggler:after
+    content: ''
+    width: 88px
+    height: 88px
+    border-radius: 100px
+    z-index: 2
+    background-color: white
+    position: absolute
+    transition-duration: 500ms
+    top: 6px
+    left: 6px
+    box-shadow: 0 2px 5px #999999
+
+.togglerOn, .togglerOn:before
+    background-color: #4cd946 !important
+
+.togglerOn:after
+    left: 105px
+
+.hider-class
+    display: none
+
+.battery-class
+    font-weight: 300
+    text-decoration: none
+.dc-yes
+    font-weight: 900
+    text-decoration: underline
