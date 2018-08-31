@@ -27,3 +27,6 @@ gem 'haml'
 
 # Use mongrel for the Web server
 # gem 'mongrel'
+
+# use Switchery
+# gem 'switchery-rails'
