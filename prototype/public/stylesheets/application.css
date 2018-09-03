@@ -299,43 +299,54 @@ a {
   border-top-left-radius: 0;
 }
 
-/* line 40, ../../stylesheets/partials/_components.sass */
+/* line 39, ../../stylesheets/partials/_components.sass */
+a.spacer {
+  display: block;
+  text-align: center;
+}
+
+/* line 44, ../../stylesheets/partials/_components.sass */
 .checkbox {
   display: flex;
   margin: 1rem 0;
 }
-/* line 43, ../../stylesheets/partials/_components.sass */
+/* line 47, ../../stylesheets/partials/_components.sass */
 .checkbox input {
   margin-right: 1rem;
 }
 
-/* line 47, ../../stylesheets/partials/_components.sass */
+/* line 51, ../../stylesheets/partials/_components.sass */
 .line {
   width: 50%;
   margin-bottom: 1rem;
   border-bottom: 0.3rem solid black;
 }
 
-/* line 53, ../../stylesheets/partials/_components.sass */
+/* line 57, ../../stylesheets/partials/_components.sass */
 li {
   margin: 1rem 0 1rem 1rem;
   list-style: disc;
 }
 
-/* line 58, ../../stylesheets/partials/_components.sass */
+/* line 62, ../../stylesheets/partials/_components.sass */
 .dialer {
   display: flex;
   justify-content: center;
 }
+/* line 65, ../../stylesheets/partials/_components.sass */
+.dialer img {
+  width: 200px;
+  height: 200px;
+}
 
-/* line 63, ../../stylesheets/partials/_components.sass */
+/* line 70, ../../stylesheets/partials/_components.sass */
 input.knob {
   font-size: 3rem;
   font-weight: 900;
   color: black;
 }
 
-/* line 69, ../../stylesheets/partials/_components.sass */
+/* line 76, ../../stylesheets/partials/_components.sass */
 .detail-text {
   color: #4c4c4c;
 }
