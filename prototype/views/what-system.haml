@@ -42,19 +42,20 @@
   .something.hider-class
     %h2 What AC battery do you plan to use?
     %form
-      %label Battery manufacturer
-      %input
-      %label Battery inverter model
-      %input
-      %label Battery type
-      %select
-        %option Salt Water
-        %option Lithium Ion
-        %option Lead Acid
-        %option Flow
-        %option Other
-      %br
+      .text-input
+        %label Battery manufacturer
+        %input
+        %label Battery inverter model
+        %input
+        %label Battery type
+        %select
+          %option Salt Water
+          %option Lithium Ion
+          %option Lead Acid
+          %option Flow
+          %option Other
+        %br
 
 .section
-  %a.button{:href=>"/"}
+  %a.button{:href=>"/export"}
     Next

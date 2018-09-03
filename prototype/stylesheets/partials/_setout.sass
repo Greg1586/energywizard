@@ -1,43 +1,50 @@
+@import "variables"
+
 *
   font-family: "Helvetica Neue", Helvetica, SansSerif
+  background-color: $page-grey
 
-h1, h2, h3
-  letter-spacing: -0.025em
+h1, h2, h3, h4, p
+  line-height: 1.2
 
 h1
-  font-size: 2rem
-  font-weight: 900
-
-h2
-  font-size: 1.75rem
-  font-weight: 800
-
-h3
   font-size: 1.5rem
   font-weight: 900
 
+h2
+  font-size: 1.25rem
+  font-weight: 800
+
+h3
+  font-size: 1.25rem
+  font-weight: 400
+
+p
+  margin-top: 1.2em
 
 //Page
 .page
-  background-color: #ededed
-  padding: 1rem
+  padding: 2rem
 
 //Section
 .section
   margin-bottom: 1rem
   label
     display: block
+.spacer
+  margin-bottom: 1.5rem
 
 // header
 .header
   display: block
-  padding: 1rem
-  background-color: #00ACED
+  padding: 1rem 1rem 1rem 2rem
+  background-color: $ausnet-blue
   color: white
 
 //inputs
 .text-input
   input, select
+    background-color: white
     border: 1px solid #ccc
     border-radius: 0.5rem
     box-sizing: border-box
@@ -46,4 +53,4 @@ h3
     padding: 1rem
     width: 100%
   select
-    height: 3rem
+    height: 3.5rem
