@@ -6,7 +6,9 @@
 	%h1.section Welcome to AusNet Services
 	.line
 	%h3.section You can use this tool to get approval for an inverter energy system, e.g. solar panels, battery, up to 30kW capacity and 15kW export.
-	%h3.section For systems greater than 30kW, you need to apply for technical assessment.
+	.section
+		For systems greater than 30kW, you need to apply for
+		%a{:href=>"/request-assessment"} technical assessment.
 
 	%h4 There are a few things you'll need before you use this tool:
 	.section
@@ -28,3 +30,5 @@
 
 %a.button{:href=>"/nmi-meter-email"}
 	I've got all these things
+%a.button.secondary{:href=>"/request-assessment"}
+	I need a bigger installation
