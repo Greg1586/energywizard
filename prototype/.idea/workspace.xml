@@ -2,138 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bb37536-95a9-4643-84b7-ef02d9d47c0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/export-over.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/0042.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/0108.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/0108_unedited.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/0558.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/404.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/50bucks.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/50bucks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/AFOY.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/AGRI_110YRS_IMAGES4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/AGRI_110YRS_IMAGES5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Australia_favorite_dog_breeds_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Bank_Accounts_Header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Business_bank_accounts_tile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Choppa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/I254eww.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Integrated_parent.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Personal_bank_accounts_tile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Sam.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/StartUps.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Sunwise.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/TEST_business_loans_header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Transactions_55_plus_tile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Transactions_EDB_tile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Transactions_EDO_tile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/aeroplane.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/agri-front-panel-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/app-store-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/app-store-icon_s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/apple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/argentina.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/argentina2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/atm-locator.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/author.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/author.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/big-foot.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/big-money.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/bike.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog-logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/bloglogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brazil.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/calculator.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/campaign-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/campaign-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/car_tile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/coffee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/disqus1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/disqus2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/door.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/doublepromo_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/download-trans-history.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/elderly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/family.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/farm1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/gherkin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/happy_family.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/help.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/high_tea.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/highway.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/homebanner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/homebanner2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/homebanner3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/homebanner4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/homebanner5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/homepage.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/homepage6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/homepage6_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/homepage_final.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/homepage_mobile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/house.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/image-placeholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/interest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/iphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/jellybeans.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo_blog_header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/low_deposit.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/mancouch.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/mancouch1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/mancouchgray.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/manpaper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/manpaper1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/manpapergray.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/mittens.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/mobile_app.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/money.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/moneymoney.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/myinterest3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/opera.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/personal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/personal_accounts_Header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/perth.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/promo-tile-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/rotator_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/rotator_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/rotator_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/run.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/run_mobile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/sahara_arab.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/savings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/shopping.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/shopping.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/sitemap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/skateboard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/smb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/std-page-banner-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/std-page-banner-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/std-page-banner-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/std-page-banner-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/std-page-banner-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/stock.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/suncorp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/suncorp2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/suncorp_mobile_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/sydney-city.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/taxtime.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/treefrog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/underpants.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/underpants2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vacation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/visa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/partials/_components.sass" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/partials/_components.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/export.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/export.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/nmi-meter-email.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/nmi-meter-email.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/request-assessment.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/request-assessment.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/terms-conditions.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/terms-conditions.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/what-system.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/what-system.haml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -185,7 +53,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Gemfile" value="57" />
-          <entry key="haml" value="4777" />
+          <entry key="haml" value="4778" />
           <entry key="html" value="112" />
           <entry key="js" value="283" />
           <entry key="ru" value="1" />
@@ -196,7 +64,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="112" />
-          <entry key="Haml" value="4777" />
+          <entry key="Haml" value="4778" />
           <entry key="JavaScript" value="283" />
           <entry key="PLAIN_TEXT" value="58" />
           <entry key="SCSS" value="50" />
@@ -279,8 +147,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/export.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="667">
-                  <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+                <state relative-caret-position="145">
+                  <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
                 </state>
               </provider>
             </entry>
@@ -334,16 +202,16 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/what-system.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="967">
-                  <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+                <state relative-caret-position="474">
+                  <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/request-assessment.haml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="754">
@@ -409,9 +277,9 @@
         <option value="$PROJECT_DIR$/views/terms-conditions.haml" />
         <option value="$PROJECT_DIR$/stylesheets/partials/_components.sass" />
         <option value="$PROJECT_DIR$/views/nmi-meter-email.haml" />
-        <option value="$PROJECT_DIR$/views/what-system.haml" />
         <option value="$PROJECT_DIR$/views/export.haml" />
         <option value="$PROJECT_DIR$/views/request-assessment.haml" />
+        <option value="$PROJECT_DIR$/views/what-system.haml" />
       </list>
     </option>
   </component>
@@ -533,18 +401,18 @@
       <workItem from="1535605257408" duration="10006000" />
       <workItem from="1535685749725" duration="1672000" />
       <workItem from="1535687552687" duration="7920000" />
-      <workItem from="1535928867576" duration="11704000" />
+      <workItem from="1535928867576" duration="11903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32837000" />
+    <option name="totallyTimeSpent" value="33036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12848867" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12848867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -796,10 +664,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/what-system.haml">
+    <entry file="file://$PROJECT_DIR$/views/request-assessment.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="967">
-          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+        <state relative-caret-position="754">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -812,15 +680,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/export.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="145">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/request-assessment.haml">
+    <entry file="file://$PROJECT_DIR$/views/what-system.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        <state relative-caret-position="474">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
     </entry>
