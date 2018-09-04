@@ -1,0 +1,93 @@
+%h1.section Are you installing a battery as part of the system?
+.line
+.section
+.section.battery-toggler
+  %h3.solar-class.solar-yes Yes
+  %label{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"batteryToggler"}
+    .switch
+  %h3.battery-class.solar-no No
+.section.solar-content.hidden.show-class
+  .battery-content.hider-class
+    %h3.section Please tell us about your battery system
+    .section.battery-toggler
+      %h3.battery-class.dc-yes DC
+      %label{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"toggler"}
+        .switch
+      %h3.battery-class.ac AC
+    .something.hider-class
+      %h2 What AC battery do you plan to use?
+      %form
+        .text-input
+          %label Battery manufacturer
+          %input
+          %label Battery inverter model
+          %input
+          %label Battery type
+          %select
+            %option Salt Water
+            %option Lithium Ion
+            %option Lead Acid
+            %option Flow
+            %option Other
+          %br
+
+-#.section.solar-toggler
+-#  %h3.solar-class.solar-yes Yes
+-#  %label{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"solarToggler"}
+-#    .switch
+-#  %h3.battery-class.solar-no No
+-#
+-#.section.solar-content.hidden.show-class
+-#  %h3 What inverter do you plan to use?
+-#  .text-input
+-#    %form
+-#      %label Solar inverter manufacturer
+-#      %input
+-#
+-#      %label Solar inverter model
+-#      %input
+-#
+-#      %label Quantity
+-#      %input
+-#
+-#  .section.add-inverter
+-#    %h3 add an inverter...
+-#    %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler"}
+-#      .plus +
+-#
+-#  .extra-inverter.hidden
+-#    .text-input
+-#      %form
+-#        %label Solar inverter manufacturer
+-#        %input
+-#
+-#        %label Solar inverter model
+-#        %input
+-#
+-#        %label Quantity
+-#        %input
+-#
+-#    .section.add-inverter
+-#      %h3 add an inverter...
+-#      %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterTogglerTwo"}
+-#        .plus +
+-#
+-#    .extra-extra-inverter.hidden
+-#      .text-input
+-#        %form
+-#          %label Solar inverter manufacturer
+-#          %input
+-#
+-#          %label Solar inverter model
+-#          %input
+-#
+-#          %label Quantity
+-#          %input
+
+
+.section
+  %a.button.spacer{:href=>"/battery"}
+    Next
+
+%a.spacer{:href=>"/nmi-meter-email"}
+  go back

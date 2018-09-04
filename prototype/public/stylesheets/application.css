@@ -167,64 +167,68 @@ table {
 /* line 3, ../../stylesheets/partials/_setout.sass */
 * {
   font-family: "Helvetica Neue", Helvetica, SansSerif;
+}
+
+/* line 6, ../../stylesheets/partials/_setout.sass */
+html {
   background-color: #ededed;
 }
 
-/* line 7, ../../stylesheets/partials/_setout.sass */
+/* line 9, ../../stylesheets/partials/_setout.sass */
 h1, h2, h3, h4, p {
   line-height: 1.2;
 }
 
-/* line 10, ../../stylesheets/partials/_setout.sass */
+/* line 12, ../../stylesheets/partials/_setout.sass */
 h1 {
   font-size: 1.5rem;
   font-weight: 900;
 }
 
-/* line 14, ../../stylesheets/partials/_setout.sass */
+/* line 16, ../../stylesheets/partials/_setout.sass */
 h2 {
   font-size: 1.25rem;
   font-weight: 800;
 }
 
-/* line 18, ../../stylesheets/partials/_setout.sass */
+/* line 20, ../../stylesheets/partials/_setout.sass */
 h3 {
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-/* line 22, ../../stylesheets/partials/_setout.sass */
+/* line 24, ../../stylesheets/partials/_setout.sass */
 p {
   margin-top: 1.2em;
 }
 
-/* line 26, ../../stylesheets/partials/_setout.sass */
+/* line 28, ../../stylesheets/partials/_setout.sass */
 .page {
   padding: 2rem;
 }
 
-/* line 30, ../../stylesheets/partials/_setout.sass */
+/* line 32, ../../stylesheets/partials/_setout.sass */
 .section {
   margin-bottom: 1rem;
 }
-/* line 32, ../../stylesheets/partials/_setout.sass */
+/* line 34, ../../stylesheets/partials/_setout.sass */
 .section label {
   display: block;
 }
 
-/* line 34, ../../stylesheets/partials/_setout.sass */
+/* line 36, ../../stylesheets/partials/_setout.sass */
 .spacer {
   margin-bottom: 1.5rem;
 }
 
-/* line 38, ../../stylesheets/partials/_setout.sass */
+/* line 40, ../../stylesheets/partials/_setout.sass */
 .header {
   display: block;
   padding: 1rem 1rem 1rem 2rem;
   background-color: #28317d;
   color: white;
 }
-/* line 43, ../../stylesheets/partials/_setout.sass */
+/* line 45, ../../stylesheets/partials/_setout.sass */
 .header a {
   background-color: transparent;
   color: white;
@@ -232,7 +236,7 @@ p {
   cursor: pointer;
 }
 
-/* line 51, ../../stylesheets/partials/_setout.sass */
+/* line 53, ../../stylesheets/partials/_setout.sass */
 .text-input input, .text-input select {
   background-color: white;
   border: 1px solid #cccccc;
@@ -243,7 +247,7 @@ p {
   padding: 1rem;
   width: 100%;
 }
-/* line 60, ../../stylesheets/partials/_setout.sass */
+/* line 62, ../../stylesheets/partials/_setout.sass */
 .text-input select {
   height: 3.5rem;
 }
@@ -352,7 +356,7 @@ input.knob {
 }
 
 /* line 5, ../../stylesheets/partials/_ausnet.sass */
-.toggler {
+.toggler, .solarToggler, .batteryToggler {
   display: block;
   width: 100px;
   height: 50px;
@@ -369,7 +373,7 @@ input.knob {
 }
 
 /* line 20, ../../stylesheets/partials/_ausnet.sass */
-.toggler:before {
+.toggler:before, .solarToggler:before, .batteryToggler:before {
   content: "";
   position: absolute;
   left: 2.5px;
@@ -381,8 +385,18 @@ input.knob {
   border-radius: 100px;
 }
 
-/* line 31, ../../stylesheets/partials/_ausnet.sass */
-.toggler:after {
+/* line 30, ../../stylesheets/partials/_ausnet.sass */
+.toggler:before {
+  background: white;
+}
+
+/* line 32, ../../stylesheets/partials/_ausnet.sass */
+.solarToggler:before, .batteryToggler:before {
+  background: #4cd946 !important;
+}
+
+/* line 35, ../../stylesheets/partials/_ausnet.sass */
+.toggler:after, .solarToggler:after, .batteryToggler:after {
   content: "";
   width: 44px;
   height: 44px;
@@ -396,40 +410,78 @@ input.knob {
   box-shadow: 0 2px 5px #999999;
 }
 
-/* line 44, ../../stylesheets/partials/_ausnet.sass */
+/* line 48, ../../stylesheets/partials/_ausnet.sass */
 .togglerOn, .togglerOn:before {
   background-color: #4cd946 !important;
 }
 
-/* line 47, ../../stylesheets/partials/_ausnet.sass */
-.togglerOn:after {
-  left: 63.5px;
-}
-
 /* line 50, ../../stylesheets/partials/_ausnet.sass */
-.hider-class {
-  display: none;
+.solarTogglerOn, .solarTogglerOn:before {
+  background-color: white !important;
 }
 
 /* line 52, ../../stylesheets/partials/_ausnet.sass */
-.battery-toggler {
+.togglerOn:after, .solarTogglerOn:after .batteryTogglerOn:after {
+  left: 63.5px;
+}
+
+/* line 55, ../../stylesheets/partials/_ausnet.sass */
+.hider-class, .hidden {
+  display: none;
+}
+
+/* line 57, ../../stylesheets/partials/_ausnet.sass */
+.show-class {
+  display: block;
+}
+
+/* line 60, ../../stylesheets/partials/_ausnet.sass */
+.add-inverter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 65, ../../stylesheets/partials/_ausnet.sass */
+.battery-toggler, .solar-toggler {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 56, ../../stylesheets/partials/_ausnet.sass */
-.battery-class {
+/* line 69, ../../stylesheets/partials/_ausnet.sass */
+.battery-class, .solar-class {
   font-weight: 300;
   text-decoration: none;
 }
 
-/* line 59, ../../stylesheets/partials/_ausnet.sass */
-.dc-yes {
+/* line 72, ../../stylesheets/partials/_ausnet.sass */
+.dc-yes, .solar-yes {
   font-weight: 900;
   text-decoration: underline;
 }
 
-/* line 62, ../../stylesheets/partials/_ausnet.sass */
-.ac {
+/* line 75, ../../stylesheets/partials/_ausnet.sass */
+.ac, .solar-no {
   text-align: right;
+}
+
+/* line 78, ../../stylesheets/partials/_ausnet.sass */
+.plus-button {
+  align-items: center;
+  background-color: #28317d;
+  border-radius: 3rem;
+  color: white;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 900;
+  height: 3rem;
+  justify-content: center;
+  width: 3rem;
+  position: relative;
+}
+
+/* line 91, ../../stylesheets/partials/_ausnet.sass */
+.plus {
+  top: -0.3rem;
+  position: absolute;
 }

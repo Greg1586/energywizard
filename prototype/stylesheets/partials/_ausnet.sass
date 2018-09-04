@@ -2,7 +2,7 @@
 
 
 // toggles
-.toggler
+.toggler, .solarToggler, .batteryToggler
     display: block
     width: 100px
     height: 50px
@@ -17,7 +17,7 @@
     position: relative
     border-radius: 100px
 
-.toggler:before
+.toggler:before, .solarToggler:before, .batteryToggler:before
     content: ''
     position: absolute
     left: 2.5px
@@ -27,8 +27,12 @@
     background: white
     z-index: 1
     border-radius: 100px
+.toggler:before
+    background: white
+.solarToggler:before, .batteryToggler:before
+    background: #4cd946 !important
 
-.toggler:after
+.toggler:after, .solarToggler:after, .batteryToggler:after
     content: ''
     width: 44px
     height: 44px
@@ -43,21 +47,49 @@
 
 .togglerOn, .togglerOn:before
     background-color: #4cd946 !important
-
-.togglerOn:after
+.solarTogglerOn, .solarTogglerOn:before,
+    background-color: white !important
+.togglerOn:after, .solarTogglerOn:after .batteryTogglerOn:after
     left: 63.5px
 
-.hider-class
+.hider-class, .hidden
     display: none
-.battery-toggler
+.show-class
+    display: block
+
+.add-inverter
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.battery-toggler, .solar-toggler
     display: flex
     justify-content: space-between
 
-.battery-class
+.battery-class, .solar-class
     font-weight: 300
     text-decoration: none
-.dc-yes
+.dc-yes, .solar-yes
     font-weight: 900
     text-decoration: underline
-.ac
+.ac, .solar-no
     text-align: right
+
+.plus-button
+    align-items: center
+    background-color: $ausnet-blue
+    border-radius: 3rem
+    color: white
+    display: flex
+    font-size: 3rem
+    font-weight: 900
+    height: 3rem
+    justify-content: center
+    width: 3rem
+    position: relative
+
+.plus
+    top: -0.3rem
+    position: absolute
+
+

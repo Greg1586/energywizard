@@ -174,6 +174,17 @@ $('.solarQuery').click(function(){
 $('.otherQuery').click(function(){
   $(".other-content").toggleClass("hider-class");
 });
+$('.solarToggler').click(function(){
+    $(this).toggleClass("solarTogglerOn");
+    $(".solar-content").toggleClass("show-class");
+    $(".solar-class").toggleClass("solar-yes");
+});
+  $('.inverterToggler').click(function(){
+      $(".extra-inverter").toggleClass("hidden");
+    });
     // $('.toggler').click(function(){
     // });
+});
+$('.batteryToggler').click(function(){
+    $(this).toggleClass("batteryTogglerOn");
 });
