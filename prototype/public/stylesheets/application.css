@@ -356,7 +356,7 @@ input.knob {
 }
 
 /* line 5, ../../stylesheets/partials/_ausnet.sass */
-.toggler, .solarToggler, .batteryToggler {
+.toggler, .solarToggler, .batteryToggler, .otherToggler {
   display: block;
   width: 100px;
   height: 50px;
@@ -373,7 +373,7 @@ input.knob {
 }
 
 /* line 20, ../../stylesheets/partials/_ausnet.sass */
-.toggler:before, .solarToggler:before, .batteryToggler:before {
+.toggler:before, .solarToggler:before, .batteryToggler:before, .otherToggler:before {
   content: "";
   position: absolute;
   left: 2.5px;
@@ -386,7 +386,7 @@ input.knob {
 }
 
 /* line 30, ../../stylesheets/partials/_ausnet.sass */
-.toggler:before {
+.toggler:before, .otherToggler:before {
   background: white;
 }
 
@@ -396,7 +396,7 @@ input.knob {
 }
 
 /* line 35, ../../stylesheets/partials/_ausnet.sass */
-.toggler:after, .solarToggler:after, .batteryToggler:after {
+.toggler:after, .solarToggler:after, .batteryToggler:after, .otherToggler:after {
   content: "";
   width: 44px;
   height: 44px;
@@ -411,17 +411,17 @@ input.knob {
 }
 
 /* line 48, ../../stylesheets/partials/_ausnet.sass */
-.togglerOn, .togglerOn:before {
+.togglerOn, .togglerOn:before, .otherTogglerOn:before {
   background-color: #4cd946 !important;
 }
 
 /* line 50, ../../stylesheets/partials/_ausnet.sass */
-.solarTogglerOn, .solarTogglerOn:before {
+.solarTogglerOn, .solarTogglerOn:before, .batteryTogglerOn:before {
   background-color: white !important;
 }
 
 /* line 52, ../../stylesheets/partials/_ausnet.sass */
-.togglerOn:after, .solarTogglerOn:after .batteryTogglerOn:after {
+.togglerOn:after, .solarTogglerOn:after, .batteryTogglerOn:after, .otherTogglerOn:after {
   left: 63.5px;
 }
 

@@ -1,0 +1,55 @@
+%h1.section Are you installing Wind or Hydro?
+.line.section
+
+.section.battery-toggler
+  %h3.solar-class.solar-yes Yes
+  %label{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"otherToggler"}
+    .switch
+  %h3.solar-class.solar-no No
+
+.whatever.hidden.show-class
+  .battery-content
+    %h3.section Please tell us about your system
+  .section
+    .checkbox
+      %input{:type=>"checkbox", :id=>"solar", :class=>"windQuery"}
+      %label{:for=>"solar"} Wind
+    .checkbox
+      %input{:type=>"checkbox", :id=>"battery", :name=>"", :class=>"hydroQuery"}
+      %label{:for=>"battery"} Hydro
+
+
+.section.wind-content.hidden
+  %h3 What inverter do you plan to use for your wind system?
+  .text-input
+    %form
+      %label Inverter manufacturer
+      %input
+
+      %label Inverter model
+      %input
+
+      %label Quantity
+      %input
+
+
+.section.hydro-content.hidden
+  %h3 What inverter do you plan to use for your hydro system?
+  .text-input
+    %form
+      %label Inverter manufacturer
+      %input
+
+      %label Inverter model
+      %input
+
+      %label Quantity
+      %input
+
+
+.section
+  %a.button.spacer{:href=>"/export-over"}
+    Next
+
+%a.spacer{:href=>"/battery"}
+  go back

@@ -181,10 +181,23 @@ $('.solarToggler').click(function(){
 });
   $('.inverterToggler').click(function(){
       $(".extra-inverter").toggleClass("hidden");
-    });
-    // $('.toggler').click(function(){
-    // });
 });
 $('.batteryToggler').click(function(){
     $(this).toggleClass("batteryTogglerOn");
+    $(".whatever").toggleClass("show-class");
+    $(".solar-class").toggleClass("solar-yes");
 });
+$('.otherToggler').click(function(){
+    $(this).toggleClass("batteryTogglerOn");
+    $(".whatever").toggleClass("show-class");
+    $(".solar-class").toggleClass("solar-yes");
+});
+$('.windQuery').click(function(){
+    $(".wind-content").toggleClass("hidden");
+});
+$('.hydroQuery').click(function(){
+    $(".hydro-content").toggleClass("hidden");
+});
+});
+    // $('.toggler').click(function(){
+    // });

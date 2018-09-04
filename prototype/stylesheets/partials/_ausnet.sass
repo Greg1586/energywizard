@@ -2,7 +2,7 @@
 
 
 // toggles
-.toggler, .solarToggler, .batteryToggler
+.toggler, .solarToggler, .batteryToggler, .otherToggler
     display: block
     width: 100px
     height: 50px
@@ -17,7 +17,7 @@
     position: relative
     border-radius: 100px
 
-.toggler:before, .solarToggler:before, .batteryToggler:before
+.toggler:before, .solarToggler:before, .batteryToggler:before, .otherToggler:before
     content: ''
     position: absolute
     left: 2.5px
@@ -27,12 +27,12 @@
     background: white
     z-index: 1
     border-radius: 100px
-.toggler:before
+.toggler:before, .otherToggler:before
     background: white
 .solarToggler:before, .batteryToggler:before
     background: #4cd946 !important
 
-.toggler:after, .solarToggler:after, .batteryToggler:after
+.toggler:after, .solarToggler:after, .batteryToggler:after, .otherToggler:after
     content: ''
     width: 44px
     height: 44px
@@ -45,11 +45,11 @@
     left: 3px
     box-shadow: 0 2px 5px #999999
 
-.togglerOn, .togglerOn:before
+.togglerOn, .togglerOn:before, .otherTogglerOn:before
     background-color: #4cd946 !important
-.solarTogglerOn, .solarTogglerOn:before,
+.solarTogglerOn, .solarTogglerOn:before, .batteryTogglerOn:before
     background-color: white !important
-.togglerOn:after, .solarTogglerOn:after .batteryTogglerOn:after
+.togglerOn:after, .solarTogglerOn:after, .batteryTogglerOn:after, .otherTogglerOn:after
     left: 63.5px
 
 .hider-class, .hidden
