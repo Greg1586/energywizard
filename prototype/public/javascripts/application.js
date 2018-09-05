@@ -198,6 +198,12 @@ $('.windQuery').click(function(){
 $('.hydroQuery').click(function(){
     $(".hydro-content").toggleClass("hidden");
 });
+$('.inverterSelector').change(function(){
+    if ($(this).val() === '2') {
+        $(".linkContentOne").toggleClass("hidden");
+    }
+    if ($(this).val() === '3') {
+        $(".linkContentTwo").toggleClass("hidden");
+    }
 });
-    // $('.toggler').click(function(){
-    // });
+});

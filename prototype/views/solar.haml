@@ -2,16 +2,19 @@
 .line
 .section.solar-toggler
   %h3.solar-class.solar-yes Yes
-  %label{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"solarToggler"}
+  %label{:type=>"checkbox", :name=>"switch", :checked=>"checked", :class=>"solarToggler"}
     .switch
   %h3.solar-class.solar-no No
 
 .section.solar-content.hidden.show-class
-  %h3 What inverter do you plan to use?
+  %h2.section What inverter do you plan to use?
   .text-input
     %form
       %label Solar inverter manufacturer
-      %input
+      %select{:class=>"inverterSelector"}
+        %option{:value=>"1"} please select...
+        %option{:value=>"2"} CEC Approved NEC 9980 Inverter
+        %option{:value=>"3"} CEC Approved NEC 9000 Inverter
 
       %label Solar inverter model
       %input
@@ -54,8 +57,11 @@
           %input
 
 
-.section
-  %a.button.spacer{:href=>"/battery"}
+.section.linkContentOne.hidden
+  %a.button.spacer{:href=>"/other-sources"}
+    Next
+.section.linkContentTwo.hidden
+  %a.button.spacer{:href=>"/no-capacity"}
     Next
 
 %a.spacer{:href=>"/nmi-meter-email"}

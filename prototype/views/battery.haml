@@ -9,7 +9,7 @@
 
 .whatever.hidden.show-class
   .battery-content
-    %h3.section Please tell us about your battery system
+    %h3.section Please tell us about how your battery system is coupled
     .section.battery-toggler
       %h3.battery-class.dc-yes DC
       %label{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"toggler"}
@@ -19,14 +19,14 @@
       %h2 What AC battery do you plan to use?
       %form
         .text-input
-          %label Battery manufacturer
+          %label Battery inverter manufacturer
           %input
           %label Battery inverter model
           %input
           %label Battery type
           %select
-            %option Salt Water
             %option Lithium Ion
+            %option Salt Water
             %option Lead Acid
             %option Flow
             %option Other
@@ -39,7 +39,7 @@
       .extra-inverter.hidden
         .text-input
           %form
-            %label Battery manufacturer
+            %label Battery inverter manufacturer
             %input
 
             %label Battery inverter model
@@ -67,8 +67,8 @@
 
 
 .section
-  %a.button.spacer{:href=>"/other-sources"}
+  %a.button.spacer{:href=>"/export-over"}
     Next
 
-%a.spacer{:href=>"/solar"}
+%a.spacer{:href=>"/other-sources"}
   go back
