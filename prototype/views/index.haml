@@ -2,28 +2,29 @@
 	homepage
 - content_for :bodyClass do
 	homepage
-%div
-	%h1 Welcome to AusNet Services
-	%h2 You can use this tool to get approval for an inverter energy system (such as solar) of up to 10kW capacity and 5kW export per phase, with a maximum being 30kW capacity and 15kW export across 3 phases.
-%div
-	For systems greater than 30kW, you need to apply for
-	%a{:href=>"/request-assessment"} technical assessment.
-	%h3 There are a few things you'll need before you use this tool:
-%div
-	%ul
-		%li
-			%p What sort of installation it is,
-			%i eg solar / battery / wind
-		%li
-			%p The NMI and meter number - these can usually be found on page 2 of the electricity bill for the property
-		%li
-			%p Details of the proposed inverters i.e. manufacturer and model
-		%li
-			%p The expected total capacity and export requirements of the system
-		%li
-			%p How many phases at the property (most are single phase)
-
-%a.button{:href=>"/terms-conditions"}
-	I've got all these things
-%a.button.secondary{:href=>"/request-assessment"}
-	I need a bigger installation
+%h1 Welcome to AusNet Services
+.content-parent
+	.content-area-1
+		%h2 You can use this tool to get approval for an inverter energy system (such as solar) of up to 10kW capacity and 5kW export per phase, with a maximum being 30kW capacity and 15kW export across 3 phases.
+		%div
+			For systems greater than 30kW, you need to apply for
+			%a{:href=>"/request-assessment"} technical assessment.
+			%h3 There are a few things you'll need before you use this tool:
+		%div
+			%ul
+				%li
+					%p What sort of installation it is,
+					%i eg solar / battery / wind
+				%li
+					%p The NMI and meter number - these can usually be found on page 2 of the electricity bill for the property
+				%li
+					%p Details of the proposed inverters i.e. manufacturer and model
+				%li
+					%p The expected total capacity and export requirements of the system
+				%li
+					%p How many phases at the property (most are single phase)
+	.button-area-1
+		%a.button{:href=>"/terms-conditions"}
+			I've got all these things
+		%a.button.secondary{:href=>"/request-assessment"}
+			I need a bigger installation
