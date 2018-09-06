@@ -1,74 +1,65 @@
-%h1.section Are you installing a battery as part of the system?
-.line.section
+%h1 Are you installing a battery as part of the system?
+.line
+.toggler-group
+  .radio-1 Yes
+  .toggler1
+  .radio-2.radio-toggle-alt No
 
-.section.battery-toggler
-  %h3.solar-class.solar-yes Yes
-  %label{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"batteryToggler"}
-    .switch
-  %h3.solar-class.solar-no No
+.radio-content-1.hidden.show-class
+  %h3 Please tell us about how your battery system is coupled
+  .toggler-group
+    .radio-3 DC
+    .toggler2
+    .radio-4.radio-toggle-alt AC
 
-.whatever.hidden.show-class
-  .battery-content
-    %h3.section Please tell us about how your battery system is coupled
-    .section.battery-toggler
-      %h3.battery-class.dc-yes DC
-      %label{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"toggler"}
-        .switch
-      %h3.battery-class.ac AC
-    .something.hider-class
-      %h2 What AC battery do you plan to use?
-      %form
-        .text-input
+  .radio-content-2.hider-class
+    %h2 What AC battery do you plan to use?
+    %form
+      .text-input
+        %label Battery inverter manufacturer
+        %input
+        %label Battery inverter model
+        %input
+        %label Battery type
+        %select
+          %option Lithium Ion
+          %option Salt Water
+          %option Lead Acid
+          %option Flow
+          %option Other
+        %br
+    .add-inverter
+      %h3 add another battery
+      %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
+        .plus +
+    .extra-inverter1.hidden
+      .text-input
+        %form
           %label Battery inverter manufacturer
           %input
           %label Battery inverter model
           %input
-          %label Battery type
-          %select
-            %option Lithium Ion
-            %option Salt Water
-            %option Lead Acid
-            %option Flow
-            %option Other
-          %br
-      .section.add-inverter
+          %label Quantity
+          %input
+      .add-inverter
         %h3 add another battery
-        %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler"}
+        %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler2"}
           .plus +
+    .extra-inverter2.hidden
+      .text-input
+        %form
+          %label Battery inverter manufacturer
+          %input
 
-      .extra-inverter.hidden
-        .text-input
-          %form
-            %label Battery inverter manufacturer
-            %input
+          %label Battery inverter model
+          %input
 
-            %label Battery inverter model
-            %input
-
-            %label Quantity
-            %input
-
-        .section.add-inverter
-          %h3 add another battery
-          %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterTogglerTwo"}
-            .plus +
-
-        .extra-extra-inverter.hidden
-          .text-input
-            %form
-              %label Battery inverter manufacturer
-              %input
-
-              %label Battery inverter model
-              %input
-
-              %label Quantity
-              %input
+          %label Quantity
+          %input
 
 
-.section
-  %a.button.spacer{:href=>"/export-over"}
-    Next
+%a.button{:href=>"/export-over"}
+  Next
 
-%a.spacer{:href=>"/other-sources"}
+%a{:href=>"/other-sources"}
   go back

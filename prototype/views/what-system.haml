@@ -1,6 +1,5 @@
-%h1.section Please tell us about the system you want to install
-.line
-.section
+%h1 Please tell us about the system you want to install
+%div
   .checkbox
     %input{:type=>"checkbox", :id=>"solar", :checked=>"checked", :class=>"solarQuery"}
     %label{:for=>"solar"} Solar
@@ -11,54 +10,49 @@
     %input{:type=>"checkbox", :id=>"otherPower", :class=>"otherQuery" }
     %label{:for=>"otherPower"} Other, eg wind or hydro
 
-.section.other-content.hider-class
-  %h3 What generation type will you be installing?
-  .text-input
-    %select
-      %option Wind
-      %option Hydro
+%h3 Are you planning on installing:
+.text-input
+  %select
+    %option Wind
+    %option Hydro
 
-.section.solar-content
-  %h3 What inverter do you plan to use?
-  .text-input
-    %form
-      %label Solar inverter manufacturer
+
+%h3 What solar inverter do you plan to use?
+.text-input
+  %form
+    %label Solar inverter manufacturer
+    %input
+
+    %label Solar inverter model
+    %input
+
+    %label Quantity
+    %input
+
+
+%h3 Please tell us about your battery system
+.toggler-group
+  .radio-1 DC
+  .toggler
+  .radio-2.radio-toggle-alt AC
+.radio-content-1.hider-class
+  %h3 What AC battery do you plan to use?
+  %form
+    .text-input
+      %label Battery manufacturer
       %input
-
-      %label Solar inverter model
+      %label Battery inverter model
       %input
+      %label Battery type
+      %select
+        %option Salt Water
+        %option Lithium Ion
+        %option Lead Acid
+        %option Flow
+        %option Other
+      %br
 
-      %label Quantity
-      %input
-
-
-.battery-content.hider-class
-  %h3.section Please tell us about your battery system
-  .section.battery-toggler
-    %h3.battery-class.dc-yes DC
-    %label{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"toggler"}
-      .switch
-    %h3.battery-class.ac AC
-  .something.hider-class
-    %h2 What AC battery do you plan to use?
-    %form
-      .text-input
-        %label Battery manufacturer
-        %input
-        %label Battery inverter model
-        %input
-        %label Battery type
-        %select
-          %option Salt Water
-          %option Lithium Ion
-          %option Lead Acid
-          %option Flow
-          %option Other
-        %br
-
-.section
-  %a.button.spacer{:href=>"/export"}
-    Next
-
-%a.spacer{:href=>"/nmi-meter-email"}
+%a.button{:href=>"/export"}
+  Next
+%a{:href=>"/nmi-meter-email"}
   go back

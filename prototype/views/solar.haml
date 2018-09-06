@@ -1,13 +1,11 @@
-%h1.section Are you installing a solar generation system?
-.line
-.section.solar-toggler
-  %h3.solar-class.solar-yes Yes
-  %label{:type=>"checkbox", :name=>"switch", :checked=>"checked", :class=>"solarToggler"}
-    .switch
-  %h3.solar-class.solar-no No
+%h1 Are you installing a solar generation system?
+.toggler-group
+  .radio-1 Yes
+  .toggler1
+  .radio-2.radio-toggle-alt No
 
-.section.solar-content.hidden.show-class
-  %h2.section What inverter do you plan to use?
+.radio-content-1.hidden.show-class
+  %h2 What inverter do you plan to use?
   .text-input
     %form
       %label Solar inverter manufacturer
@@ -15,54 +13,50 @@
         %option{:value=>"1"} please select...
         %option{:value=>"2"} CEC Approved NEC 9980 Inverter
         %option{:value=>"3"} CEC Approved NEC 9000 Inverter
-
       %label Solar inverter model
       %input
-
       %label Quantity
       %input
-
-  .section.add-inverter
+  .add-inverter
     %h3 add an inverter...
     %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler"}
       .plus +
-
   .extra-inverter.hidden
     .text-input
       %form
         %label Solar inverter manufacturer
         %input
-
         %label Solar inverter model
         %input
-
         %label Quantity
         %input
-
-    .section.add-inverter
+    .add-inverter
       %h3 add an inverter...
       %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterTogglerTwo"}
         .plus +
-
     .extra-extra-inverter.hidden
       .text-input
         %form
           %label Solar inverter manufacturer
           %input
-
           %label Solar inverter model
           %input
-
           %label Quantity
           %input
 
-
-.section.linkContentOne.hidden
-  %a.button.spacer{:href=>"/other-sources"}
+.linkContent1
+  %a.button{:href=>"/other-sources"}
     Next
-.section.linkContentTwo.hidden
-  %a.button.spacer{:href=>"/no-capacity"}
-    Next
+.linkContent2
+  %h3 We can't approve this application at this time
+  %h4 This is because your total system capacity is too high, which may be because of the inverter you've chosen.
+  %div
+    %p We can only allow up to 10kW capacity per phase, and in some cases the infrastructure will support less than that.
+    %hr
+    %p You can select another meter with a lower capacity and output from the CEC approved list and try again, or:
+    %p If you'd like this to be reviewed, you can apply for one of our engineers to take a look.
+  %a.button.secondary{:href=>"/request-assessment"}
+    Request an assessment
 
-%a.spacer{:href=>"/nmi-meter-email"}
+%a{:href=>"/nmi-meter-email"}
   go back
