@@ -25,13 +25,15 @@
           .plus +
       .extra-inverter1.hidden
         .text-input
-          %form
-            %label Solar inverter manufacturer
-            %input
-            %label Solar inverter model
-            %input
-            %label Quantity
-            %input
+          %label Solar inverter manufacturer
+          %select{:class=>"inverterSelector"}
+            %option{:value=>"1"} please select...
+            %option{:value=>"2"} CEC Approved NEC 9980 Inverter
+            %option{:value=>"3"} CEC Approved NEC 9000 Inverter
+          %label Solar inverter model
+          %input
+          %label Quantity
+          %input
         .add-inverter
           %h3 add an inverter...
           %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler2"}
@@ -81,7 +83,7 @@
           %input
   .button-area-1
     .linkContent1
-      %a.button{:href=>"/other-sources"}
+      %a.button{:href=>"/battery"}
         Next
     .linkContent2
       %h3 We can't approve this application at this time

@@ -1,18 +1,24 @@
-%h1 How much do you want your inverter to export in kW?
-%h2 Please consider whether you really need the maximum available.
-%h3 Use the dial to adjust to how much you need.
+%h1 Your export and system summary
+.content-parent
+  .content-area-1
+    %h2 Export summary
+    %h3 The maximum available to you for this meter is 3.5kw.
+    .dialer
+      %img{:src=>"/images/dialer.png"}
 
-.dialer
-  = render "layouts/dialer"
 
-%h3 Your inverter's predetermined capacity is 3.5kW
-%h3 You can get approval for this installation
+    %h2 System summary
+    %h3 Your inverter's predetermined capacity is 3.5kW
+    %h4 Solar
+    %ul
+      %li Inverter: "Gary's inverter 101, 2.3kW"
+      %li Export: 3.5kW
+      %li Capacity: 7.6kW
 
-%a.button{:href=>"/summary"}
-  Go to summary
-
-%a.button.secondary{:href=>"/request-assessment"}
-  I need to export more
-
-%a{:href=>"/what-system"}
-  go back
+    %h3 You can get approval for this installation
+    %div This system is good to go
+.button-area-1
+  %a.button{:href=>"/finished"}
+    Get Approval
+  %a{:href=>"/battery"}
+    go back

@@ -15,11 +15,19 @@
         %input
       %div
         %label
+          %b How many phases does the property have
+        .detail-text Most have 1 phase but some have more, for example if it's a large property or an elevator has been installed.
+        %select
+          %option 1
+          %option 2
+          %option 3
+      %div
+        %label
           %b Enter the email address of the person managing this grid application
         .detail-text your pre-approval will be sent to this address
         %input
   .button-area-1
-    %a.button{:href=>"/solar"}
+    %a.button{:href=>"/generation"}
       Next
 
     %a.button.tertiary{:href=>"/terms-conditions"}

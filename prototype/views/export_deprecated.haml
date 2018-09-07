@@ -1,0 +1,18 @@
+%h1 How much do you want your inverter to export in kW?
+%h2 Please consider whether you really need the maximum available.
+%h3 Use the dial to adjust to how much you need.
+
+.dialer
+  = render "layouts/dialer"
+
+%h3 Your inverter's predetermined capacity is 3.5kW
+%h3 You can get approval for this installation
+
+%a.button{:href=>"/summary"}
+  Go to summary
+
+%a.button.secondary{:href=>"/request-assessment"}
+  I need to export more
+
+%a{:href=>"/what-system"}
+  go back
