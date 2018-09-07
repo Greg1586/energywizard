@@ -215,18 +215,6 @@ p {
   padding: 30px;
 }
 
-/* line 35, ../../stylesheets/partials/_setout.sass */
-.content-parent {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* line 38, ../../stylesheets/partials/_setout.sass */
-.content-area-1 {
-  flex-grow: 1;
-  max-width: 500px;
-}
-
 /* line 41, ../../stylesheets/partials/_setout.sass */
 .button-area-1 {
   display: flex;
