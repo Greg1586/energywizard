@@ -215,25 +215,6 @@ p {
   padding: 30px;
 }
 
-/* line 41, ../../stylesheets/partials/_setout.sass */
-.button-area-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-@media (max-width: 550px) {
-  /* line 47, ../../stylesheets/partials/_setout.sass */
-  .content-parent {
-    display: block;
-  }
-}
-@media (min-width: 550px) {
-  /* line 50, ../../stylesheets/partials/_setout.sass */
-  .content-area-1 {
-    margin-right: 30px;
-  }
-}
 /* line 54, ../../stylesheets/partials/_setout.sass */
 .header {
   display: block;
