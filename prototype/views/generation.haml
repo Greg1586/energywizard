@@ -50,10 +50,10 @@
   .content-area-2
     %h1 Are you installing Wind or Hydro?
     .checkbox
-      %input{:type=>"checkbox", :id=>"solar", :class=>"windQuery"}
+      %input{:type=>"checkbox", :id=>"windQuery", :name=>"windQuery", :class=>"windQuery"}
       %label{:for=>"solar"} Wind
     .checkbox
-      %input{:type=>"checkbox", :id=>"battery", :name=>"", :class=>"hydroQuery"}
+      %input{:type=>"checkbox", :id=>"hydroQuery", :name=>"hydroQuery", :class=>"hydroQuery"}
       %label{:for=>"battery"} Hydro
 
     .wind-content.hidden
@@ -61,7 +61,10 @@
       .text-input
         %form
           %label Inverter manufacturer
-          %input
+          %select{:class=>"inverterSelector2"}
+            %option{:value=>"1"} please select...
+            %option{:value=>"2"} CEC Approved NEC 3360 Inverter
+            %option{:value=>"3"} CEC Approved Toshiba 2745 Inverter
 
           %label Inverter model
           %input
@@ -74,7 +77,10 @@
       .text-input
         %form
           %label Inverter manufacturer
-          %input
+          %select{:class=>"inverterSelector3"}
+            %option{:value=>"1"} please select...
+            %option{:value=>"2"} CEC Approved GenTrax 1000 Inverter
+            %option{:value=>"3"} CEC Approved Toshiba 2745 Inverter
 
           %label Inverter model
           %input
@@ -82,6 +88,8 @@
           %label Quantity
           %input
   .button-area-1
+    .instructionContent
+      %h3 You need to select one or more inverters before you can continue
     .linkContent1
       %a.button{:href=>"/battery"}
         Next

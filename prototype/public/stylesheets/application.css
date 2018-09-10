@@ -207,7 +207,7 @@ h3 {
 
 /* line 28, ../../stylesheets/partials/_setout.sass */
 p {
-  margin-top: 1.2em;
+  margin-bottom: 1.5rem;
 }
 
 /* line 32, ../../stylesheets/partials/_setout.sass */
@@ -215,14 +215,30 @@ p {
   padding: 30px;
 }
 
-/* line 54, ../../stylesheets/partials/_setout.sass */
+/* line 35, ../../stylesheets/partials/_setout.sass */
+.content-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* line 39, ../../stylesheets/partials/_setout.sass */
+.content-area-1, .content-area-2, .button-area-1, .title-area {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 46, ../../stylesheets/partials/_setout.sass */
 .header {
   display: block;
   padding: 10px 10px 10px 30px;
   background-color: #28317d;
   color: white;
 }
-/* line 59, ../../stylesheets/partials/_setout.sass */
+/* line 51, ../../stylesheets/partials/_setout.sass */
 .header a {
   background-color: transparent;
   color: white;
@@ -230,7 +246,7 @@ p {
   cursor: pointer;
 }
 
-/* line 67, ../../stylesheets/partials/_setout.sass */
+/* line 59, ../../stylesheets/partials/_setout.sass */
 .text-input input, .text-input select {
   background-color: white;
   border: 1px solid #cccccc;
@@ -240,7 +256,7 @@ p {
   padding: 1rem;
   width: 100%;
 }
-/* line 75, ../../stylesheets/partials/_setout.sass */
+/* line 67, ../../stylesheets/partials/_setout.sass */
 .text-input select {
   height: 3.5rem;
 }
@@ -451,7 +467,18 @@ input.knob {
   display: none;
 }
 
-/* line 75, ../../stylesheets/partials/_ausnet.sass */
+/* line 74, ../../stylesheets/partials/_ausnet.sass */
+.instructionContent {
+  background-color: red;
+  padding: 15px 30px;
+}
+/* line 77, ../../stylesheets/partials/_ausnet.sass */
+.instructionContent h3 {
+  color: white;
+  margin-bottom: 0;
+}
+
+/* line 81, ../../stylesheets/partials/_ausnet.sass */
 .plus-button {
   align-items: center;
   background-color: #28317d;
@@ -466,13 +493,33 @@ input.knob {
   position: relative;
 }
 
-/* line 87, ../../stylesheets/partials/_ausnet.sass */
+/* line 93, ../../stylesheets/partials/_ausnet.sass */
 .plus {
   top: -0.3rem;
   position: absolute;
 }
 
-/* line 91, ../../stylesheets/partials/_ausnet.sass */
+/* line 97, ../../stylesheets/partials/_ausnet.sass */
 .testClass {
   background-color: red;
+}
+
+/* line 100, ../../stylesheets/partials/_ausnet.sass */
+.phasing {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 103, ../../stylesheets/partials/_ausnet.sass */
+.phasing h3, .phasing div {
+  flex-basis: 50%;
+}
+/* line 105, ../../stylesheets/partials/_ausnet.sass */
+.phasing div {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: right;
+}
+/* line 109, ../../stylesheets/partials/_ausnet.sass */
+.phasing hr {
+  flex-basis: 100%;
 }
