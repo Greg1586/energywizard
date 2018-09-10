@@ -1,4 +1,5 @@
-%h1 Please review this phase setup:
+.content-area-1
+  %h1 Please review this phase setup:
 
 .content-parent
   .content-area-1
@@ -8,15 +9,18 @@
       %hr
   .content-area-1
     .phasing
-      %p We've automatically allocated export across the three phases
+      %p Please distribute your system output evenly across each phase:
       %h3 Phase A
-      %div 4.4 kW
+      .text-input
+        %input
       %hr
       %h3 Phase B
-      %div 4.3 kW
+      .text-input
+        %input
       %hr
       %h3 Phase C
-      %div 4.3 kW
+      .text-input
+        %input
 
   .button-area-1
     %a.button{:href=>"/export"}

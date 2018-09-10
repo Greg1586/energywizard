@@ -1,11 +1,14 @@
-%h1 We can't approve this application at this time
-%h2 Your total system capacity is too high.
-%div
-  %p We can only allow up to 10kW capacity per phase, and in some cases the infrastructure will support less than that.
-  %p If you'd like this to be reviewed, you can apply for one of our engineers to take a look.
+.content-area-1
+  %h1 We can't approve this application at this time
+  %h2 Your total system capacity is too high.
+.content-parent
+  .content-area-1
+    %div
+      %p We can only allow up to 10kW capacity per phase, and in some cases the infrastructure will support less than that.
+      %p If you'd like this to be reviewed, you can apply for one of our engineers to take a look.
+  .button-area-1
+    %a.button.secondary{:href=>"/request-assessment"}
+      I need to request an assessment
 
-%a.button.secondary{:href=>"/request-assessment"}
-  I need to request an assessment
-
-%a{:href=>"/"}
-  go back
+    %a{:href=>"/"}
+      go back

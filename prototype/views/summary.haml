@@ -1,14 +1,17 @@
-%h1 Here's what you've asked for
-%h2 Solar
-%ul
-  %li Inverter: "Gary's inverter 101, 2.3kW"
-  %li Export: 3.5kW
-  %li Capacity: 7.6kW
+.content-area-1
+  %h1 Here's what you've asked for
+.content-parent
+  .content-area-1
+    %h2 Solar
+    %ul
+      %li Inverter: "Gary's inverter 101, 2.3kW"
+      %li Export: 3.5kW
+      %li Capacity: 7.6kW
 
-%div This system is good to go
+    %div This system is good to go
+  .button-area-1
+    %a.button{:href=>"/finished"}
+      Get Approval
 
-%a.button{:href=>"/finished"}
-  Get Approval
-
-%a{:href=>"/what-system"}
-  go back
+    %a{:href=>"/what-system"}
+      go back
