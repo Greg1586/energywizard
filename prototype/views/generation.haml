@@ -1,7 +1,19 @@
-.content-area-1
-  %h1 Are you installing a solar generation system?
+
+
 .content-parent
   .content-area-1
+    %h1 Which of these best describes your installation?
+    .checkbox
+      %input{:type=>"checkbox", :id=>"newInstallation", :name=>"newInstallation", :class=>"newInstallation"}
+      %label{:for=>"solar"} New installation
+    .checkbox
+      %input{:type=>"checkbox", :id=>"replacementInstallation", :name=>"replacementInstallation", :class=>"replacementInstallation"}
+      %label{:for=>"battery"} Replacing existing
+    .checkbox
+      %input{:type=>"checkbox", :id=>"upgradingInstallation", :name=>"upgradingInstallation", :class=>"upgradingInstallation"}
+      %label{:for=>"battery"} Upgrading existing
+  .content-area-1
+    %h1 Are you installing a solar generation system?
     .toggler-group
       .radio-1 Yes
       .toggler1
