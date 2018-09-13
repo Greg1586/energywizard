@@ -5,15 +5,16 @@
 .content-parent
   .content-area-1
     %h2 Which of these best describes your installation?
-    .checkbox
-      %input{:type=>"checkbox", :id=>"newInstallation", :name=>"newInstallation", :class=>"newInstallation"}
-      %label{:for=>"solar"} New installation
-    .checkbox
-      %input{:type=>"checkbox", :id=>"replacementInstallation", :name=>"replacementInstallation", :class=>"replacementInstallation"}
-      %label{:for=>"battery"} Replacing existing
-    .checkbox
-      %input{:type=>"checkbox", :id=>"upgradingInstallation", :name=>"upgradingInstallation", :class=>"upgradingInstallation"}
-      %label{:for=>"battery"} Upgrading existing
+    %form
+      .checkbox
+        %input{:type=>"radio", :id=>"newInstallation", :name=>"newInstallation", :class=>"newInstallation"}
+        %label{:for=>"solar"} New installation
+      .checkbox
+        %input{:type=>"radio", :id=>"replacementInstallation", :name=>"replacementInstallation", :class=>"replacementInstallation"}
+        %label{:for=>"battery"} Replacing existing
+      .checkbox
+        %input{:type=>"radio", :id=>"upgradingInstallation", :name=>"upgradingInstallation", :class=>"upgradingInstallation"}
+        %label{:for=>"battery"} Upgrading existing
   .content-area-1
     %h2 Are you installing a solar generation system?
     = render "layouts/yes-or-no"
