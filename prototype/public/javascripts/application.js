@@ -1,17 +1,29 @@
 $(document).ready(function () {
 //togglers
 
-    $('.toggler1').click(function () {
-        $(this).toggleClass("togglerOn");
+    $('.yes').click(function () {
+        $(this).toggleClass("toggle-active");
+        $(".no").toggleClass("toggle-active");
         $(".radio-content-1").toggleClass("show-class");
         $(".radio-1").toggleClass("radio-toggle-alt");
         $(".radio-2").toggleClass("radio-toggle-alt");
     });
-    $('.toggler2').click(function () {
-        $(this).toggleClass("togglerOn");
-        $(".radio-content-2").toggleClass("show-class");
-        $(".radio-3").toggleClass("radio-toggle-alt");
-        $(".radio-4").toggleClass("radio-toggle-alt");
+    $('.no').click(function () {
+        $(this).toggleClass("toggle-active");
+        $(".yes").toggleClass("toggle-active");
+        $(".radio-content-1").toggleClass("show-class");
+        $(".radio-1").toggleClass("radio-toggle-alt");
+        $(".radio-2").toggleClass("radio-toggle-alt");
+    });
+    $('.dc').click(function () {
+        $(this).toggleClass("toggle-active");
+        $(".ac").toggleClass("toggle-active");
+        $(".radio-content-2").toggleClass("hidden");
+    });
+    $('.ac').click(function () {
+        $(this).toggleClass("toggle-active");
+        $(".dc").toggleClass("toggle-active");
+        $(".radio-content-2").toggleClass("hidden");
     });
     $('.windQuery').click(function () {
         $(".wind-content").toggleClass("hidden");

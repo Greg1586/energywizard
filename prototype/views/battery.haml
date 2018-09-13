@@ -1,20 +1,15 @@
 .content-parent
   .title-area
     %h1 Are you installing a battery as part of the system?
-  .content-area-1
-    .toggler-group
-      .radio-1 Yes
-      .toggler1
-      .radio-2.radio-toggle-alt No
+    = render "layouts/yes-or-no"
 
     .radio-content-1.hidden.show-class
       %h3 Please tell us about how your battery system is coupled
-      .toggler-group
-        .radio-3 DC
-        .toggler2
-        .radio-4.radio-toggle-alt AC
-
-      .radio-content-2.hider-class
+      %h2 Is your system AC or DC coupled?
+      .ac-dc-toggle
+        .ac.toggle-active AC
+        .dc DC
+      .radio-content-2
         %h2 What AC battery do you plan to use?
         %form
           .text-input
@@ -24,13 +19,6 @@
             %input
             %label Quantity
             %input
-            -#%label Battery type
-            -#%select
-            -#  %option Lithium Ion
-            -#  %option Salt Water
-            -#  %option Lead Acid
-            -#  %option Flow
-            -#  %option Other
             %br
         .add-inverter
           %h3 add another battery
