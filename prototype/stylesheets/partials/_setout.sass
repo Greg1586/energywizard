@@ -4,7 +4,7 @@
   font-family: "Helvetica Neue", Helvetica, SansSerif
 
 html
-  background-color: $page-grey
+  //background: $page-gradient
 
 h1, h2, h3, h4, p
   line-height: 1.2
@@ -34,14 +34,15 @@ p
 
 .content-parent
   display: flex
-  flex-wrap: wrap
-  justify-content: space-evenly
-.content-area-1, .content-area-2, .button-area-1, .title-area
-  flex: 1
+  flex-direction: column
+  align-items: center
+.content-area-1, .button-area-1, .title-area
   min-width: 300px
+  max-width: 500px
   padding: 30px
   margin: 10px
-  background-color: rgba(255, 255, 255, 0.5)
+  border: 1px solid black
+  width: 100%
 .button-area-1
   align-items: flex-end
 
@@ -68,3 +69,8 @@ p
     width: 100%
   select
     height: 3.5rem
+
+// MEDIA QUERIES
+@media (max-width: 600px)
+  .page
+    padding: 0

@@ -169,11 +169,6 @@ table {
   font-family: "Helvetica Neue", Helvetica, SansSerif;
 }
 
-/* line 6, ../../stylesheets/partials/_setout.sass */
-html {
-  background-color: #ededed;
-}
-
 /* line 9, ../../stylesheets/partials/_setout.sass */
 h1, h2, h3, h4, p {
   line-height: 1.2;
@@ -213,32 +208,33 @@ p {
 /* line 35, ../../stylesheets/partials/_setout.sass */
 .content-parent {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* line 39, ../../stylesheets/partials/_setout.sass */
-.content-area-1, .content-area-2, .button-area-1, .title-area {
-  flex: 1;
+.content-area-1, .button-area-1, .title-area {
   min-width: 300px;
+  max-width: 500px;
   padding: 30px;
   margin: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+  width: 100%;
 }
 
-/* line 45, ../../stylesheets/partials/_setout.sass */
+/* line 46, ../../stylesheets/partials/_setout.sass */
 .button-area-1 {
   align-items: flex-end;
 }
 
-/* line 48, ../../stylesheets/partials/_setout.sass */
+/* line 49, ../../stylesheets/partials/_setout.sass */
 .header {
   display: block;
   padding: 10px 10px 10px 30px;
   background-color: #28317d;
   color: white;
 }
-/* line 53, ../../stylesheets/partials/_setout.sass */
+/* line 54, ../../stylesheets/partials/_setout.sass */
 .header a {
   background-color: transparent;
   color: white;
@@ -246,7 +242,7 @@ p {
   cursor: pointer;
 }
 
-/* line 61, ../../stylesheets/partials/_setout.sass */
+/* line 62, ../../stylesheets/partials/_setout.sass */
 .text-input input, .text-input select {
   background-color: white;
   border: 1px solid #cccccc;
@@ -256,11 +252,17 @@ p {
   padding: 1rem;
   width: 100%;
 }
-/* line 69, ../../stylesheets/partials/_setout.sass */
+/* line 70, ../../stylesheets/partials/_setout.sass */
 .text-input select {
   height: 3.5rem;
 }
 
+@media (max-width: 600px) {
+  /* line 75, ../../stylesheets/partials/_setout.sass */
+  .page {
+    padding: 0;
+  }
+}
 /* line 4, ../../stylesheets/partials/_components.sass */
 a {
   text-decoration: none;

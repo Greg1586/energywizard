@@ -1,8 +1,10 @@
 
-
+.content-parent
+  .title-area
+    %h1 Please tell us about your installation
 .content-parent
   .content-area-1
-    %h1 Which of these best describes your installation?
+    %h2 Which of these best describes your installation?
     .checkbox
       %input{:type=>"checkbox", :id=>"newInstallation", :name=>"newInstallation", :class=>"newInstallation"}
       %label{:for=>"solar"} New installation
@@ -13,14 +15,14 @@
       %input{:type=>"checkbox", :id=>"upgradingInstallation", :name=>"upgradingInstallation", :class=>"upgradingInstallation"}
       %label{:for=>"battery"} Upgrading existing
   .content-area-1
-    %h1 Are you installing a solar generation system?
+    %h2 Are you installing a solar generation system?
     .toggler-group
       .radio-1 Yes
       .toggler1
       .radio-2.radio-toggle-alt No
 
     .radio-content-1.hidden.show-class
-      %h2 What inverter do you plan to use?
+      %h3 What inverter do you plan to use?
       .text-input
         %form
           %label Solar inverter manufacturer
@@ -33,7 +35,7 @@
           %label Quantity
           %input
       .add-inverter
-        %h3 add an inverter...
+        %h4 add an inverter...
         %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
           .plus +
       .extra-inverter1.hidden
@@ -48,7 +50,7 @@
           %label Quantity
           %input
         .add-inverter
-          %h3 add an inverter...
+          %h4 add an inverter...
           %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler2"}
             .plus +
         .extra-inverter2.hidden
@@ -60,8 +62,8 @@
               %input
               %label Quantity
               %input
-  .content-area-2
-    %h1 Are you installing Wind or Hydro?
+  .content-area-1
+    %h2 Are you installing Wind or Hydro?
     .checkbox
       %input{:type=>"checkbox", :id=>"windQuery", :name=>"windQuery", :class=>"windQuery"}
       %label{:for=>"solar"} Wind
