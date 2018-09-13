@@ -1,25 +1,37 @@
 @import "variables"
 
 *
-  font-family: "Helvetica Neue", Helvetica, SansSerif
   box-sizing: border-box
+  font-family: "Helvetica Neue", Helvetica, Arial, SansSerif
+
+html
+  background-image: url("/images/Background-01.png")
+  background-size: cover
 
 h1, h2, h3, h4, p
-  line-height: 1
-  margin-bottom: 1rem
+  margin: 1rem 0
+  &:first-child
+    margin-top: 0
+  &:last-child
+    margin-bottom: 0
+
+h1, h2, h3, h4
+  color: $ausnet-blue
+  font-family: "Ubuntu", "Helvetica Neue", Helvetica, SansSerif
+  line-height: 1.25
 
 h2, h3
   font-size: 1.25rem
 
 h1
   font-size: 1.5rem
-  font-weight: 900
+  font-weight: 100
 
 h2
-  font-weight: 800
+  font-weight: 300
 
 h3
-  font-weight: 400
+  font-weight: 300
 
 //Page
 .page
@@ -30,10 +42,11 @@ h3
   flex-direction: column
   align-items: center
 .content-area-1, .button-area-1, .title-area
+  background-color: transparentize(white, 0.25)
   max-width: 500px
   padding: 30px
   margin: 10px
-  border: 1px solid black
+  border: 1px solid white
   width: 100%
 .button-area-1
   align-items: flex-end
@@ -66,6 +79,3 @@ h3
 @media (max-width: 600px)
   .page
     padding: 0
-//@media (max-width: 560px)
-//  .content-area-1, .button-area-1, .title-area
-//    padding: 30px 10px

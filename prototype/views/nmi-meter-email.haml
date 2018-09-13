@@ -6,26 +6,22 @@
   .content-area-1
     %form.text-input
       %div
-        %label
-          %b Enter your NMI (National Meter Identifier)
+        %h3 Enter your NMI (National Meter Identifier)
         .detail-text This is an 11-digit number, usually on page two of your electricity bill
         %input
       %div
-        %label
-          %b Enter your Meter Number
+        %h3 Enter your Meter Number
         .detail-text This is a 7-digit number found on your meter or also on page two of your electricity bill
         %input{:class=>"meterNumber"}
       %div
-        %label
-          %b How many phases does the property have
+        %h3 How many phases does the property have
         .detail-text Most have 1 phase but some have more, for example if it's a large property or an elevator has been installed.
         %select
           %option 1
           %option 2
           %option 3
       %div
-        %label
-          %b Enter the email address of the person managing this grid application
+        %h3 Enter the email address of the person managing this grid application
         .detail-text your pre-approval will be sent to this address
         %input
   .content-area-1.hidden

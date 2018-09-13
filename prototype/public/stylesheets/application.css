@@ -166,71 +166,92 @@ table {
 
 /* line 3, ../../stylesheets/partials/_setout.sass */
 * {
-  font-family: "Helvetica Neue", Helvetica, SansSerif;
   box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, SansSerif;
 }
 
 /* line 7, ../../stylesheets/partials/_setout.sass */
-h1, h2, h3, h4, p {
-  line-height: 1;
-  margin-bottom: 1rem;
+html {
+  background-image: url("/images/Background-01.png");
+  background-size: cover;
 }
 
 /* line 11, ../../stylesheets/partials/_setout.sass */
+h1, h2, h3, h4, p {
+  margin: 1rem 0;
+}
+/* line 13, ../../stylesheets/partials/_setout.sass */
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, p:first-child {
+  margin-top: 0;
+}
+/* line 15, ../../stylesheets/partials/_setout.sass */
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 18, ../../stylesheets/partials/_setout.sass */
+h1, h2, h3, h4 {
+  color: #28317d;
+  font-family: "Ubuntu", "Helvetica Neue", Helvetica, SansSerif;
+  line-height: 1.25;
+}
+
+/* line 23, ../../stylesheets/partials/_setout.sass */
 h2, h3 {
   font-size: 1.25rem;
 }
 
-/* line 14, ../../stylesheets/partials/_setout.sass */
+/* line 26, ../../stylesheets/partials/_setout.sass */
 h1 {
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 100;
 }
 
-/* line 18, ../../stylesheets/partials/_setout.sass */
+/* line 30, ../../stylesheets/partials/_setout.sass */
 h2 {
-  font-weight: 800;
+  font-weight: 300;
 }
 
-/* line 21, ../../stylesheets/partials/_setout.sass */
+/* line 33, ../../stylesheets/partials/_setout.sass */
 h3 {
-  font-weight: 400;
+  font-weight: 300;
 }
 
-/* line 25, ../../stylesheets/partials/_setout.sass */
+/* line 37, ../../stylesheets/partials/_setout.sass */
 .page {
   padding: 30px;
 }
 
-/* line 28, ../../stylesheets/partials/_setout.sass */
+/* line 40, ../../stylesheets/partials/_setout.sass */
 .content-parent {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* line 32, ../../stylesheets/partials/_setout.sass */
+/* line 44, ../../stylesheets/partials/_setout.sass */
 .content-area-1, .button-area-1, .title-area {
+  background-color: rgba(255, 255, 255, 0.75);
   max-width: 500px;
   padding: 30px;
   margin: 10px;
-  border: 1px solid black;
+  border: 1px solid white;
   width: 100%;
 }
 
-/* line 38, ../../stylesheets/partials/_setout.sass */
+/* line 51, ../../stylesheets/partials/_setout.sass */
 .button-area-1 {
   align-items: flex-end;
 }
 
-/* line 41, ../../stylesheets/partials/_setout.sass */
+/* line 54, ../../stylesheets/partials/_setout.sass */
 .header {
   display: block;
   padding: 10px 10px 10px 30px;
   background-color: #28317d;
   color: white;
 }
-/* line 46, ../../stylesheets/partials/_setout.sass */
+/* line 59, ../../stylesheets/partials/_setout.sass */
 .header a {
   background-color: transparent;
   color: white;
@@ -238,7 +259,7 @@ h3 {
   cursor: pointer;
 }
 
-/* line 54, ../../stylesheets/partials/_setout.sass */
+/* line 67, ../../stylesheets/partials/_setout.sass */
 .text-input input, .text-input select {
   background-color: white;
   border: 1px solid #cccccc;
@@ -248,13 +269,13 @@ h3 {
   padding: 1rem;
   width: 100%;
 }
-/* line 62, ../../stylesheets/partials/_setout.sass */
+/* line 75, ../../stylesheets/partials/_setout.sass */
 .text-input select {
   height: 3.5rem;
 }
 
 @media (max-width: 600px) {
-  /* line 67, ../../stylesheets/partials/_setout.sass */
+  /* line 80, ../../stylesheets/partials/_setout.sass */
   .page {
     padding: 0;
   }
