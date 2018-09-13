@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bb37536-95a9-4643-84b7-ef02d9d47c0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/_stashed/what-system.haml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layouts/_yes-or-no.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/application.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/partials/_components.sass" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/partials/_components.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/_Social.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/_stashed/_Social.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/_feedback.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/_stashed/_feedback.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/battery.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/battery.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/export_deprecated.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/_stashed/export_deprecated.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/generation.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/generation.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/jqknob.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/_stashed/jqknob.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/other-sources.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/_stashed/other-sources.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/request-assessment.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/request-assessment.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/solar.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/_stashed/solar.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/styleguide.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/_stashed/styleguide.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/test.haml" beforeDir="false" afterPath="$PROJECT_DIR$/views/_stashed/test.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/what-system.haml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -80,7 +64,7 @@
           <entry key="html" value="112" />
           <entry key="js" value="1929" />
           <entry key="ru" value="1" />
-          <entry key="sass" value="6346" />
+          <entry key="sass" value="6369" />
           <entry key="scss" value="50" />
         </counts>
       </usages-collector>
@@ -91,7 +75,7 @@
           <entry key="JavaScript" value="1929" />
           <entry key="PLAIN_TEXT" value="58" />
           <entry key="SCSS" value="50" />
-          <entry key="Sass" value="6346" />
+          <entry key="Sass" value="6369" />
         </counts>
       </usages-collector>
     </session>
@@ -127,20 +111,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/stylesheets/partials/_components.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-166">
-                  <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="21" selection-start-line="21" selection-end-line="21" />
+                <state relative-caret-position="629">
+                  <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -240,9 +215,9 @@
       <find>batter</find>
       <find>hider</find>
       <find>link</find>
-      <find>.option-buttons</find>
       <find>.toggler</find>
       <find>.toggler2</find>
+      <find>.option-buttons</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -293,11 +268,11 @@
         <option value="$PROJECT_DIR$/stylesheets/partials/_setout.sass" />
         <option value="$PROJECT_DIR$/views/layouts/_yes-or-no.haml" />
         <option value="$PROJECT_DIR$/views/generation.haml" />
-        <option value="$PROJECT_DIR$/stylesheets/partials/_components.sass" />
         <option value="$PROJECT_DIR$/views/request-assessment.haml" />
         <option value="$PROJECT_DIR$/views/what-system.haml" />
         <option value="$PROJECT_DIR$/views/battery.haml" />
         <option value="$PROJECT_DIR$/public/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/stylesheets/partials/_components.sass" />
       </list>
     </option>
   </component>
@@ -427,12 +402,12 @@
       <workItem from="1536298031222" duration="1715000" />
       <workItem from="1536533692350" duration="18049000" />
       <workItem from="1536794258231" duration="324000" />
-      <workItem from="1536794795515" duration="5089000" />
+      <workItem from="1536794795515" duration="5387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88863000" />
+    <option name="totallyTimeSpent" value="89161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -705,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_components.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
-          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/request-assessment.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="783">
@@ -737,6 +705,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/partials/_components.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
         </state>
       </provider>
     </entry>
