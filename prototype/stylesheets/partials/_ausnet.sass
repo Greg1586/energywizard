@@ -30,12 +30,19 @@
 .linkContent1, .linkContent2
   display: none
 
-.instructionContent
-  background-color: red
+.instructionContent, .positiveContent
   padding: 15px 30px
   h3
-    color: white
     margin-bottom: 0
+.instructionContent
+  background-color: red
+  h3
+    color: white
+.positiveContent
+  background-color: $ausnet-green
+  h3
+    color: $ausnet-blue
+
 
 .plus-button
   align-items: center
@@ -53,8 +60,6 @@
   top: -0.3rem
   position: absolute
 
-.testClass
-  background-color: red
 
 .phasing
   align-items: flex-end

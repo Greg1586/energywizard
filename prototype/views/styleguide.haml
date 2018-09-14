@@ -1,0 +1,141 @@
+
+.content-parent
+  .title-area
+    %h1 This is the page title.
+    %h1 It's a html "h1" tag.
+    %h1 Titles and headers use the corporate Font, Netto.
+.content-parent
+  .content-area-1
+    %h2 This is the header for the first content area, it's an "h2" tag.
+    %p This some body text, it uses the html "p" tag. Body text should use Helvetica Neue, Arial or Sans Serif font-families.
+    %p Body should use sentence case.
+    %p Below are some radio buttons.
+    %form
+      .checkbox
+        %input{:type=>"radio", :id=>"styleguideRadio1", :name=>"styleguideRadio", :class=>"styleguideRadio"}
+        %label{:for=>"solar"} This is a label
+      .checkbox
+        %input{:type=>"radio", :id=>"styleguideRadio2", :name=>"styleguideRadio", :class=>"styleguideRadio"}
+        %label{:for=>"battery"} This is a label
+      .checkbox
+        %input{:type=>"radio", :id=>"styleguideRadio3", :name=>"styleguideRadio", :class=>"styleguideRadio"}
+        %label{:for=>"battery"} This is a label
+  .content-area-1
+    %h2 This is an important question, so it has it's own content area. It's also a html "h2" tag.
+    = render "layouts/yes-or-no"
+
+    .radio-content-1
+      %h3 This is a header for a content area that's dependent on the answer above. It's an html "h3" tag.
+      %p You can put some explainer text here using a "p" tag, but the "h3" header should be enough. Content below the yes / no option might be dependent on the answer a user gives.
+      %p Below are input fields:
+      .text-input
+        %form
+          %label This is a multiple choice dropdown
+          %select{:class=>"multipleChoice"}
+            %option{:value=>"1"} Option 1
+            %option{:value=>"2"} Option 2
+            %option{:value=>"3"} Option 3
+          %label This is a free text field
+          %input
+          %label This is a free text field
+          %input
+      .add-inverter
+        %h4 This is an additional or optional requirement header, it uses an html "h4" tag.
+        %h4 Use it when more information is needed, or it's dependent on the information already given, or it's strongly related to the information already given in this content area.
+        %h4 Users should click or tap the plus button below to add the information.
+        %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
+          .plus +
+      .extra-inverter1
+        .text-input
+          %label Additional requirement selection label
+          %select{:class=>"inverterSelector"}
+            %option{:value=>"1"} Option 1
+            %option{:value=>"2"} Option 2
+            %option{:value=>"3"} Option 3
+          %label Free text field
+          %input
+          %label Free text field
+          %input
+        .add-inverter
+          %h4 Additional requirement selection header
+          %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler2"}
+            .plus +
+        .extra-inverter2
+          .text-input
+            %form
+              %label Free text field
+              %input
+              %label Free text field
+              %input
+              %label Free text field
+              %input
+  .content-area-1
+    %h2 Here's another content area asking a user for  more information.
+    %p Below are checkboxes and their labels.
+    .checkbox
+      %input{:type=>"checkbox", :id=>"checkbox1", :name=>"checkbox", :class=>"windQuery"}
+      %label{:for=>"solar"} Option A
+    .checkbox
+      %input{:type=>"checkbox", :id=>"checkbox2", :name=>"checkbox", :class=>"hydroQuery"}
+      %label{:for=>"battery"} Option B
+
+    .wind-content
+      %h3 Further information request, this uses an html "h3" tag.
+      %p And it acts like similar input requests previously:
+      .text-input
+        %form
+          %label Multiple choice dropdown
+          %select{:class=>"inverterSelector2"}
+            %option{:value=>"1"} Option 1
+            %option{:value=>"2"} Option 2
+            %option{:value=>"3"} Option 3
+
+          %label Free text field
+          %input
+
+          %label Free text field
+          %input
+
+    .hydro-content
+      %h3 Further information request, this uses an html "h3" tag.
+      %p And it acts like similar input requests previously:
+      .text-input
+        %form
+          %label Multiple choice dropdown
+          %select{:class=>"inverterSelector2"}
+            %option{:value=>"1"} Option 1
+            %option{:value=>"2"} Option 2
+            %option{:value=>"3"} Option 3
+
+          %label Free text field
+          %input
+
+          %label Free text field
+          %input
+
+  .button-area-1
+    .instructionContent
+      %h3 Here is a blocker - this indicates a user needs to do something on the page in order to continue.
+      %h3 It uses a html "h3" tag.
+
+  .button-area-1
+    %a.button{:href=>"/battery"}
+      This is a Primary Button
+    %a.button.secondary{:href=>"/battery"}
+      This is a secondary button
+    %a.button.tertiary{:href=>"/battery"}
+      This is a tertiary button
+
+  .button-area-1
+    %h3 Here's a header for an explanation which uses an html "h3" tag.
+    %h4 And this is a subheading that uses an "h4" tag.
+    %div
+      %p This section is used to explain to a user immediately why they can't proceed and give them some options.
+      %hr
+      %p These are the options
+      %p This is another option
+    %a.button.secondary{:href=>"/request-assessment"}
+      This is the action for an option
+
+    %a.button.tertiary{:href=>"/nmi-meter-email"}
+      This enables a user to go back
