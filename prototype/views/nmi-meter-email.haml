@@ -8,10 +8,12 @@
       %div
         %h3 Enter your NMI (National Meter Identifier)
         .detail-text This is an 11-digit number, usually on page two of your electricity bill
+        -#%input.warning
         %input
       %div
         %h3 Enter your Meter Number
         .detail-text This is a 7-digit number found on your meter or also on page two of your electricity bill
+        -#%input.warning{:class=>"meterNumber"}
         %input{:class=>"meterNumber"}
       %div
         %h3 How many phases does the property have
@@ -24,19 +26,25 @@
         %h3 Enter the email address of the person managing this grid application
         .detail-text your pre-approval will be sent to this address
         %input
-  .content-area-1.hidden
-    .linkContent2
-      %h3 We can't approve this application at this time
-      %h4 This is because there is no capacity for extra generation at your substation.
-      %div
-        %p We will be unable to approve any applications at this substation using this tool.
-        %p However, you can request to have a review and one of our engineers can take a look.
-      %a.button.secondary{:href=>"/request-assessment"}
-        Request an assessment
+  -#.content-area-1
+  -#  .linkContent2
+  -#    %h3 We can't approve this application at this time
+  -#    %h4 This is because there is no capacity for extra generation at your substation.
+  -#    %div
+  -#      %p We will be unable to approve any applications at this substation using this tool.
+  -#      %p However, you can request to have a review and one of our engineers can take a look.
+  -#    %a.button.secondary{:href=>"/request-assessment"}
+  -#      Request an assessment
+  -#.content-area-1
+  -#  .instructionContent
+  -#    %h3 Please check that the Meter Number and NMI you have entered are correct
+  -#    %h4 We're having trouble validating the numbers entered at our end
+  -#    %div
+  -#      %p If we can't validate the Meter Number with the NMI then we can't pre-approve an application with this tool.
 
   .button-area-1
     .positiveContent
-      %h3 There is sufficient capacity for up to 5kW export per phase at the substation, so you can proceed.
+      %h3 There is sufficient provision for up to 5kW export per phase at the substation, with the installation having a capacity of up to 10kW, so you can proceed.
     %a.button{:href=>"/generation"}
       Next
 

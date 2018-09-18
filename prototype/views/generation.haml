@@ -11,10 +11,15 @@
         %label{:for=>"solar"} New installation
       .checkbox
         %input{:type=>"radio", :id=>"replacementInstallation", :name=>"installationGroup", :class=>"replacementInstallation"}
-        %label{:for=>"battery"} Replacing existing
+        %label{:for=>"battery"} Completely replacing the existing installation
       .checkbox
         %input{:type=>"radio", :id=>"upgradingInstallation", :name=>"installationGroup", :class=>"upgradingInstallation"}
-        %label{:for=>"battery"} Upgrading existing
+        %label{:for=>"battery"} Upgrading or adding to the existing installation
+  .content-area-1.instructionContent.upgradingContent.hidden
+    %h2 In the options below, please add the existing system so we can know what the total upgraded system will be.
+  .content-area-1.instructionContent.replacingContent.hidden
+    %h2 In the options below, please be sure to describe only the new system and completely remove the old one when you're done.
+
   .content-area-1
     %h2 Are you installing a solar generation system?
     = render "layouts/yes-or-no"

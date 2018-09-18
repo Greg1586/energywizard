@@ -37,6 +37,26 @@ $(document).ready(function () {
     $('.inverterToggler2').click(function () {
         $(".extra-inverter2").toggleClass("hidden");
     });
+    $('.replacementInstallation').click(function () {
+        if($('.replacementInstallation').is(':checked')) {
+            $(".replacingContent").removeClass("hidden");
+            $(".upgradingContent").addClass("hidden");
+        }
+    });
+    $('.upgradingInstallation').click(function () {
+        if($('.upgradingInstallation').is(':checked')) {
+            $(".upgradingContent").removeClass("hidden");
+            $(".replacingContent").addClass("hidden");
+        }
+    });
+    // $('.replacementInstallation').click(function () {
+    //     $(".replacingContent").toggleClass("hidden");
+    //     $(".upgradingContent").toggleClass("hidden");
+    // });
+    // $('.upgradingInstallation').click(function () {
+    //     $(".upgradingContent").toggleClass("hidden");
+    //     $(".replacingContent").toggleClass("hidden");
+    // });
     $('.inverterSelector, .inverterSelector2, .inverterSelector3').change(function () {
         if ($(this).val() === '1') {
             $(".linkContent1").hide();

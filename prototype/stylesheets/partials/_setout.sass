@@ -15,7 +15,7 @@ h1, h2, h3, h4, p
   &:last-child
     margin-bottom: 0
 
-h1, h2, h3, h4
+h1, h2, h3, h4, h4 a, h2 b
   color: $ausnet-blue
   font-family: "Ubuntu", "Helvetica Neue", Helvetica, SansSerif
   line-height: 1.25
@@ -32,6 +32,9 @@ h2
 
 h3
   font-weight: 300
+h4 a
+  color: $ausnet-dark-green
+  text-decoration: underline
 
 //Page
 .page
@@ -41,6 +44,8 @@ h3
   display: flex
   flex-direction: column
   align-items: center
+  .content-area-1:last-child, .button-area-1:last-child
+    margin-bottom: 10rem
 .content-area-1, .button-area-1, .title-area
   background-color: transparentize(white, 0.25)
   max-width: 500px

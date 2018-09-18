@@ -190,7 +190,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, p:last-child {
 }
 
 /* line 18, ../../stylesheets/partials/_setout.sass */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h4 a, h2 b {
   color: #28317d;
   font-family: "Ubuntu", "Helvetica Neue", Helvetica, SansSerif;
   line-height: 1.25;
@@ -217,19 +217,29 @@ h3 {
   font-weight: 300;
 }
 
-/* line 37, ../../stylesheets/partials/_setout.sass */
+/* line 35, ../../stylesheets/partials/_setout.sass */
+h4 a {
+  color: #00a653;
+  text-decoration: underline;
+}
+
+/* line 40, ../../stylesheets/partials/_setout.sass */
 .page {
   padding: 30px;
 }
 
-/* line 40, ../../stylesheets/partials/_setout.sass */
+/* line 43, ../../stylesheets/partials/_setout.sass */
 .content-parent {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+/* line 47, ../../stylesheets/partials/_setout.sass */
+.content-parent .content-area-1:last-child, .content-parent .button-area-1:last-child {
+  margin-bottom: 10rem;
+}
 
-/* line 44, ../../stylesheets/partials/_setout.sass */
+/* line 49, ../../stylesheets/partials/_setout.sass */
 .content-area-1, .button-area-1, .title-area {
   background-color: rgba(255, 255, 255, 0.75);
   max-width: 500px;
@@ -239,19 +249,19 @@ h3 {
   width: 100%;
 }
 
-/* line 51, ../../stylesheets/partials/_setout.sass */
+/* line 56, ../../stylesheets/partials/_setout.sass */
 .button-area-1 {
   align-items: flex-end;
 }
 
-/* line 54, ../../stylesheets/partials/_setout.sass */
+/* line 59, ../../stylesheets/partials/_setout.sass */
 .header {
   display: block;
   padding: 10px 10px 10px 30px;
   background-color: #28317d;
   color: white;
 }
-/* line 59, ../../stylesheets/partials/_setout.sass */
+/* line 64, ../../stylesheets/partials/_setout.sass */
 .header a {
   background-color: transparent;
   color: white;
@@ -259,7 +269,7 @@ h3 {
   cursor: pointer;
 }
 
-/* line 67, ../../stylesheets/partials/_setout.sass */
+/* line 72, ../../stylesheets/partials/_setout.sass */
 .text-input input, .text-input select {
   background-color: white;
   border: 1px solid #cccccc;
@@ -269,13 +279,13 @@ h3 {
   padding: 1rem;
   width: 100%;
 }
-/* line 75, ../../stylesheets/partials/_setout.sass */
+/* line 80, ../../stylesheets/partials/_setout.sass */
 .text-input select {
   height: 3.5rem;
 }
 
 @media (max-width: 600px) {
-  /* line 80, ../../stylesheets/partials/_setout.sass */
+  /* line 85, ../../stylesheets/partials/_setout.sass */
   .page {
     padding: 0;
   }
@@ -285,7 +295,7 @@ a {
   text-decoration: none;
 }
 
-/* line 6, ../../stylesheets/partials/_components.sass */
+/* line 7, ../../stylesheets/partials/_components.sass */
 .button {
   background-color: #28317d;
   color: white;
@@ -297,14 +307,14 @@ a {
   text-align: center;
 }
 
-/* line 15, ../../stylesheets/partials/_components.sass */
+/* line 16, ../../stylesheets/partials/_components.sass */
 .secondary {
   background-color: #e0e0e0;
   font-weight: 400;
   color: black;
 }
 
-/* line 19, ../../stylesheets/partials/_components.sass */
+/* line 20, ../../stylesheets/partials/_components.sass */
 .tertiary {
   background-color: whitesmoke;
   color: black;
@@ -312,7 +322,7 @@ a {
   font-weight: normal;
 }
 
-/* line 25, ../../stylesheets/partials/_components.sass */
+/* line 26, ../../stylesheets/partials/_components.sass */
 .yes-no-toggle, .ac-dc-toggle {
   cursor: pointer;
   margin: 30px 0;
@@ -320,7 +330,7 @@ a {
   border: 1px solid #28317d;
 }
 
-/* line 30, ../../stylesheets/partials/_components.sass */
+/* line 31, ../../stylesheets/partials/_components.sass */
 .yes, .no, .ac, .dc {
   flex: 1;
   text-align: center;
@@ -330,60 +340,65 @@ a {
   font-weight: 200;
 }
 
-/* line 37, ../../stylesheets/partials/_components.sass */
+/* line 38, ../../stylesheets/partials/_components.sass */
 .toggle-active {
   background-color: #28317d;
   color: white;
   font-weight: 900;
 }
 
-/* line 42, ../../stylesheets/partials/_components.sass */
+/* line 43, ../../stylesheets/partials/_components.sass */
 a.spacer {
   display: block;
   text-align: center;
 }
 
 /* line 47, ../../stylesheets/partials/_components.sass */
+input.warning {
+  border: 3px solid red;
+}
+
+/* line 51, ../../stylesheets/partials/_components.sass */
 .checkbox {
   display: flex;
   margin: 1rem 0;
 }
-/* line 50, ../../stylesheets/partials/_components.sass */
+/* line 54, ../../stylesheets/partials/_components.sass */
 .checkbox input {
   margin-right: 1rem;
 }
 
-/* line 54, ../../stylesheets/partials/_components.sass */
+/* line 58, ../../stylesheets/partials/_components.sass */
 .line {
   width: 50%;
   margin-bottom: 1rem;
   border-bottom: 0.3rem solid black;
 }
 
-/* line 60, ../../stylesheets/partials/_components.sass */
+/* line 64, ../../stylesheets/partials/_components.sass */
 li {
   margin: 1rem 0 1rem 1rem;
   list-style: disc;
 }
 
-/* line 65, ../../stylesheets/partials/_components.sass */
+/* line 69, ../../stylesheets/partials/_components.sass */
 .dialer {
   margin: 30px 0;
 }
-/* line 67, ../../stylesheets/partials/_components.sass */
+/* line 71, ../../stylesheets/partials/_components.sass */
 .dialer img {
   width: 200px;
   height: 200px;
 }
 
-/* line 72, ../../stylesheets/partials/_components.sass */
+/* line 76, ../../stylesheets/partials/_components.sass */
 input.knob {
   font-size: 3rem;
   font-weight: 900;
   color: black;
 }
 
-/* line 78, ../../stylesheets/partials/_components.sass */
+/* line 82, ../../stylesheets/partials/_components.sass */
 .detail-text {
   color: #4c4c4c;
 }
@@ -445,7 +460,7 @@ input.knob {
   background-color: red;
 }
 /* line 39, ../../stylesheets/partials/_ausnet.sass */
-.instructionContent h3 {
+.instructionContent * {
   color: white;
 }
 
