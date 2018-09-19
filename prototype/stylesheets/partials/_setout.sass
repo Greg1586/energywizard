@@ -67,6 +67,18 @@ h4 a
     text-decoration: none
     cursor: pointer
 
+.approval, .existing, .replacement
+  display: flex
+  flex-wrap: wrap
+  align-items: baseline
+  p, label, input
+    flex-basis: 50%
+    width: 50%
+    margin: 1rem 0 !important
+    &:nth-child(even)
+      font-size: 2rem
+      text-align: right
+
 //inputs
 .text-input
   input, select

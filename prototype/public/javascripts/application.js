@@ -1,19 +1,47 @@
 $(document).ready(function () {
 //togglers
 
-    $('.yes').click(function () {
+    $('.solar-yes').click(function () {
         $(this).toggleClass("toggle-active");
-        $(".no").toggleClass("toggle-active");
+        $(".solar-no").toggleClass("toggle-active");
         $(".radio-content-1").toggleClass("show-class");
         $(".radio-1").toggleClass("radio-toggle-alt");
         $(".radio-2").toggleClass("radio-toggle-alt");
+        // if (($('.solar-yes').is(".toggle-active")) && (!$(".windQuery, .hydroQuery").is(":checked"))) {
+        //     $(".instructionContentBattery").addClass("hidden");
+        // }
     });
-    $('.no').click(function () {
+    $('.solar-no').click(function () {
         $(this).toggleClass("toggle-active");
-        $(".yes").toggleClass("toggle-active");
+        $(".solar-yes").toggleClass("toggle-active");
         $(".radio-content-1").toggleClass("show-class");
         $(".radio-1").toggleClass("radio-toggle-alt");
         $(".radio-2").toggleClass("radio-toggle-alt");
+        // if (($('.solar-no').is(".toggle-active")) && (!$(".windQuery, .hydroQuery").is(":checked"))) {
+        //     $(".instructionContentBattery").removeClass("hidden");
+        //     $(".instructionContent").addClass("hidden");
+        // }
+    });
+    $('.battery-yes').click(function () {
+        $(this).toggleClass("toggle-active");
+        $(".battery-no").toggleClass("toggle-active");
+        $(".radio-content-3").toggleClass("show-class");
+        $(".radio-1").toggleClass("radio-toggle-alt");
+        $(".radio-2").toggleClass("radio-toggle-alt");
+        // if (($('.battery-yes').is(".toggle-active")) && (!$(".windQuery, .hydroQuery").is(":checked"))) {
+        //     $(".instructionContentBattery").addClass("hidden");
+        // }
+    });
+    $('.battery-no').click(function () {
+        $(this).toggleClass("toggle-active");
+        $(".battery-yes").toggleClass("toggle-active");
+        $(".radio-content-3").toggleClass("show-class");
+        $(".radio-1").toggleClass("radio-toggle-alt");
+        $(".radio-2").toggleClass("radio-toggle-alt");
+        // if (($('.battery-no').is(".toggle-active")) && (!$(".windQuery, .hydroQuery").is(":checked"))) {
+        //     $(".instructionContentBattery").removeClass("hidden");
+        //     $(".instructionContent").addClass("hidden");
+        // }
     });
     $('.dc').click(function () {
         $(this).toggleClass("toggle-active");
@@ -27,9 +55,11 @@ $(document).ready(function () {
     });
     $('.windQuery').click(function () {
         $(".wind-content").toggleClass("hidden");
+        $(".instructionContentBattery").addClass("hidden");
     });
     $('.hydroQuery').click(function () {
         $(".hydro-content").toggleClass("hidden");
+        $(".instructionContentBattery").addClass("hidden");
     });
     $('.inverterToggler1').click(function () {
         $(".extra-inverter1").toggleClass("hidden");
@@ -49,14 +79,12 @@ $(document).ready(function () {
             $(".replacingContent").addClass("hidden");
         }
     });
-    // $('.replacementInstallation').click(function () {
-    //     $(".replacingContent").toggleClass("hidden");
-    //     $(".upgradingContent").toggleClass("hidden");
-    // });
-    // $('.upgradingInstallation').click(function () {
-    //     $(".upgradingContent").toggleClass("hidden");
-    //     $(".replacingContent").toggleClass("hidden");
-    // });
+    $('.newInstallation').click(function () {
+        if($('.newInstallation').is(':checked')) {
+            $(".upgradingContent").addClass("hidden");
+            $(".replacingContent").addClass("hidden");
+        }
+    });
     $('.inverterSelector, .inverterSelector2, .inverterSelector3').change(function () {
         if ($(this).val() === '1') {
             $(".linkContent1").hide();
@@ -71,6 +99,14 @@ $(document).ready(function () {
             $(".instructionContent").hide();
             $(".linkContent2").show();
             $(".linkContent1").hide();
+        }
+    });
+    $('.phaseSelector').change(function () {
+        if ($(this).val() !== '1') {
+            $(".phase").show();
+        }
+        if ($(this).val() === '1') {
+            $(".phase").hide();
         }
     });
 });

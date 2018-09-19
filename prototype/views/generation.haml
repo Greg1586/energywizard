@@ -1,5 +1,7 @@
 
 .content-parent
+  .content-area-1.positiveContent
+    %h3 There is sufficient provision for up to 5kW export per phase at the substation, with the installation having a capacity of up to 10kW.
   .title-area
     %h1 Please tell us about your installation
 .content-parent
@@ -15,14 +17,33 @@
       .checkbox
         %input{:type=>"radio", :id=>"upgradingInstallation", :name=>"installationGroup", :class=>"upgradingInstallation"}
         %label{:for=>"battery"} Upgrading or adding to the existing installation
-  .content-area-1.instructionContent.upgradingContent.hidden
-    %h2 In the options below, please add the existing system so we can know what the total upgraded system will be.
-  .content-area-1.instructionContent.replacingContent.hidden
-    %h2 In the options below, please be sure to describe only the new system and completely remove the old one when you're done.
-
+  .content-area-1.upgradingContent.hidden
+    %h2 Please tell us about your existing system:
+    .existing
+      %label Existing rating
+      %input
+      %label Existing export limit
+      %input
+  .content-area-1.replacingContent.hidden
+    %h2 Please tell us about your the system you are replacing:
+    .replacement
+      %label Existing rating
+      %input
+      %label Existing export limit
+      %input
+  .content-area-1
+    %h2 How many phases does the property have?
+    %p Most residential properties have 1.
+    .text-input
+      %select{:class=>"phaseSelector"}
+        %option{:value=>"1"} 1
+        %option{:value=>"2"} 2
+        %option{:value=>"3"} 3
   .content-area-1
     %h2 Are you installing a solar generation system?
-    = render "layouts/yes-or-no"
+    .solar-yes-no-toggle
+      .solar-yes.toggle-active yes
+      .solar-no no
 
     .radio-content-1.hidden.show-class
       %h3 What inverter do you plan to use?
@@ -37,6 +58,12 @@
           %input
           %label Quantity
           %input
+        .phase.hidden
+          %label Which phase will this inverter go on?
+          %select
+            %option{:value=>"1"} 1
+            %option{:value=>"2"} 2
+            %option{:value=>"3"} 3
       .add-inverter
         %h4 add an inverter...
         %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
@@ -52,6 +79,12 @@
           %input
           %label Quantity
           %input
+          .phase.hidden
+            %label Which phase will this inverter go on?
+            %select
+              %option{:value=>"1"} 1
+              %option{:value=>"2"} 2
+              %option{:value=>"3"} 3
         .add-inverter
           %h4 add an inverter...
           %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler2"}
@@ -65,6 +98,77 @@
               %input
               %label Quantity
               %input
+            .phase.hidden
+              %label Which phase will this inverter go on?
+              %select
+                %option{:value=>"1"} 1
+                %option{:value=>"2"} 2
+                %option{:value=>"3"} 3
+  .content-area-1
+    %h2 Are you installing a battery as part of the system?
+    .battery-yes-no-toggle
+      .battery-yes.toggle-active yes
+      .battery-no no
+    .radio-content-3.hidden.show-class
+      %h3 Please tell us about how your battery system is coupled
+      %h2 Is your system AC or DC coupled?
+      .ac-dc-toggle
+        .ac.toggle-active AC
+        .dc DC
+      .radio-content-2
+        %h2 What AC battery inverter do you plan to use?
+        %form
+          .text-input
+            %label Battery inverter manufacturer
+            %input
+            %label Battery inverter model
+            %input
+            %label Quantity
+            %input
+            .phase.hidden
+              %label Which phase will this inverter go on?
+              %select
+                %option{:value=>"1"} 1
+                %option{:value=>"2"} 2
+                %option{:value=>"3"} 3
+        .add-inverter
+          %h3 add another battery inverter
+          %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
+            .plus +
+        .extra-inverter1.hidden
+          .text-input
+            %form
+              %label Battery inverter manufacturer
+              %input
+              %label Battery inverter model
+              %input
+              %label Quantity
+              %input
+              .phase.hidden
+                %label Which phase will this inverter go on?
+                %select
+                  %option{:value=>"1"} 1
+                  %option{:value=>"2"} 2
+                  %option{:value=>"3"} 3
+          .add-inverter
+            %h3 add another battery inverter
+            %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler2"}
+              .plus +
+        .extra-inverter2.hidden
+          .text-input
+            %form
+              %label Battery inverter manufacturer
+              %input
+              %label Battery inverter model
+              %input
+              %label Quantity
+              %input
+            .phase.hidden
+              %label Which phase will this inverter go on?
+              %select
+                %option{:value=>"1"} 1
+                %option{:value=>"2"} 2
+                %option{:value=>"3"} 3
   .content-area-1
     %h2 Are you installing Wind or Hydro?
     .checkbox
@@ -83,13 +187,16 @@
             %option{:value=>"1"} please select...
             %option{:value=>"2"} CEC Approved NEC 3360 Inverter
             %option{:value=>"3"} CEC Approved Toshiba 2745 Inverter
-
           %label Inverter model
           %input
-
           %label Quantity
           %input
-
+        .phase.hidden
+          %label Which phase will this inverter go on?
+          %select
+            %option{:value=>"1"} 1
+            %option{:value=>"2"} 2
+            %option{:value=>"3"} 3
     .hydro-content.hidden
       %h3 What inverter do you plan to use for your hydro system?
       .text-input
@@ -99,18 +206,44 @@
             %option{:value=>"1"} please select...
             %option{:value=>"2"} CEC Approved GenTrax 1000 Inverter
             %option{:value=>"3"} CEC Approved Toshiba 2745 Inverter
-
           %label Inverter model
           %input
-
           %label Quantity
           %input
+        .phase.hidden
+          %label Which phase will this inverter go on?
+          %select
+            %option{:value=>"1"} 1
+            %option{:value=>"2"} 2
+            %option{:value=>"3"} 3
+  .content-area-1.positiveContent
+    %h2 Based on the inverters you've chosen, here's your summary so far
+    .approval.existingApproval.hidden
+      %p Capacity
+      %p 7kW
+      %p Export
+      %p 2kW
+    .approval.newApproval.hidden
+      %p Capacity
+      %p 2kW
+      %p Export
+      %p 1kW
+    .approval.totalApproval
+      %p Capacity
+      %p 9kW
+      %p Export
+      %p 3kW
   .button-area-1
+    .instructionContentBattery.hidden
+      %h3 It looks like you're not installing any generation.
+      %h4 If this is correct, and you only want to install a battery, please continue.
+      %h4 If this doesn't sound right, please check the options above to add generation.
+      %a.button.secondary{:href=>"/battery"}
+        I just want batteries
     .instructionContent
       %h3 You need to select one or more inverters before you can continue
     .linkContent1
-
-      %a.button{:href=>"/battery"}
+      %a.button{:href=>"/export"}
         Next
     .linkContent2
       %h3 We can't approve this application at this time

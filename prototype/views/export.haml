@@ -2,26 +2,29 @@
   .title-area
     %h1 Your export and system summary
 .content-parent
-  .content-area-1
+  .content-area-1.positiveContent
     %h2 Export summary
-    %h3 The maximum available to you for this meter is 3.5kw.
-    .dialer
-      %img{:src=>"/images/dialer.png"}
+    %h1 The maximum available to you for this meter is 4.5kw.
+    -#.dialer
+    -#  %img{:src=>"/images/dialer.png"}
 
   .content-area-1
     %h2 System summary
-    %h3 Your inverter's predetermined export capacity is 3.5kW
-    %h4 Solar
+    %h3 Your inverter's predetermined export capacity is 4.5kW
+    %h4 Solar inverters - 3
     %ul
       %li Inverter: "CEC Approved NEC 9810 Inverter"
-      %li Export: 3.5kW
-      %li Capacity: 7.6kW
+      %li Inverter: "CEC Approved Toshiba Electronics 8830 Inverter"
+      %li Inverter: "CEC Approved AusGrid Systems t1000 Inverter"
+      %li Export: 4.5kW
+      %li Capacity: 9kW
 
 
   .button-area-1
     .positiveContent
-      %h3 You can get approval for this installation
-      %p The approval is valid for the export and capacity shown or a lower export and/or lower capacity
+      %h3 You can get approval for this installation.
+      %p The approval is valid for the export and capacity shown or a lower export and/or lower capacity.
+      %h3 Click below to have the pre-approval emailed to you.
     %a.button{:href=>"/finished"}
       Get Approval
     %a.button.tertiary{:href=>"/battery"}
