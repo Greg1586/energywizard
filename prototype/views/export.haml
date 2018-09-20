@@ -2,29 +2,76 @@
   .title-area
     %h1 Your export and system summary
 .content-parent
-  .content-area-1.positiveContent
-    %h2 Export summary
-    %h1 The maximum available to you for this meter is 4.5kw.
+  -#.content-area-1.positiveContent
+  -#  %h2 Export summary
+  -#  %h1 The maximum available to you for this meter is 4.5kw.
     -#.dialer
     -#  %img{:src=>"/images/dialer.png"}
 
   .content-area-1
     %h2 System summary
-    %h3 Your inverter's predetermined export capacity is 4.5kW
-    %h4 Solar inverters - 3
-    %ul
-      %li Inverter: "CEC Approved NEC 9810 Inverter"
-      %li Inverter: "CEC Approved Toshiba Electronics 8830 Inverter"
-      %li Inverter: "CEC Approved AusGrid Systems t1000 Inverter"
-      %li Export: 4.5kW
-      %li Capacity: 9kW
+    %h3 Your systems predetermined export is 4.5kW
+    %h3 Your systems predetermined capacity is 6kW
+    %table.summary-table
+      %tr
+        %th Inverter
+        %th Capacity
+        %th Export
+        %th Phase
+      %tr
+        %td Inverter 2
+        %td 1.5kW
+        %td 1kW
+        %td A
+      %tr
+        %td Inverter 3
+        %td 2.5kW
+        %td 1.5kW
+        %td A
+      %tr
+        %td Inverter 4
+        %td 1kW
+        %td 1kW
+        %td B
+      %tr
+        %td Inverter 5
+        %td 0.5kW
+        %td 0.5kW
+        %td B
+      %tr
+        %td Inverter 6
+        %td 0.5kW
+        %td 0.5kW
+        %td C
+      %tr.phaseTotal.summaryTable
+        %td Phase A Total
+        %td 4kW
+        %td 2.5kW
+        %td
+      %tr.phaseTotal
+        %td Phase B Total
+        %td 1.5kW
+        %td 1.5kW
+        %td
+      %tr.phaseTotal
+        %td Phase C Total
+        %td 0.5kW
+        %td 0.5kW
+        %td
+      %tr.phaseTotal.summaryTable#installationSummary
+        %td Installation Total
+        %td 6kW
+        %td 4.5kW
+        %td
 
+  .content-area-1.positiveContent
+    %h1 You can get approval for this installation.
+    %p The approval is valid for the export and capacity shown or a lower export and/or lower capacity.
+    %h3 Click below to have the pre-approval emailed to you.
+    %h3
+      %b Your reference number is 1024888
 
   .button-area-1
-    .positiveContent
-      %h3 You can get approval for this installation.
-      %p The approval is valid for the export and capacity shown or a lower export and/or lower capacity.
-      %h3 Click below to have the pre-approval emailed to you.
     %a.button{:href=>"/finished"}
       Get Approval
     %a.button.tertiary{:href=>"/battery"}

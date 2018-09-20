@@ -42,6 +42,8 @@
   background-color: $ausnet-green
   h3
     color: $ausnet-blue
+    b
+      color: black
 .terms-conditions
   overflow-y: scroll
   height: 600px
@@ -49,6 +51,7 @@
 .plus-button
   align-items: center
   background-color: $ausnet-blue
+  border-radius: 10px
   color: white
   display: flex
   font-size: 3rem
@@ -59,9 +62,13 @@
   position: relative
 
 .plus
-  top: -0.3rem
   position: absolute
 
+.captcha
+  width: 100%
+
+.extra-inverter1, .extra-inverter2
+  margin-top: 2rem
 
 .phasing
   align-items: flex-end
@@ -78,3 +85,28 @@
     margin: 1rem 0
   .text-input input
     margin: 0
+
+
+
+
+.quantity
+  display: flex
+  > div:first-child
+    flex: 2
+    padding-right: 30px
+  .remove-inverter
+    flex: 1
+  input
+    width: 100%
+    margin-top: 1rem
+    height: 3rem
+  .remove-inverter
+    align-items: flex-end
+    .secondary
+      font-size: 1rem
+
+.add-inverter
+  h3
+    border-top: 2px solid $ausnet-grey
+    margin-top: 2rem
+    padding-top: 2rem

@@ -3,139 +3,222 @@
   .title-area
     %h1 This is the page title.
     %h1 It's a html "h1" tag.
-    %h1 Titles and headers use the corporate Font, Netto.
+    %h1 H1 always uses the corporate Font, Netto.
+
 .content-parent
+  .content-area-1.positiveContent
+    %h2 This is content that provides a user some useful or positive information.
+    %p It can be used anywhere on the page, and will often have content in it that's dependent on what information the user has told us, such as their maximum capacity and export, or what ratings their property already has.
+
+  .content-area-1.instructionContent
+    %h2 This is content that provides the user a prompt to do something, like change their inverters
+    %p It can be used anywhere on the page, and just like the green box, will often have content in it that's dependent on what information the user has told us.
+
   .content-area-1
     %h2 This is the header for the first content area, it's an "h2" tag.
-    %p This some body text, it uses the html "p" tag. Body text should use Helvetica Neue, Arial or Sans Serif font-families.
+    %h2 Everything that's an H2 and below should use Arial or Sans Serif.
+    %p This some body text, it uses the html "p" tag. Body text should use Arial or Sans Serif font-families.
     %p Body should use sentence case.
-    %p Below are some radio buttons.
+
+
+
+  .content-area-1
+    %h1
+      %b Page Elements
+    %h1 This is a Page Header, h1
+    %h2 This is a Section Header, h2
+    %h3 This is a Sub-section Header, h3
+    %h4 This is a Sub-section Header, h4
+    %br
+    %h2
+      %b Binary Questions
+    %p Many of the options in the Pre-Approval Prototype are "yes / no" or similar questions, with additional questions depending on this answer.
+    = render "layouts/yes-or-no"
+    %br
+    %h2
+      %b Forms
+    %h3 Input fields:
+    .text-input
+      %form
+        %label This is a multiple choice dropdown
+        %select{:class=>"multipleChoice"}
+          %option{:value=>"1"} Option 1
+          %option{:value=>"2"} Option 2
+          %option{:value=>"3"} Option 3
+        %label This is a free text field
+        %input
+        %label This is a free text field with a warning - use it if validation fails, or a user has forgotten to add the right information.
+        %input.warning
+    %br
+    %h3
+      %b Radio Buttons
+    %p use these if you want a user to select only one of a few different options
     %form
       .checkbox
         %input{:type=>"radio", :id=>"styleguideRadio1", :name=>"styleguideRadio", :class=>"styleguideRadio"}
-        %label{:for=>"solar"} This is a label
+        %label{:for=>"Option1"} This is a radio option
       .checkbox
         %input{:type=>"radio", :id=>"styleguideRadio2", :name=>"styleguideRadio", :class=>"styleguideRadio"}
-        %label{:for=>"battery"} This is a label
+        %label{:for=>"Option2"} This is a radio option
       .checkbox
         %input{:type=>"radio", :id=>"styleguideRadio3", :name=>"styleguideRadio", :class=>"styleguideRadio"}
-        %label{:for=>"battery"} This is a label
-  .content-area-1
-    %h2 This is an important question, so it has it's own content area. It's also a html "h2" tag.
-    = render "layouts/yes-or-no"
-
-    .radio-content-1
-      %h3 This is a header for a content area that's dependent on the answer above. It's an html "h3" tag.
-      %p You can put some explainer text here using a "p" tag, but the "h3" header should be enough. Content below the yes / no option might be dependent on the answer a user gives.
-      %p Below are input fields:
-      .text-input
-        %form
-          %label This is a multiple choice dropdown
-          %select{:class=>"multipleChoice"}
-            %option{:value=>"1"} Option 1
-            %option{:value=>"2"} Option 2
-            %option{:value=>"3"} Option 3
-          %label This is a free text field
-          %input
-          %label This is a free text field
-          %input
-      .add-inverter
-        %h4 This is an additional or optional requirement header, it uses an html "h4" tag.
-        %h4 Use it when more information is needed, or it's dependent on the information already given, or it's strongly related to the information already given in this content area.
-        %h4 Users should click or tap the plus button below to add the information.
-        %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
-          .plus +
-      .extra-inverter1
-        .text-input
-          %label Additional requirement selection label
-          %select{:class=>"inverterSelector"}
-            %option{:value=>"1"} Option 1
-            %option{:value=>"2"} Option 2
-            %option{:value=>"3"} Option 3
-          %label Free text field
-          %input
-          %label Free text field
-          %input
-        .add-inverter
-          %h4 Additional requirement selection header
-          %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler2"}
-            .plus +
-        .extra-inverter2
-          .text-input
-            %form
-              %label Free text field
-              %input
-              %label Free text field
-              %input
-              %label Free text field
-              %input
-  .content-area-1
-    %h2 Here's another content area asking a user for  more information.
-    %p Below are checkboxes and their labels.
-    .checkbox
-      %input{:type=>"checkbox", :id=>"checkbox1", :name=>"checkbox", :class=>"windQuery"}
-      %label{:for=>"solar"} Option A
-    .checkbox
-      %input{:type=>"checkbox", :id=>"checkbox2", :name=>"checkbox", :class=>"hydroQuery"}
-      %label{:for=>"battery"} Option B
-
-    .wind-content
-      %h3 Further information request, this uses an html "h3" tag.
-      %p And it acts like similar input requests previously:
-      .text-input
-        %form
-          %label Multiple choice dropdown
-          %select{:class=>"inverterSelector2"}
-            %option{:value=>"1"} Option 1
-            %option{:value=>"2"} Option 2
-            %option{:value=>"3"} Option 3
-
-          %label Free text field
-          %input
-
-          %label Free text field
-          %input
-
-    .hydro-content
-      %h3 Further information request, this uses an html "h3" tag.
-      %p And it acts like similar input requests previously:
-      .text-input
-        %form
-          %label Multiple choice dropdown
-          %select{:class=>"inverterSelector2"}
-            %option{:value=>"1"} Option 1
-            %option{:value=>"2"} Option 2
-            %option{:value=>"3"} Option 3
-
-          %label Free text field
-          %input
-
-          %label Free text field
-          %input
-
-  .button-area-1
-    .instructionContent
-      %h3 Here is a blocker - this indicates a user needs to do something on the page in order to continue.
-      %h3 It uses a html "h3" tag.
-
-  .button-area-1
+        %label{:for=>"Option3"} This is a radio option
+    %h3
+      %b Checkboxes
+    %form
+      .checkbox
+        %input{:type=>"checkbox", :name=>"styleguideCheckbox", :class=>"styleguideCheckbox"}
+        %label{:for=>"Option1"} This is a checkbox option
+      .checkbox
+        %input{:type=>"checkbox", :name=>"styleguideCheckbox", :class=>"styleguideCheckbox"}
+        %label{:for=>"Option2"} This is a checkbox option
+      .checkbox
+        %input{:type=>"checkbox", :name=>"styleguideCheckbox", :class=>"styleguideCheckbox"}
+        %label{:for=>"Option3"} This is a checkbox option
+    %br
+    %h2
+      %b Buttons
     %a.button{:href=>"/battery"}
       This is a Primary Button
     %a.button.secondary{:href=>"/battery"}
       This is a secondary button
     %a.button.tertiary{:href=>"/battery"}
       This is a tertiary button
+    %br
+    %p this is a custom "plus" button, used to add extra inverters
+    %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
+      .plus +
+    %br
+
+    %h2
+      %b Tables
+
+    %h2 This is a sample table
+    %table.summary-table
+      %tr
+        %th Column header
+        %th Column header
+        %th Column header
+        %th Column header
+      %tr
+        %td Data Row 1
+        %td Data Cell
+        %td Data Cell
+        %td Data Cell
+      %tr
+        %td Data Row 2
+        %td Data Cell
+        %td Data Cell
+        %td Data Cell
+
+      %tr.phaseTotal.summaryTable
+        %td Summary Row 1
+        %td Summary Data
+        %td Summary Data
+        %td
+      %tr.phaseTotal.summaryTable#installationSummary
+        %td Total Row
+        %td Total Data
+        %td Total Data
+        %td
+.content-parent
+  .content-area-1
+    %h3 Design Principles
+    %h3 Most content will go in it's own content box.
+    %h4 This box has a mid-grey outline and a slightly heavier top border.
+    %p This means all questions relating to solar go in one content box.
+    %p All questions relating to batteries go in another content box.
+    %p Any questions relating to hydro go in another content box.
+    %p Any questions relating to wind go in another content box.
+    %p Given the -pre-approval tool is a form, users will respond well to it being vertically aligned and of a fixed width, centrally on the page.
+    %p As such, a content width of 500px is used for all content areas, with width reducing for mobile.
+    %p As much as is possible, inputs and buttons should fill the width of the container, with 30px padding either side.
+    %p There are some exceptions, such as the "plus" button, which is smaller as an affordance to clicking.
+    %h3 Buttons
+    %p Buttons should go in the box relating to the action they are associated with.
+    %a.button{:href=>"/styleguide"}
+      This is a primary content-level button
+    %a.button.secondary{:href=>"/styleguide"}
+      This is a secondary content-level button
+    %a.button.tertiary{:href=>"/styleguide"}
+      This is an tertiary content-level button
+
 
   .button-area-1
-    %h3 Here's a header for an explanation which uses an html "h3" tag.
-    %h4 And this is a subheading that uses an "h4" tag.
-    %div
-      %p This section is used to explain to a user immediately why they can't proceed and give them some options.
-      %hr
-      %p These are the options
-      %p This is another option
-    %a.button.secondary{:href=>"/request-assessment"}
-      This is the action for an option
-
-    %a.button.tertiary{:href=>"/nmi-meter-email"}
+    %p Page-level buttons, such as "Next" and "Go Back" should live in their own box.
+    %a.button{:href=>"/styleguide"}
+      This is a page-level button
+    %a.button.tertiary{:href=>"/styleguide"}
       This enables a user to go back
+
+.content-parent
+  .content-area-1
+    %h1 Page and background
+    %p The entire page should nestle within the existing header and footer of the AusNet Services website.
+    %p With the exception of the red and green boxes all content should be on a white background.
+    %p Behind all this, there should be the stacking cube motif as seen on the AusNet Services website.
+
+.content-parent
+  .content-area-1
+    %h1 Sample Page Layout
+    %p Below is a sample page layout, including several separated content areas, and a separate area for buttons.
+    %br
+    %h2 First up, there's a starter question
+    = render "layouts/yes-or-no"
+    %br
+    %h2 Then there's some questions based on that answer
+    %p If a user answers "no" above, then all of the inputs related to that "yes / no" in the box should disappear.
+    %p In most cases, users will be detailing the inverter setup for their proposed system.
+    .text-input
+      %form
+        %label This is a multiple choice dropdown
+        %select{:class=>"multipleChoice"}
+          %option{:value=>"1"} Option 1
+          %option{:value=>"2"} Option 2
+          %option{:value=>"3"} Option 3
+        %label This is a free text field
+        %input
+      %form.quantity
+        %div
+          %label Quantity
+          %input
+        .remove-inverter
+          .button.secondary remove this inverter
+    %h3 Users should be given the opportunity to add more inverters, or remove them if they make a mistake.
+    .add-inverter
+      %h3 add an inverter...
+      %p This section expands when a user clicks the "plus" button, and it duplicates the inputs above.
+      %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
+        .plus +
+    %br
+
+  .content-area-1
+    %h2 This is another content area
+    %p If the user has already filled in information about their solar inverters, we might use this section to ask them about their battery inverters.
+    %br
+    %h3 Is your system configuration AC or DC coupled?
+    .ac-dc-toggle
+      .ac.toggle-active AC
+      .dc DC
+    .text-input
+      %form
+        %label This is a multiple choice dropdown
+        %select{:class=>"multipleChoice"}
+          %option{:value=>"1"} Option 1
+          %option{:value=>"2"} Option 2
+          %option{:value=>"3"} Option 3
+        %label This is a free text field
+        %input
+      %form.quantity
+        %div
+          %label Quantity
+          %input
+        .remove-inverter
+          .button.secondary remove this inverter
+  .button-area-1
+    %h2 Finally, we can have page-level actions
+    %p these can happen once a user has entered all their data.
+    %a.button{:href=>"/styleguide"}
+      Next
+    %a.button.tertiary{:href=>"/styleguide"}
+      Go back

@@ -1,12 +1,14 @@
 @import "variables"
 
+//Elements
+
 *
   box-sizing: border-box
-  font-family: "Helvetica Neue", Helvetica, Arial, SansSerif
+  font-family: Arial, SansSerif
 
 html
-  background-image: url("/images/Background-01.png")
   background-size: cover
+  background: url("/images/Background-03.png")
 
 h1, h2, h3, h4, p
   margin: 1rem 0
@@ -16,8 +18,7 @@ h1, h2, h3, h4, p
     margin-bottom: 0
 
 h1, h2, h3, h4, h4 a, h2 b
-  color: $ausnet-blue
-  font-family: "Ubuntu", "Helvetica Neue", Helvetica, SansSerif
+  color: $ausnet-dark-blue
   line-height: 1.25
 
 h2, h3
@@ -36,6 +37,18 @@ h4 a
   color: $ausnet-dark-green
   text-decoration: underline
 
+table
+  width: 100%
+  th, td
+    padding: 1rem 0
+  th
+    text-align: left
+  .summaryTable
+    border-top: 2px solid $ausnet-dark-blue
+  #installationSummary
+    font-size: 1.5rem
+    font-weight: bold
+
 //Page
 .page
   padding: 30px
@@ -47,11 +60,12 @@ h4 a
   .content-area-1:last-child, .button-area-1:last-child
     margin-bottom: 10rem
 .content-area-1, .button-area-1, .title-area
-  background-color: transparentize(white, 0.25)
+  background-color: white
+  border: 1px solid $ausnet-grey
+  border-top:  7px solid $ausnet-grey
+  margin: 10px
   max-width: 500px
   padding: 30px
-  margin: 10px
-  border: 1px solid white
   width: 100%
 .button-area-1
   align-items: flex-end
@@ -59,7 +73,7 @@ h4 a
 .header
   display: block
   padding: 10px 10px 10px 30px
-  background-color: $ausnet-blue
+  background-color: $ausnet-dark-blue
   color: white
   a
     background-color: transparent
@@ -67,17 +81,6 @@ h4 a
     text-decoration: none
     cursor: pointer
 
-.approval, .existing, .replacement
-  display: flex
-  flex-wrap: wrap
-  align-items: baseline
-  p, label, input
-    flex-basis: 50%
-    width: 50%
-    margin: 1rem 0 !important
-    &:nth-child(even)
-      font-size: 2rem
-      text-align: right
 
 //inputs
 .text-input

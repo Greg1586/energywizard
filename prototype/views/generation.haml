@@ -5,40 +5,7 @@
   .title-area
     %h1 Please tell us about your installation
 .content-parent
-  .content-area-1
-    %h2 Which of these best describes your installation?
-    %form
-      .checkbox
-        %input{:type=>"radio", :id=>"newInstallation", :name=>"installationGroup", :class=>"newInstallation"}
-        %label{:for=>"solar"} New installation
-      .checkbox
-        %input{:type=>"radio", :id=>"replacementInstallation", :name=>"installationGroup", :class=>"replacementInstallation"}
-        %label{:for=>"battery"} Completely replacing the existing installation
-      .checkbox
-        %input{:type=>"radio", :id=>"upgradingInstallation", :name=>"installationGroup", :class=>"upgradingInstallation"}
-        %label{:for=>"battery"} Upgrading or adding to the existing installation
-  .content-area-1.upgradingContent.hidden
-    %h2 Please tell us about your existing system:
-    .existing
-      %label Existing rating
-      %input
-      %label Existing export limit
-      %input
-  .content-area-1.replacingContent.hidden
-    %h2 Please tell us about your the system you are replacing:
-    .replacement
-      %label Existing rating
-      %input
-      %label Existing export limit
-      %input
-  .content-area-1
-    %h2 How many phases does the property have?
-    %p Most residential properties have 1.
-    .text-input
-      %select{:class=>"phaseSelector"}
-        %option{:value=>"1"} 1
-        %option{:value=>"2"} 2
-        %option{:value=>"3"} 3
+
   .content-area-1
     %h2 Are you installing a solar generation system?
     .solar-yes-no-toggle
@@ -56,16 +23,16 @@
             %option{:value=>"3"} CEC Approved NEC 9000 Inverter
           %label Solar inverter model
           %input
-          %label Quantity
-          %input
-        .phase.hidden
+        .phase
           %label Which phase will this inverter go on?
           %select
-            %option{:value=>"1"} 1
-            %option{:value=>"2"} 2
-            %option{:value=>"3"} 3
+            %option{:value=>"1"} A
+            %option{:value=>"2"} B
+            %option{:value=>"3"} C
+          %label Quantity
+          %input
       .add-inverter
-        %h4 add an inverter...
+        %h3 add an inverter...
         %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
           .plus +
       .extra-inverter1.hidden
@@ -77,17 +44,21 @@
             %option{:value=>"3"} CEC Approved NEC 9000 Inverter
           %label Solar inverter model
           %input
-          %label Quantity
-          %input
-          .phase.hidden
+          .phase
             %label Which phase will this inverter go on?
             %select
-              %option{:value=>"1"} 1
-              %option{:value=>"2"} 2
-              %option{:value=>"3"} 3
+              %option{:value=>"1"} A
+              %option{:value=>"2"} B
+              %option{:value=>"3"} C
+        %form.quantity
+          .text-input
+            %label Quantity
+            %input
+          .remove-inverter
+            .button.secondary remove this inverter
         .add-inverter
-          %h4 add an inverter...
-          %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler2"}
+          %h3 add another inverter...
+          %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
             .plus +
         .extra-inverter2.hidden
           .text-input
@@ -96,14 +67,19 @@
               %input
               %label Solar inverter model
               %input
-              %label Quantity
-              %input
-            .phase.hidden
+            .phase
               %label Which phase will this inverter go on?
               %select
-                %option{:value=>"1"} 1
-                %option{:value=>"2"} 2
-                %option{:value=>"3"} 3
+                %option{:value=>"1"} A
+                %option{:value=>"2"} B
+                %option{:value=>"3"} C
+            %form.quantity
+              %div
+                %label Quantity
+                %input
+              .remove-inverter
+                .button.secondary remove this inverter
+
   .content-area-1
     %h2 Are you installing a battery as part of the system?
     .battery-yes-no-toggle
@@ -125,12 +101,12 @@
             %input
             %label Quantity
             %input
-            .phase.hidden
+            .phase
               %label Which phase will this inverter go on?
               %select
-                %option{:value=>"1"} 1
-                %option{:value=>"2"} 2
-                %option{:value=>"3"} 3
+                %option{:value=>"1"} A
+                %option{:value=>"2"} B
+                %option{:value=>"3"} C
         .add-inverter
           %h3 add another battery inverter
           %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
@@ -142,14 +118,18 @@
               %input
               %label Battery inverter model
               %input
-              %label Quantity
-              %input
-              .phase.hidden
-                %label Which phase will this inverter go on?
-                %select
-                  %option{:value=>"1"} 1
-                  %option{:value=>"2"} 2
-                  %option{:value=>"3"} 3
+            .phase
+              %label Which phase will this inverter go on?
+              %select
+                %option{:value=>"1"} A
+                %option{:value=>"2"} B
+                %option{:value=>"3"} C
+            %form.quantity
+              %div
+                %label Quantity
+                %input
+              .remove-inverter
+                .button.secondary remove this inverter
           .add-inverter
             %h3 add another battery inverter
             %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler2"}
@@ -161,78 +141,73 @@
               %input
               %label Battery inverter model
               %input
-              %label Quantity
-              %input
-            .phase.hidden
+            .phase
               %label Which phase will this inverter go on?
               %select
-                %option{:value=>"1"} 1
-                %option{:value=>"2"} 2
-                %option{:value=>"3"} 3
-  .content-area-1
-    %h2 Are you installing Wind or Hydro?
-    .checkbox
-      %input{:type=>"checkbox", :id=>"windQuery", :name=>"windQuery", :class=>"windQuery"}
-      %label{:for=>"solar"} Wind
-    .checkbox
-      %input{:type=>"checkbox", :id=>"hydroQuery", :name=>"hydroQuery", :class=>"hydroQuery"}
-      %label{:for=>"battery"} Hydro
+                %option{:value=>"1"} A
+                %option{:value=>"2"} B
+                %option{:value=>"3"} C
+            %form.quantity
+              %div
+                %label Quantity
+                %input
+              .remove-inverter
+                .button.secondary remove this inverter
 
-    .wind-content.hidden
-      %h3 What inverter do you plan to use for your wind system?
-      .text-input
-        %form
-          %label Inverter manufacturer
-          %select{:class=>"inverterSelector2"}
-            %option{:value=>"1"} please select...
-            %option{:value=>"2"} CEC Approved NEC 3360 Inverter
-            %option{:value=>"3"} CEC Approved Toshiba 2745 Inverter
-          %label Inverter model
-          %input
-          %label Quantity
-          %input
-        .phase.hidden
-          %label Which phase will this inverter go on?
-          %select
-            %option{:value=>"1"} 1
-            %option{:value=>"2"} 2
-            %option{:value=>"3"} 3
-    .hydro-content.hidden
-      %h3 What inverter do you plan to use for your hydro system?
-      .text-input
-        %form
-          %label Inverter manufacturer
-          %select{:class=>"inverterSelector3"}
-            %option{:value=>"1"} please select...
-            %option{:value=>"2"} CEC Approved GenTrax 1000 Inverter
-            %option{:value=>"3"} CEC Approved Toshiba 2745 Inverter
-          %label Inverter model
-          %input
-          %label Quantity
-          %input
-        .phase.hidden
-          %label Which phase will this inverter go on?
-          %select
-            %option{:value=>"1"} 1
-            %option{:value=>"2"} 2
-            %option{:value=>"3"} 3
   .content-area-1.positiveContent
     %h2 Based on the inverters you've chosen, here's your summary so far
-    .approval.existingApproval.hidden
-      %p Capacity
-      %p 7kW
-      %p Export
-      %p 2kW
-    .approval.newApproval.hidden
-      %p Capacity
-      %p 2kW
-      %p Export
-      %p 1kW
-    .approval.totalApproval
-      %p Capacity
-      %p 9kW
-      %p Export
-      %p 3kW
+    %table.summary-table
+      %tr
+        %th Inverter
+        %th Capacity
+        %th Export
+        %th Phase
+      %tr
+        %td Inverter 2
+        %td 1.5kW
+        %td 1kW
+        %td A
+      %tr
+        %td Inverter 3
+        %td 2.5kW
+        %td 1.5kW
+        %td A
+      %tr
+        %td Inverter 4
+        %td 1kW
+        %td 1kW
+        %td B
+      %tr
+        %td Inverter 5
+        %td 0.5kW
+        %td 0.5kW
+        %td B
+      %tr
+        %td Inverter 6
+        %td 0.5kW
+        %td 0.5kW
+        %td C
+      %tr.phaseTotal.summaryTable
+        %td Phase A Total
+        %td 4kW
+        %td 2.5kW
+        %td
+      %tr.phaseTotal
+        %td Phase B Total
+        %td 1.5kW
+        %td 1.5kW
+        %td
+      %tr.phaseTotal
+        %td Phase C Total
+        %td 0.5kW
+        %td 0.5kW
+        %td
+      %tr.phaseTotal.summaryTable#installationSummary
+        %td Installation Total
+        %td 6kW
+        %td 4.5kW
+        %td
+
   .button-area-1
     .instructionContentBattery.hidden
       %h3 It looks like you're not installing any generation.
@@ -255,6 +230,5 @@
         %p If you'd like this to be reviewed, you can apply for one of our engineers to take a look.
       %a.button.secondary{:href=>"/request-assessment"}
         Request an assessment
-
-    %a.button.tertiary{:href=>"/nmi-meter-email"}
-      go back
+      %a.button.tertiary{:href=>"/nmi-meter-email"}
+        go back

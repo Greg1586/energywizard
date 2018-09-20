@@ -101,12 +101,12 @@ $(document).ready(function () {
             $(".linkContent1").hide();
         }
     });
-    $('.phaseSelector').change(function () {
-        if ($(this).val() !== '1') {
-            $(".phase").show();
-        }
-        if ($(this).val() === '1') {
-            $(".phase").hide();
-        }
-    });
+    // $('.phaseSelector').change(function () {
+    //     if ($(this).val() !== '1') {
+    //         $(".phase").show();
+    //     }
+    //     if ($(this).val() === '1') {
+    //         $(".phase").hide();
+    //     }
+    // });
 });
