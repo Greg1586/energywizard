@@ -1,0 +1,37 @@
+.radio-content-1.hidden.show-class
+  %h3 What solar inverter do you plan to use?
+  .text-input
+    %form
+      %label Solar inverter model
+      %input
+      %label Solar inverter manufacturer
+      %select{:class=>"inverterSelector"}
+        %option{:value=>"1"} please select...
+        %option{:value=>"2"} CEC Approved NEC 9980 Inverter
+        %option{:value=>"3"} CEC Approved NEC 9000 Inverter
+    .phase-quantity.text-input
+      .phase
+        %label Which phase will this inverter go on?
+        %select
+          %option{:value=>"1"} A
+          %option{:value=>"2"} B
+          %option{:value=>"3"} C
+      .quantity
+        %label Quantity
+        %input
+  .export-limiting
+    %h3 You can export-limit inverters
+    %div.limit-choices
+      %div.existing-rating
+        %p This inverter has an export rating of
+        %p.existing 6kW
+      %form.text-input
+        %label Please tell us what you'll export on this inverter:
+        %input
+  .adding-buttons
+    .button.save Save this inverter
+    .button.secondary.clear Remove it
+  .add-inverter
+    %h3 add an inverter...
+    %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
+      .plus +

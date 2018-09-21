@@ -44,6 +44,7 @@
     color: $ausnet-blue
     b
       color: black
+
 .terms-conditions
   overflow-y: scroll
   height: 600px
@@ -86,27 +87,59 @@
   .text-input input
     margin: 0
 
-
-
-
-.quantity
-  display: flex
-  > div:first-child
-    flex: 2
-    padding-right: 30px
-  .remove-inverter
-    flex: 1
-  input
-    width: 100%
-    margin-top: 1rem
-    height: 3rem
-  .remove-inverter
-    align-items: flex-end
-    .secondary
-      font-size: 1rem
-
 .add-inverter
   h3
     border-top: 2px solid $ausnet-grey
     margin-top: 2rem
     padding-top: 2rem
+
+.export-limiting
+  border-top: 2px dotted $ausnet-mid-grey
+  padding-top: 1rem
+  .limit-choices
+    display: flex
+
+    > div, >form.text-input
+      flex: 1
+    > div
+      margin-right: 15px
+    > form.text-input
+      margin-left: 15px
+  .existing-rating
+    display: flex
+    flex-direction: column
+    .existing
+      display: flex
+      align-items: flex-end
+      margin-top: 0
+      padding: 0.5rem
+      background-color: $ausnet-mid-grey
+      height: 3.3rem
+      font-size: 2rem
+      color: $ausnet-blue
+
+.phase-quantity
+  display: flex
+  .phase, .quantity
+    flex: 1
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  .phase
+    margin-right: 15px
+  .quantity
+    margin-left: 15px
+
+.phase-summary
+  td
+    font-weight: bold
+.phase-row td
+  padding-top: 1rem
+
+#dynamicWarning
+  position: fixed
+  bottom: 0
+  display: flex
+  width: 100%
+  .content-area-1
+    margin-bottom: 0

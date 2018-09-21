@@ -12,64 +12,14 @@
     %h2 System summary
     %h3 Your systems predetermined export is 4.5kW
     %h3 Your systems predetermined capacity is 6kW
-    %table.summary-table
-      %tr
-        %th Inverter
-        %th Capacity
-        %th Export
-        %th Phase
-      %tr
-        %td Inverter 2
-        %td 1.5kW
-        %td 1kW
-        %td A
-      %tr
-        %td Inverter 3
-        %td 2.5kW
-        %td 1.5kW
-        %td A
-      %tr
-        %td Inverter 4
-        %td 1kW
-        %td 1kW
-        %td B
-      %tr
-        %td Inverter 5
-        %td 0.5kW
-        %td 0.5kW
-        %td B
-      %tr
-        %td Inverter 6
-        %td 0.5kW
-        %td 0.5kW
-        %td C
-      %tr.phaseTotal.summaryTable
-        %td Phase A Total
-        %td 4kW
-        %td 2.5kW
-        %td
-      %tr.phaseTotal
-        %td Phase B Total
-        %td 1.5kW
-        %td 1.5kW
-        %td
-      %tr.phaseTotal
-        %td Phase C Total
-        %td 0.5kW
-        %td 0.5kW
-        %td
-      %tr.phaseTotal.summaryTable#installationSummary
-        %td Installation Total
-        %td 6kW
-        %td 4.5kW
-        %td
+    %h4 NMI: 1767863
+    %h4 Meter Number: 999888999
+    =render "layouts/table"
 
   .content-area-1.positiveContent
-    %h1 You can get approval for this installation.
-    %p The approval is valid for the export and capacity shown or a lower export and/or lower capacity.
-    %h3 Click below to have the pre-approval emailed to you.
-    %h3
-      %b Your reference number is 1024888
+    %h1 You can proceed to get approval for this installation.
+    %p The approval is valid for the inverter capacity and export shown or less.
+    %h1 Click below to get approval emailed to you.
 
   .button-area-1
     %a.button{:href=>"/finished"}

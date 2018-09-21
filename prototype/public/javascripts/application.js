@@ -25,7 +25,7 @@ $(document).ready(function () {
     $('.battery-yes').click(function () {
         $(this).toggleClass("toggle-active");
         $(".battery-no").toggleClass("toggle-active");
-        $(".radio-content-3").toggleClass("show-class");
+        $(".radio-content-3").show();
         $(".radio-1").toggleClass("radio-toggle-alt");
         $(".radio-2").toggleClass("radio-toggle-alt");
         // if (($('.battery-yes').is(".toggle-active")) && (!$(".windQuery, .hydroQuery").is(":checked"))) {
@@ -35,7 +35,7 @@ $(document).ready(function () {
     $('.battery-no').click(function () {
         $(this).toggleClass("toggle-active");
         $(".battery-yes").toggleClass("toggle-active");
-        $(".radio-content-3").toggleClass("show-class");
+        $(".radio-content-3").hide();
         $(".radio-1").toggleClass("radio-toggle-alt");
         $(".radio-2").toggleClass("radio-toggle-alt");
         // if (($('.battery-no').is(".toggle-active")) && (!$(".windQuery, .hydroQuery").is(":checked"))) {
@@ -43,15 +43,23 @@ $(document).ready(function () {
         //     $(".instructionContent").addClass("hidden");
         // }
     });
+    $('.replacement').click(function () {
+        $(this).toggleClass("toggle-active");
+        $(".adding").toggleClass("toggle-active");
+    });
+    $('.adding').click(function () {
+        $(this).toggleClass("toggle-active");
+        $(".replacement").toggleClass("toggle-active");
+    });
     $('.dc').click(function () {
         $(this).toggleClass("toggle-active");
         $(".ac").toggleClass("toggle-active");
-        $(".radio-content-2").toggleClass("hidden");
+        $(".radio-content-2").hide();
     });
     $('.ac').click(function () {
         $(this).toggleClass("toggle-active");
         $(".dc").toggleClass("toggle-active");
-        $(".radio-content-2").toggleClass("hidden");
+        $(".radio-content-2").show();
     });
     $('.windQuery').click(function () {
         $(".wind-content").toggleClass("hidden");
@@ -100,6 +108,9 @@ $(document).ready(function () {
             $(".linkContent2").show();
             $(".linkContent1").hide();
         }
+    });
+    $('.dismissDynamic').click(function () {
+        $("#dynamicWarning").hide();
     });
     // $('.phaseSelector').change(function () {
     //     if ($(this).val() !== '1') {

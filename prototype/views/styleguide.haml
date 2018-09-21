@@ -222,3 +222,11 @@
       Next
     %a.button.tertiary{:href=>"/styleguide"}
       Go back
+
+.content-parent#dynamicWarning
+  .content-area-1.instructionContent
+    %h3 This is a dynamic warning that appears when a user takes an action that means they can't proceed, such as adding too many inverters.
+    %p You can add a button to dismiss it.
+    %p In the case of a user adding too many inverters, there souldn't be a button, rather the dynamic warning should disappear when they make a change to their inverters.
+    .button.secondary.dismissDynamic
+      Dismiss

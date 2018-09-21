@@ -1,212 +1,50 @@
 
 .content-parent
   .content-area-1.positiveContent
-    %h3 There is sufficient provision for up to 5kW export per phase at the substation, with the installation having a capacity of up to 10kW.
+    %h3 Based on our network assessment you are eligible for:
+    %h4
+      %ul
+        %li 10kW inverter capacity per phase
+        %li 5kW export per phase
   .title-area
     %h1 Please tell us about your installation
 .content-parent
-
   .content-area-1
     %h2 Are you installing a solar generation system?
     .solar-yes-no-toggle
       .solar-yes.toggle-active yes
       .solar-no no
-
-    .radio-content-1.hidden.show-class
-      %h3 What inverter do you plan to use?
-      .text-input
-        %form
-          %label Solar inverter manufacturer
-          %select{:class=>"inverterSelector"}
-            %option{:value=>"1"} please select...
-            %option{:value=>"2"} CEC Approved NEC 9980 Inverter
-            %option{:value=>"3"} CEC Approved NEC 9000 Inverter
-          %label Solar inverter model
-          %input
-        .phase
-          %label Which phase will this inverter go on?
-          %select
-            %option{:value=>"1"} A
-            %option{:value=>"2"} B
-            %option{:value=>"3"} C
-          %label Quantity
-          %input
-      .add-inverter
-        %h3 add an inverter...
-        %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
-          .plus +
-      .extra-inverter1.hidden
-        .text-input
-          %label Solar inverter manufacturer
-          %select{:class=>"inverterSelector"}
-            %option{:value=>"1"} please select...
-            %option{:value=>"2"} CEC Approved NEC 9980 Inverter
-            %option{:value=>"3"} CEC Approved NEC 9000 Inverter
-          %label Solar inverter model
-          %input
-          .phase
-            %label Which phase will this inverter go on?
-            %select
-              %option{:value=>"1"} A
-              %option{:value=>"2"} B
-              %option{:value=>"3"} C
-        %form.quantity
-          .text-input
-            %label Quantity
-            %input
-          .remove-inverter
-            .button.secondary remove this inverter
-        .add-inverter
-          %h3 add another inverter...
-          %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
-            .plus +
-        .extra-inverter2.hidden
-          .text-input
-            %form
-              %label Solar inverter manufacturer
-              %input
-              %label Solar inverter model
-              %input
-            .phase
-              %label Which phase will this inverter go on?
-              %select
-                %option{:value=>"1"} A
-                %option{:value=>"2"} B
-                %option{:value=>"3"} C
-            %form.quantity
-              %div
-                %label Quantity
-                %input
-              .remove-inverter
-                .button.secondary remove this inverter
+    = render "layouts/solar-inverter"
+    .extra-inverter1.hidden
+      =render "layouts/solar-inverter"
+      .extra-inverter2.hidden
+        =render "layouts/solar-inverter"
 
   .content-area-1
     %h2 Are you installing a battery as part of the system?
     .battery-yes-no-toggle
       .battery-yes.toggle-active yes
       .battery-no no
-    .radio-content-3.hidden.show-class
+    %hr
+    .radio-content-3
       %h3 Please tell us about how your battery system is coupled
-      %h2 Is your system AC or DC coupled?
+      %h2
+        %b Is your system AC or DC coupled?
+      %a{:href=>"/ac-dc-diagram"}what does this mean?
       .ac-dc-toggle
         .ac.toggle-active AC
         .dc DC
-      .radio-content-2
-        %h2 What AC battery inverter do you plan to use?
-        %form
-          .text-input
-            %label Battery inverter manufacturer
-            %input
-            %label Battery inverter model
-            %input
-            %label Quantity
-            %input
-            .phase
-              %label Which phase will this inverter go on?
-              %select
-                %option{:value=>"1"} A
-                %option{:value=>"2"} B
-                %option{:value=>"3"} C
-        .add-inverter
-          %h3 add another battery inverter
-          %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler1"}
-            .plus +
-        .extra-inverter1.hidden
-          .text-input
-            %form
-              %label Battery inverter manufacturer
-              %input
-              %label Battery inverter model
-              %input
-            .phase
-              %label Which phase will this inverter go on?
-              %select
-                %option{:value=>"1"} A
-                %option{:value=>"2"} B
-                %option{:value=>"3"} C
-            %form.quantity
-              %div
-                %label Quantity
-                %input
-              .remove-inverter
-                .button.secondary remove this inverter
-          .add-inverter
-            %h3 add another battery inverter
-            %a.plus-button{:type=>"checkbox", :id=>"monthly", :name=>"switch", :checked=>"checked", :class=>"inverterToggler2"}
-              .plus +
-        .extra-inverter2.hidden
-          .text-input
-            %form
-              %label Battery inverter manufacturer
-              %input
-              %label Battery inverter model
-              %input
-            .phase
-              %label Which phase will this inverter go on?
-              %select
-                %option{:value=>"1"} A
-                %option{:value=>"2"} B
-                %option{:value=>"3"} C
-            %form.quantity
-              %div
-                %label Quantity
-                %input
-              .remove-inverter
-                .button.secondary remove this inverter
+    .radio-content-2
+      =render "layouts/battery-inverter"
+    .extra-inverter1.hidden
+      =render "layouts/battery-inverter"
+      .extra-inverter2.hidden
+        =render "layouts/battery-inverter"
 
   .content-area-1.positiveContent
     %h2 Based on the inverters you've chosen, here's your summary so far
-    %table.summary-table
-      %tr
-        %th Inverter
-        %th Capacity
-        %th Export
-        %th Phase
-      %tr
-        %td Inverter 2
-        %td 1.5kW
-        %td 1kW
-        %td A
-      %tr
-        %td Inverter 3
-        %td 2.5kW
-        %td 1.5kW
-        %td A
-      %tr
-        %td Inverter 4
-        %td 1kW
-        %td 1kW
-        %td B
-      %tr
-        %td Inverter 5
-        %td 0.5kW
-        %td 0.5kW
-        %td B
-      %tr
-        %td Inverter 6
-        %td 0.5kW
-        %td 0.5kW
-        %td C
-      %tr.phaseTotal.summaryTable
-        %td Phase A Total
-        %td 4kW
-        %td 2.5kW
-        %td
-      %tr.phaseTotal
-        %td Phase B Total
-        %td 1.5kW
-        %td 1.5kW
-        %td
-      %tr.phaseTotal
-        %td Phase C Total
-        %td 0.5kW
-        %td 0.5kW
-        %td
-      %tr.phaseTotal.summaryTable#installationSummary
-        %td Installation Total
-        %td 6kW
-        %td 4.5kW
-        %td
+    = render "layouts/table"
+
 
   .button-area-1
     .instructionContentBattery.hidden
@@ -220,6 +58,8 @@
     .linkContent1
       %a.button{:href=>"/export"}
         Next
+      %a.button.tertiary{:href=>"/if-existing"}
+        go back
     .linkContent2
       %h3 We can't approve this application at this time
       %h4 This is because your total system capacity is too high, which may be because of the inverter you've chosen.
@@ -230,5 +70,9 @@
         %p If you'd like this to be reviewed, you can apply for one of our engineers to take a look.
       %a.button.secondary{:href=>"/request-assessment"}
         Request an assessment
-      %a.button.tertiary{:href=>"/nmi-meter-email"}
+      %a.button.tertiary{:href=>"/if-existing"}
         go back
+
+.content-parent#dynamicWarning
+  .content-area-1.instructionContent
+    %h3 It looks like you've added too many inverters to phase B - please try removing or changing the chosen inverters in order to proceed.

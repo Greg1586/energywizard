@@ -36,19 +36,25 @@ h3
 h4 a
   color: $ausnet-dark-green
   text-decoration: underline
-
+ol li
+  list-style: decimal
+ul li
+  list-style: disc
 table
   width: 100%
   th, td
-    padding: 1rem 0
+    padding: 0.5rem
   th
     text-align: left
+    border-bottom: 1px solid $ausnet-dark-blue
   .summaryTable
     border-top: 2px solid $ausnet-dark-blue
-  #installationSummary
-    font-size: 1.5rem
+  .installationSummary
+    font-size: 1.25rem
     font-weight: bold
-
+  .data-red
+    background-color: red
+    color: white
 //Page
 .page
   padding: 30px

@@ -222,45 +222,61 @@ h4 a {
   text-decoration: underline;
 }
 
-/* line 40, ../../stylesheets/partials/_setout.sass */
+/* line 39, ../../stylesheets/partials/_setout.sass */
+ol li {
+  list-style: decimal;
+}
+
+/* line 41, ../../stylesheets/partials/_setout.sass */
+ul li {
+  list-style: disc;
+}
+
+/* line 43, ../../stylesheets/partials/_setout.sass */
 table {
   width: 100%;
 }
-/* line 42, ../../stylesheets/partials/_setout.sass */
+/* line 45, ../../stylesheets/partials/_setout.sass */
 table th, table td {
-  padding: 1rem 0;
+  padding: 0.5rem;
 }
-/* line 44, ../../stylesheets/partials/_setout.sass */
+/* line 47, ../../stylesheets/partials/_setout.sass */
 table th {
   text-align: left;
+  border-bottom: 1px solid #28317d;
 }
-/* line 46, ../../stylesheets/partials/_setout.sass */
+/* line 50, ../../stylesheets/partials/_setout.sass */
 table .summaryTable {
   border-top: 2px solid #28317d;
 }
-/* line 48, ../../stylesheets/partials/_setout.sass */
-table #installationSummary {
-  font-size: 1.5rem;
+/* line 52, ../../stylesheets/partials/_setout.sass */
+table .installationSummary {
+  font-size: 1.25rem;
   font-weight: bold;
 }
+/* line 55, ../../stylesheets/partials/_setout.sass */
+table .data-red {
+  background-color: red;
+  color: white;
+}
 
-/* line 53, ../../stylesheets/partials/_setout.sass */
+/* line 59, ../../stylesheets/partials/_setout.sass */
 .page {
   padding: 30px;
 }
 
-/* line 56, ../../stylesheets/partials/_setout.sass */
+/* line 62, ../../stylesheets/partials/_setout.sass */
 .content-parent {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 60, ../../stylesheets/partials/_setout.sass */
+/* line 66, ../../stylesheets/partials/_setout.sass */
 .content-parent .content-area-1:last-child, .content-parent .button-area-1:last-child {
   margin-bottom: 10rem;
 }
 
-/* line 62, ../../stylesheets/partials/_setout.sass */
+/* line 68, ../../stylesheets/partials/_setout.sass */
 .content-area-1, .button-area-1, .title-area {
   background-color: white;
   border: 1px solid #cdcdcd;
@@ -271,19 +287,19 @@ table #installationSummary {
   width: 100%;
 }
 
-/* line 70, ../../stylesheets/partials/_setout.sass */
+/* line 76, ../../stylesheets/partials/_setout.sass */
 .button-area-1 {
   align-items: flex-end;
 }
 
-/* line 73, ../../stylesheets/partials/_setout.sass */
+/* line 79, ../../stylesheets/partials/_setout.sass */
 .header {
   display: block;
   padding: 10px 10px 10px 30px;
   background-color: #28317d;
   color: white;
 }
-/* line 78, ../../stylesheets/partials/_setout.sass */
+/* line 84, ../../stylesheets/partials/_setout.sass */
 .header a {
   background-color: transparent;
   color: white;
@@ -291,7 +307,7 @@ table #installationSummary {
   cursor: pointer;
 }
 
-/* line 87, ../../stylesheets/partials/_setout.sass */
+/* line 93, ../../stylesheets/partials/_setout.sass */
 .text-input input, .text-input select {
   background-color: white;
   border: 1px solid #cccccc;
@@ -301,13 +317,13 @@ table #installationSummary {
   padding: 1rem;
   width: 100%;
 }
-/* line 95, ../../stylesheets/partials/_setout.sass */
+/* line 101, ../../stylesheets/partials/_setout.sass */
 .text-input select {
   height: 3.5rem;
 }
 
 @media (max-width: 600px) {
-  /* line 100, ../../stylesheets/partials/_setout.sass */
+  /* line 106, ../../stylesheets/partials/_setout.sass */
   .page {
     padding: 0;
   }
@@ -346,20 +362,37 @@ a {
 }
 
 /* line 26, ../../stylesheets/partials/_components.sass */
+.adding-buttons {
+  display: flex;
+}
+/* line 28, ../../stylesheets/partials/_components.sass */
+.adding-buttons .save, .adding-buttons .clear {
+  flex: 1;
+}
+/* line 30, ../../stylesheets/partials/_components.sass */
+.adding-buttons .save {
+  margin-right: 15px;
+}
+/* line 32, ../../stylesheets/partials/_components.sass */
+.adding-buttons .clear {
+  margin-left: 15px;
+}
+
+/* line 34, ../../stylesheets/partials/_components.sass */
 .instructionContentBattery .secondary {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* line 28, ../../stylesheets/partials/_components.sass */
-.solar-yes-no-toggle, .battery-yes-no-toggle, .ac-dc-toggle {
+/* line 36, ../../stylesheets/partials/_components.sass */
+.solar-yes-no-toggle, .battery-yes-no-toggle, .ac-dc-toggle, .replacement-adding-toggle {
   cursor: pointer;
   margin: 30px 0;
   display: flex;
   border: 1px solid #0864b1;
 }
 
-/* line 33, ../../stylesheets/partials/_components.sass */
-.solar-yes, .solar-no, .battery-yes, .battery-no, .ac, .dc {
+/* line 41, ../../stylesheets/partials/_components.sass */
+.solar-yes, .solar-no, .battery-yes, .battery-no, .ac, .dc, .replacement, .adding {
   flex: 1;
   text-align: center;
   font-size: 1.5rem;
@@ -368,65 +401,65 @@ a {
   font-weight: 200;
 }
 
-/* line 40, ../../stylesheets/partials/_components.sass */
+/* line 48, ../../stylesheets/partials/_components.sass */
 .toggle-active {
   background-color: #0864b1;
   color: white;
   font-weight: 900;
 }
 
-/* line 45, ../../stylesheets/partials/_components.sass */
+/* line 53, ../../stylesheets/partials/_components.sass */
 a.spacer {
   display: block;
   text-align: center;
 }
 
-/* line 49, ../../stylesheets/partials/_components.sass */
+/* line 57, ../../stylesheets/partials/_components.sass */
 input.warning {
   border: 3px solid red;
 }
 
-/* line 53, ../../stylesheets/partials/_components.sass */
+/* line 61, ../../stylesheets/partials/_components.sass */
 .checkbox {
   display: flex;
   margin: 1rem 0;
 }
-/* line 56, ../../stylesheets/partials/_components.sass */
+/* line 64, ../../stylesheets/partials/_components.sass */
 .checkbox input {
   margin-right: 1rem;
 }
 
-/* line 60, ../../stylesheets/partials/_components.sass */
+/* line 68, ../../stylesheets/partials/_components.sass */
 .line {
   width: 50%;
   margin-bottom: 1rem;
   border-bottom: 0.3rem solid black;
 }
 
-/* line 66, ../../stylesheets/partials/_components.sass */
+/* line 74, ../../stylesheets/partials/_components.sass */
 li {
   margin: 1rem 0 1rem 1rem;
   list-style: disc;
 }
 
-/* line 71, ../../stylesheets/partials/_components.sass */
+/* line 79, ../../stylesheets/partials/_components.sass */
 .dialer {
   margin: 30px 0;
 }
-/* line 73, ../../stylesheets/partials/_components.sass */
+/* line 81, ../../stylesheets/partials/_components.sass */
 .dialer img {
   width: 200px;
   height: 200px;
 }
 
-/* line 78, ../../stylesheets/partials/_components.sass */
+/* line 86, ../../stylesheets/partials/_components.sass */
 input.knob {
   font-size: 3rem;
   font-weight: 900;
   color: black;
 }
 
-/* line 84, ../../stylesheets/partials/_components.sass */
+/* line 92, ../../stylesheets/partials/_components.sass */
 .detail-text {
   color: #4c4c4c;
 }
@@ -505,13 +538,13 @@ input.knob {
   color: black;
 }
 
-/* line 47, ../../stylesheets/partials/_ausnet.sass */
+/* line 48, ../../stylesheets/partials/_ausnet.sass */
 .terms-conditions {
   overflow-y: scroll;
   height: 600px;
 }
 
-/* line 51, ../../stylesheets/partials/_ausnet.sass */
+/* line 52, ../../stylesheets/partials/_ausnet.sass */
 .plus-button {
   align-items: center;
   background-color: #0864b1;
@@ -526,78 +559,130 @@ input.knob {
   position: relative;
 }
 
-/* line 64, ../../stylesheets/partials/_ausnet.sass */
+/* line 65, ../../stylesheets/partials/_ausnet.sass */
 .plus {
   position: absolute;
 }
 
-/* line 67, ../../stylesheets/partials/_ausnet.sass */
+/* line 68, ../../stylesheets/partials/_ausnet.sass */
 .captcha {
   width: 100%;
 }
 
-/* line 70, ../../stylesheets/partials/_ausnet.sass */
+/* line 71, ../../stylesheets/partials/_ausnet.sass */
 .extra-inverter1, .extra-inverter2 {
   margin-top: 2rem;
 }
 
-/* line 73, ../../stylesheets/partials/_ausnet.sass */
+/* line 74, ../../stylesheets/partials/_ausnet.sass */
 .phasing {
   align-items: flex-end;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 77, ../../stylesheets/partials/_ausnet.sass */
+/* line 78, ../../stylesheets/partials/_ausnet.sass */
 .phasing h3, .phasing div {
   flex-basis: 50%;
   flex: 1;
 }
-/* line 80, ../../stylesheets/partials/_ausnet.sass */
+/* line 81, ../../stylesheets/partials/_ausnet.sass */
 .phasing div {
   text-align: right;
 }
-/* line 82, ../../stylesheets/partials/_ausnet.sass */
+/* line 83, ../../stylesheets/partials/_ausnet.sass */
 .phasing hr {
   border: 0.5px solid black;
   flex-basis: 100%;
   margin: 1rem 0;
 }
-/* line 86, ../../stylesheets/partials/_ausnet.sass */
+/* line 87, ../../stylesheets/partials/_ausnet.sass */
 .phasing .text-input input {
   margin: 0;
 }
 
-/* line 92, ../../stylesheets/partials/_ausnet.sass */
-.quantity {
-  display: flex;
-}
-/* line 94, ../../stylesheets/partials/_ausnet.sass */
-.quantity > div:first-child {
-  flex: 2;
-  padding-right: 30px;
-}
-/* line 97, ../../stylesheets/partials/_ausnet.sass */
-.quantity .remove-inverter {
-  flex: 1;
-}
-/* line 99, ../../stylesheets/partials/_ausnet.sass */
-.quantity input {
-  width: 100%;
-  margin-top: 1rem;
-  height: 3rem;
-}
-/* line 103, ../../stylesheets/partials/_ausnet.sass */
-.quantity .remove-inverter {
-  align-items: flex-end;
-}
-/* line 105, ../../stylesheets/partials/_ausnet.sass */
-.quantity .remove-inverter .secondary {
-  font-size: 1rem;
-}
-
-/* line 109, ../../stylesheets/partials/_ausnet.sass */
+/* line 91, ../../stylesheets/partials/_ausnet.sass */
 .add-inverter h3 {
   border-top: 2px solid #cdcdcd;
   margin-top: 2rem;
   padding-top: 2rem;
+}
+
+/* line 96, ../../stylesheets/partials/_ausnet.sass */
+.export-limiting {
+  border-top: 2px dotted #e0e0e0;
+  padding-top: 1rem;
+}
+/* line 99, ../../stylesheets/partials/_ausnet.sass */
+.export-limiting .limit-choices {
+  display: flex;
+}
+/* line 102, ../../stylesheets/partials/_ausnet.sass */
+.export-limiting .limit-choices > div, .export-limiting .limit-choices > form.text-input {
+  flex: 1;
+}
+/* line 104, ../../stylesheets/partials/_ausnet.sass */
+.export-limiting .limit-choices > div {
+  margin-right: 15px;
+}
+/* line 106, ../../stylesheets/partials/_ausnet.sass */
+.export-limiting .limit-choices > form.text-input {
+  margin-left: 15px;
+}
+/* line 108, ../../stylesheets/partials/_ausnet.sass */
+.export-limiting .existing-rating {
+  display: flex;
+  flex-direction: column;
+}
+/* line 111, ../../stylesheets/partials/_ausnet.sass */
+.export-limiting .existing-rating .existing {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 0;
+  padding: 0.5rem;
+  background-color: #e0e0e0;
+  height: 3.3rem;
+  font-size: 2rem;
+  color: #0864b1;
+}
+
+/* line 121, ../../stylesheets/partials/_ausnet.sass */
+.phase-quantity {
+  display: flex;
+}
+/* line 123, ../../stylesheets/partials/_ausnet.sass */
+.phase-quantity .phase, .phase-quantity .quantity {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 128, ../../stylesheets/partials/_ausnet.sass */
+.phase-quantity .phase {
+  margin-right: 15px;
+}
+/* line 130, ../../stylesheets/partials/_ausnet.sass */
+.phase-quantity .quantity {
+  margin-left: 15px;
+}
+
+/* line 134, ../../stylesheets/partials/_ausnet.sass */
+.phase-summary td {
+  font-weight: bold;
+}
+
+/* line 136, ../../stylesheets/partials/_ausnet.sass */
+.phase-row td {
+  padding-top: 1rem;
+}
+
+/* line 139, ../../stylesheets/partials/_ausnet.sass */
+#dynamicWarning {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+}
+/* line 144, ../../stylesheets/partials/_ausnet.sass */
+#dynamicWarning .content-area-1 {
+  margin-bottom: 0;
 }

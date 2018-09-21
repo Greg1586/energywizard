@@ -23,14 +23,22 @@ a
   color: black
   font-size: 0.75rem
   font-weight: normal
+.adding-buttons
+  display: flex
+  .save, .clear
+    flex: 1
+  .save
+    margin-right: 15px
+  .clear
+    margin-left: 15px
 .instructionContentBattery .secondary
   background-color: rgba(0,0,0,0.1)
-.solar-yes-no-toggle, .battery-yes-no-toggle, .ac-dc-toggle
+.solar-yes-no-toggle, .battery-yes-no-toggle, .ac-dc-toggle, .replacement-adding-toggle
   cursor: pointer
   margin: 30px 0
   display: flex
   border: 1px solid $ausnet-blue
-.solar-yes, .solar-no, .battery-yes, .battery-no, .ac, .dc
+.solar-yes, .solar-no, .battery-yes, .battery-no, .ac, .dc, .replacement, .adding
   flex: 1
   text-align: center
   font-size: 1.5rem

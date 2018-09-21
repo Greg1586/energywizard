@@ -1,9 +1,19 @@
 .content-parent
   .title-area
-    %h1 You're all set.
-    %h2 You can begin your installation based on the details you've provided
-    %p An email has been sent to the email address you provided
-    %h1 Please record your reference number: 1024888
+    %h1 You’re all set!
+    %p An email with these details has been sent to the email address you provided.
+    %h2 Please record your reference number: 12345678
+    %h2 Next Steps
+    %ol{:type=>"1"}
+      %li You can now begin your installation based on the details you provided. This approval is valid for 90 days.
+      %li
+        %p Once you have installed your system you will need to send three forms to your customer’s retailer to pass on to us so we can update the meter.
+        %p These forms are:
+        %ul
+          %li Electrical Works Request (EWR) form, available from the Victorian SIR website.
+          %li Certificate of Electrical Safety (CES), which your electrical inspector will purchase from Energy Safe Victoria.
+          %li AusNet Services Connection Agreement signed by the customer.
+      %li After we receive and approve the paperwork from the retailer, we will update the customers meter so that data is recorded for energy generation as well as consumption. We will then send a text message to the customer to confirm that they are able to switch on their system.
   .button-area-1
     %a.button{:href=>"/"}
       home
