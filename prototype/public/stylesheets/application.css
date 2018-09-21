@@ -676,13 +676,27 @@ input.knob {
 }
 
 /* line 139, ../../stylesheets/partials/_ausnet.sass */
+.existing-input {
+  display: flex;
+}
+/* line 141, ../../stylesheets/partials/_ausnet.sass */
+.existing-input > div:first-child {
+  padding-right: 15px;
+  border-right: 1px dotted #28317d;
+}
+/* line 144, ../../stylesheets/partials/_ausnet.sass */
+.existing-input > div:last-child {
+  margin-left: 15px;
+}
+
+/* line 147, ../../stylesheets/partials/_ausnet.sass */
 #dynamicWarning {
   position: fixed;
   bottom: 0;
   display: flex;
   width: 100%;
 }
-/* line 144, ../../stylesheets/partials/_ausnet.sass */
+/* line 152, ../../stylesheets/partials/_ausnet.sass */
 #dynamicWarning .content-area-1 {
   margin-bottom: 0;
 }
